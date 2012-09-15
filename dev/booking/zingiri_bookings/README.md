@@ -4,6 +4,9 @@ http://wordpress.org/extend/plugins/bookings/
 service site
 =
 http://www.zingiri.com/bookings/
+pricing
+=
+$8.95/month or $89.95/year
 
 notes
 =
