@@ -1,6 +1,7 @@
 plugin URL
 =
 http://wordpress.org/extend/plugins/booking/
+
 main site
 =
 http://wpbookingcalendar.com/features/
@@ -26,3 +27,5 @@ http://plugins.svn.wordpress.org/booking/
 note
 -
 a preliminary diff of svn repo and wordpress download show that the img folder in svn repo contains extra .png images nonexistant in wordpress download. further analysis is required to determine if any functionality is different
+
+this plugin works in conjunction with http://wordpress.org/extend/plugins/booking-manager/faq/
