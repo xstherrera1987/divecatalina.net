@@ -1,6 +1,9 @@
 # ignore backups
 *~
 
+# ignore OSX cache files
+.DS_Store
+
 # server files
 .htaccess
 *.log
