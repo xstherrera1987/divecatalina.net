@@ -1,8 +1,10 @@
 MySQL
-=
+===
 Databases:
--
 ---
+
+---
+
 db = divecatalina
 
 ---
@@ -10,8 +12,8 @@ db = divecatalina
 db = dev
 
 ---
+
 Users:
--
 ---
 
 usr = root @ ...
@@ -34,8 +36,6 @@ privileges = all on divecatalina
 
 ---
 
-
----
 usr = dev @ localhost
 
 pz = 
@@ -43,36 +43,3 @@ pz =
 privileges = all on divecatalina, all on dev
 
 // this is our development account (for local development)
-
----
-
-WordPress
-=
-usr = admin
-
-pz = teamgrep
-
-// this is development login to wordpress
-
----
-
-usr = webmaster
-
-pz = divecatalina
-
-// this is wordpress account for uploading content
-
----
-
-WordPress Install 
--
-(http://localhost/wp-admin/install.php)
-
-Site Title = DiveCatalina
-
-Username = admin
-
-password = teamgrep
-
-youremail = webmaster@divecatalina.net
-
