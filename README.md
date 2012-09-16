@@ -3,8 +3,6 @@ MySQL
 Databases:
 ---
 
----
-
 db = divecatalina
 
 ---
