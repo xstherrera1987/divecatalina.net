@@ -1,0 +1,26 @@
+label, input, select { display:block; }
+input.text, select.text { margin-bottom:9px; width:60%;}
+input.date { margin-bottom:9px; width:20%;}
+select.number{margin-bottom:9px; width:20%;}
+fieldset { padding:0; border:0; margin-top:20px; }
+
+.mp_h2 { 
+font-size: 18px;
+line-height: 1.2em;
+color: #333;
+font-weight: bold;
+margin: .6em 0; }
+
+.ui-dialog .ui-state-error { padding: .3em; }
+.validateTips { border: 1px solid transparent; padding: 0.3em; }
+
+#container #step1, #step2, #step3, #step4 { display: none; }
+#container #step1{ display: block; }
+#container .form { margin: 66px 72px 0 72px; }
+
+
+.error_form{
+background-position: 10px center;
+color: #9F6000;
+background-color: #FEEFB3;
+}
