@@ -23,3 +23,6 @@ phpmyadmin/
 
 # Jose: other pages i'm serving that are unrelated to this project
 jh/
+
+# ignore OSX _notes directory
+_notes
