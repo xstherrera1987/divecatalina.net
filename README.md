@@ -1,43 +1,8 @@
-MySQL
+DiveCatalina.net
 ===
-Databases:
----
+the 'dev' folder will be used to develop the HTML,CSS,JavaScript layouts using static pages
 
-db = divecatalina
+'wp-content' folder in this repo will replace the one in your local WordPress installation. 
+This  is where we will be developing the WP theme, pulling the code from the 'dev' directory.
 
----
-
-db = dev
-
----
-
-Users:
----
-
-usr = root @ ...
-
-pz = (anything you like)
-
-privileges = all
-
-// this is the default mysql root account, leave as is
-
----
-
-usr = divecatalina @ localhost
-
-pz = 
-
-privileges = all on divecatalina
-
-// this is the account wordpress uses (during development)
-
----
-
-usr = dev @ localhost
-
-pz = 
-
-privileges = all on divecatalina, all on dev
-
-// this is our development account (for local development)
+the content of the pages themselves will be entered using the WordPress admin interface
