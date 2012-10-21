@@ -3,14 +3,14 @@ Project Name: Dive Catalina.net
 Author: Team Grep
 */
 
-a 			{ text-decoration: none;}
-a: hover 	{ text-decoration: underline;}
+a 			{ text-decoration: none; color: #2098DA;}
+a:hover 	{ text-decoration: underline; color: #436fa2;}
 
 .clear	{clear: both;}
 .alignleft 	{float: left;}
 .alignright	{float: right;}
 
-/************ WEB FONTS **********/
+/************ WEB FONTS ************/
 @font-face{ 
 	font-family: 'nexa_boldregular';
     src: url('nexa_boldregular/Nexa_Free_Bold-webfont.eot');
@@ -56,7 +56,7 @@ a: hover 	{ text-decoration: underline;}
 
 }
 
-/************ MAIN **********/
+/************ MAIN ************/
 body {
 	background: #ebebeb;
 	font-family: 'sanchezregular', Garamond, serif;
@@ -120,7 +120,7 @@ ul {
 
 footer { padding: 5px; text-align: center; font-size: 10px;}
 
-/************ ABOUT US **********/
+/************ ABOUT US ************/
 .about-sig {
 	font-size: 24px;
 	font-style: italic;
@@ -134,14 +134,73 @@ footer { padding: 5px; text-align: center; font-size: 10px;}
 	margin: 10px;
 }
 
+/************ SERVICES ************/
 
+#introductory-dives, #guided-dives, #boat-dives {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+	-moz-box-shadow: 0px 0px 5px #000000;
+	-webkit-box-shadow: 0px 0px 5px #000000;
+	box-shadow: 0px 0px 5px #000000;
+	/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+	
+	float: left;
+	width: 280px;
+	height: 420px;
+	margin: 20px 10px;
+	padding: 10px;
+}
 
+#introductory-dives h3, #guided-dives h3, #boat-dives h3 {
+	border-bottom: solid 5px #436fa2;
+	margin-bottom: 10px;
+}
 
+#introductory-dives a, #guided-dives a, #boat-dives a {
+	float: right;
+}
 
+#dive-classes {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+	-moz-box-shadow: 0px 0px 5px #000000;
+	-webkit-box-shadow: 0px 0px 5px #000000;
+	box-shadow: 0px 0px 5px #000000;
+	/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+	width: 920px;
+	height: 420px;
+	margin: 20px 10px;
+	padding: 10px;
+}
 
+#scuba-diver, #advanced, #rescue, #specialty-classes, #naui-instructor, #referral-dives {
+	float:left;
+	width: 270px;
+	margin: 20px 10px;
+	border-left: solid 2px #cbcbcb;
+	padding-left: 5px;
+}
 
+#scuba-diver h3, #advanced h3, #rescue h3, #specialty-classes h3, #naui-instructor h3, #referral-dives h3 {
+	border-bottom: solid 5px #436fa2;
+	margin-bottom: 10px;
+}
 
+#scuba-diver a, #advanced a, #rescue a, #specialty-classes a, #naui-instructor a, #referral-dives a  {
+	float: right;
+}
 
+#rental {
+	padding: 20px;
+}
+
+#rental ul {
+	padding: 40px;
+}
 
 
 
