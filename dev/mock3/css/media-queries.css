@@ -1,0 +1,28 @@
+@media screen and (max-width: 478px) 	{
+	.alignleft {float: none;}
+	.alignright {float: none;}
+
+	h1 { text-align: center;}
+	h1 a { font-size: 36px; padding: 1px;}
+	h2 { font-size: 16px; padding: 1px; text-align: center;}
+	body { font-size: 13px; }
+
+	/* Give your nav elements that "blockie" look for mobile devices */
+	nav a { width: 90%; border: solid 1px #cbcbcb; text-align: center; margin: 1px;}
+	nav a:hover { background: #cbcbcb; }
+
+	#main-content { padding: 10px;}
+	#sub-content { padding: 10px;}
+
+	.about-sig {font-size: 18px;}
+}
+
+@media screen and (max-width: 740px) 	{}
+
+@media screen and (max-width: 480px) 	{}
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
