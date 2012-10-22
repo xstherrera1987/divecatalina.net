@@ -3,6 +3,7 @@
 /*
 Plugin Name: Admin00
 Description: Testing the features for admin panel customization
+Author: Team GREP
 Version: 1.0
 */
 
@@ -10,6 +11,11 @@ Version: 1.0
 function add_stylesheet() {
   echo '<link rel="stylesheet" type="text/css" href="' . 
     plugins_url('admin00.css', __FILE__) . '">';
+}
+// load our javascript to customize the interface
+function add_javascript() {
+  echo '<script type="text/javascript" src=' .
+    plugins_url('admin00.js', __FILE__) . '></script>';
 }
 
 // remove widgets from the dashboard (still need to remove Welcome!!)
@@ -39,8 +45,15 @@ function set_dashboard_columns() {
 	$user_id = get_current_user_id();
 	update_user_meta( $user_id, 'screen_layout_dashboard', $num );
 }
+	
+// set footer
+function remove_footer_admin () {
+    echo '&copy; 2012 - Team GREP for DiveCatalina.net';
+}
 
 add_action('admin_head', 'add_stylesheet');
+add_action('admin_head', 'add_javascript');
+add_filter('admin_footer_text', 'remove_footer_admin');
 add_action('wp_dashboard_setup', 'remove_dashboard_widgets');
 add_action('wp_dashboard_setup', 'set_dashboard_columns');
 

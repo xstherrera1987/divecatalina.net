@@ -1,7 +1,31 @@
+/* mark all rules with !important so they ovverride WP defaults */
+
+/* remove "Screen Options" and "Help" from top */
 #screen-meta-links {
 	display: none !important;
 }
 
-#collapse-menu {
+/* remove welcome panel widget from dashboard */
+#welcome-panel {
+	display: none !important;
+}
+
+/* remove menu items from nav on left */
+#menu-posts, #menu-links, #menu-comments, #collapse-menu, #menu-tools {
+	display: none !important;
+}
+
+/* remove items from top left WP admin bar*/
+#wp-admin-bar-wporg {
+	display: none !important;
+}
+
+/* disable items from "New" menu */
+#wp-admin-bar-new-post, #wp-admin-bar-new-link, #wp-admin-bar-new-user {
+	display: none !important;
+}
+
+/* disable items from top admin bar */
+#wp-admin-bar-comments, #wp-admin-bar-updates  {
 	display: none !important;
 }
