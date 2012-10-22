@@ -95,7 +95,6 @@ h3 {
 }
 
 nav { 
-	background-color: #ffffff;
 	border: 1px solid #999999;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
@@ -175,13 +174,14 @@ footer { padding: 5px; text-align: center; font-size: 10px;}
 	/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
 	
 	float: left;
-	width: 280px;
+	width: 271px;
 	height: 420px;
 	margin: 20px 10px;
 	padding: 10px;
 }
 
 #introductory-dives h3, #guided-dives h3, #boat-dives h3 {
+    text-align: center;
 	border-bottom: solid 5px #436fa2;
 	margin-bottom: 10px;
 }
@@ -190,27 +190,31 @@ footer { padding: 5px; text-align: center; font-size: 10px;}
 	float: right;
 }
 
-#dive-classes {
-	-moz-border-radius: 5px;
+#dive-classes {padding: 10px;}
+
+#classes-offered {
+	/*
+    -moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-	/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+	/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS
 	-moz-box-shadow: 0px 0px 5px #000000;
 	-webkit-box-shadow: 0px 0px 5px #000000;
 	box-shadow: 0px 0px 5px #000000;
 	/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
 	width: 920px;
 	height: 420px;
-	margin: 20px 10px;
-	padding: 10px;
+	margin: 10px 0;
+    padding: 5px;
 }
 
 #scuba-diver, #advanced, #rescue, #specialty-classes, #naui-instructor, #referral-dives {
 	float:left;
+    background: #e2e2e2;
 	width: 270px;
-	margin: 20px 10px;
-	border-left: solid 2px #cbcbcb;
-	padding-left: 5px;
+	margin: 20px 5px;
+	border: dashed 2px #cbcbcb;
+	padding: 10px;
 }
 
 #scuba-diver h3, #advanced h3, #rescue h3, #specialty-classes h3, #naui-instructor h3, #referral-dives h3 {
