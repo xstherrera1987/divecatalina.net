@@ -18,20 +18,13 @@
 
 	#introductory-dives, #guided-dives, #boat-dives { height: 360px; }
 
-	#dive-classes {
-		background: none;
+	#classes-offered {
 		width: 280px;
 		height: 980px;
 		margin: 20px 10px;
 		padding: 10px;
-}
+    }
 
-#scuba-diver, #advanced, #rescue, #specialty-classes, #naui-instructor, #referral-dives {
-	float:left;
-	width: 270px;
-	margin: 20px 0;
-	border-left: solid 2px #cbcbcb;
-}
 
 @media screen and (max-width: 740px) 	{}
 
