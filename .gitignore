@@ -30,4 +30,4 @@ _notes
 # plugins directory
 wp-content/plugins/*
 !wp-content/plugins/index.php
-!wp-content/plugins/admin00
+!wp-content/plugins/dc-admin
