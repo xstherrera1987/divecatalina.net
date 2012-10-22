@@ -1,7 +1,7 @@
 <?php
 
 /*
-Plugin Name: Admin00
+Plugin Name: DC Admin
 Description: Testing the features for admin panel customization
 Author: Team GREP
 Version: 1.0
@@ -10,12 +10,12 @@ Version: 1.0
 // load our stylesheet to customize the interface
 function add_stylesheet() {
   echo '<link rel="stylesheet" type="text/css" href="' . 
-    plugins_url('admin00.css', __FILE__) . '">';
+    plugins_url('dc-admin.css', __FILE__) . '">';
 }
 // load our javascript to customize the interface
 function add_javascript() {
   echo '<script type="text/javascript" src=' .
-    plugins_url('admin00.js', __FILE__) . '></script>';
+    plugins_url('dc-admin.js', __FILE__) . '></script>';
 }
 
 // remove widgets from the dashboard (still need to remove Welcome!!)
