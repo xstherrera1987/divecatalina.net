@@ -30,5 +30,4 @@ _notes
 # plugins directory
 wp-content/plugins/*
 !wp-content/plugins/index.php
-!wp-content/plugins/hello.php
-!wp-content/plugins/akismet/
+!wp-content/plugins/admin00
