@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>Dive Catalina</title>
+
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/media-queries.css" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+    <script>  
+    var el = document.getElementsByTagName("body")[0];  
+    el.className = "";  
+	</script>  
+		<div id="container">
+			<header>
+				<h1 class = "alignleft"><a href="index.html">Dive Catalina</a></h1>
+				<h2 class = "alignright">Work less... Dive Moore!</h2>
+				<div class = "clear"></div>
+		
+				<nav id="topNav">
+                <ul>
+					<li><a href="index.html">Home</a></li>
+      				<li><a href="about.html">About us</a></li>
+					<li><a href="#">Staff</a></li>
+					<li>
+					<a href="#">Services</a>
+                    <ul>
+						<li><a href="#">Introductory Classes</a></li>
+                    	<li><a href="#">Guided Dives</a></li>
+                    	<li><a href="#">Dive Classes</a></li>
+                   		<li><a href="#">Boat Dives</a></li>
+                    	<li class=last><a href="#">Rental</a></li>
+                    </ul>
+                    </li>
+					<li><a href="#">Gallery</a></li>
+					<li><a href="#">Getting to Catalina</a></li>
+					<li><a href="#">Contact us</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Links</a></li>
+                 </ul>
+				</nav>
+                <script src="js/jquery-1.8.2.js"></script>
+    			<script src="js/modernizr.js"></script> 
+    			<script>
+				(function($){
+				
+				//cache nav
+					var nav = $("#topNav");
+				
+				//add indicator and hovers to submenu parents
+					nav.find("li").each(function() {
+						if ($(this).find("ul").length > 0) {
+							$("<span>").text("^").appendTo($(this).children(":first"));
+
+						//show subnav on hover
+							$(this).mouseenter(function() {
+							$(this).find("ul").stop(true, true).slideDown();
+						});
+						
+						//hide submenus on exit
+						$(this).mouseleave(function() {
+							$(this).find("ul").stop(true, true).slideUp();
+						});
+					}
+				});
+			})(jQuery);
+		</script>
+			</header>
+
+			<section id="content">
+				<div id="slideshow">
+					<img src="images/slide1.png" />
+				</div><!-- END Slideshow -->
+				
+				<div id="main-content">
+                <h3>Boat Dives</h3>
+				<span class="staff-img"></span>
+                    <p>Boat Dives are available on the "Catalina Grace." The [???] is 36 feet long and carries 12 divers. We believe in personal service and getting you to the best diving available around Catalina Island. We typically leave at 9:00 am with 4-12 divers for two tank dives and returning at approximately 3:00 pm. We offer a choice of steel or aluminum tanks and soft weight or the boat. All trips include tanks, weights, lunch, and drinks.
+<ul>
+Cost: $115 per person
+</ul>
+
+<h4>Reservations highly recommended.
+</h4>
+
+</p>
+
+</ul>
+</div>
+			</section>
+			
+			<hr/>
+			
+			<footer>
+				<p>&copy; 2012 - Dive Catalina</p>
+			</footer>
+		</div>
+	
+	</body>
+</html> 
