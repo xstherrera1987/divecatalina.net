@@ -1,6 +1,6 @@
 @media screen and (max-width: 478px) 	{
-	.alignleft {float: none;}
-	.alignright {float: none;}
+	header h1 {float: none;}
+	header h2 {float: none;}
 
 	h1 { text-align: center;}
 	h1 a { font-size: 36px; padding: 1px;}
@@ -42,6 +42,7 @@
 	#main-content { padding: 10px;}
 	#sub-content { padding: 10px;}
 
+    #about-img { float: none; display: block; margin: 10px auto;}
 	.about-sig {font-size: 18px;}
 
 	#introductory-dives, #guided-dives, #boat-dives { height: 360px; }

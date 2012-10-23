@@ -7,8 +7,9 @@ a 			{ text-decoration: none; color: #2098DA;}
 a:hover 	{ color: #436fa2;}
 
 .clear	{clear: both;}
-.alignleft 	{float: left;}
-.alignright	{float: right;}
+.alignleft 	{float: left; margin-right: 10px;}
+.alignright	{float: right; margin-left: 10px;}
+.img-center {display: block; margin: 50px auto;}
 
 /************ WEB FONTS ************/
 @font-face{ 
@@ -94,6 +95,9 @@ h3 {
 	padding-bottom: 10px;
 }
 
+header h1 { float: left;}
+header h2 { float: right;}
+
 nav { 
 	border: 1px solid #999999;
 	-moz-border-radius: 4px;
@@ -137,7 +141,8 @@ nav a:hover {
 }
 
 #slideshow { text-align: center;}
-#slideshow img {width: 90%;}
+#slideshow img { width: 90%;}
+
 #main-content { padding: 50px; text-align: justify;}
 #sub-content { padding: 50px; text-align: justify;}
 
@@ -152,6 +157,8 @@ footer { padding: 5px; text-align: center; font-size: 10px;}
 	font-size: 24px;
 	font-style: italic;
 }
+
+#about-img { float:left; margin-right: 10px;}
 
 .staff-img {
 	height: 150px;
