@@ -21,17 +21,54 @@
 				<h2 class = "alignright">Work less... Dive Moore!</h2>
 				<div class = "clear"></div>
 				
-				<nav>
-					<a href="index.html">Home</a>
-					<a href="about.html">About us</a>
+					<nav id="topNav">
+                <ul>
+					<li><a href="index.html">Home</a></li>
+      				<li><a href="about.html">About us</a></li>
+					<li><a href="#">Staff</a></li>
+					<li>
 					<a href="#">Services</a>
-					<a href="#">Gallery</a>
-					<a href="#">Getting to Catalina</a>
-					<a href="#">Contact us</a>
-					<a href="#">News</a>
-					<a href="#">Links</a>
-					<div class = "clear"></div>
+                    <ul>
+						<li><a href="#">Introductory Classes</a></li>
+                    	<li><a href="#">Guided Dives</a></li>
+                    	<li><a href="#">Dive Classes</a></li>
+                   		<li><a href="#">Boat Dives</a></li>
+                    	<li class=last><a href="#">Rental</a></li>
+                    </ul>
+                    </li>
+					<li><a href="#">Gallery</a></li>
+					<li><a href="#">Getting to Catalina</a></li>
+					<li><a href="#">Contact us</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Links</a></li>
+                 </ul>
 				</nav>
+                <script src="js/jquery-1.8.2.js"></script>
+    			<script src="js/modernizr.js"></script> 
+    			<script>
+				(function($){
+				
+				//cache nav
+					var nav = $("#topNav");
+				
+				//add indicator and hovers to submenu parents
+					nav.find("li").each(function() {
+						if ($(this).find("ul").length > 0) {
+							$("<span>").text("^").appendTo($(this).children(":first"));
+
+						//show subnav on hover
+							$(this).mouseenter(function() {
+							$(this).find("ul").stop(true, true).slideDown();
+						});
+						
+						//hide submenus on exit
+						$(this).mouseleave(function() {
+							$(this).find("ul").stop(true, true).slideUp();
+						});
+					}
+				});
+			})(jQuery);
+		</script>
 			</header>
 
 			<section id="content">
