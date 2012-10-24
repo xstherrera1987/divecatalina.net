@@ -2,6 +2,7 @@
 *~
 
 # ignore OSX cache files
+._.DS_Store
 .DS_Store
 
 # server files
