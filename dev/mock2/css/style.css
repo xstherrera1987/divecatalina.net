@@ -140,8 +140,18 @@ nav a:hover {
 	color: #fff;
 }
 
-#slideshow { text-align: center;}
-#slideshow img { width: 90%;}
+#slideshow { 
+    margin: 10px auto;
+    position: relative;
+    max-width: 755px;
+    height: 256px;
+}
+
+#slideshow img {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+}
 
 #main-content { padding: 50px; text-align: justify;}
 #sub-content { padding: 50px; text-align: justify;}
