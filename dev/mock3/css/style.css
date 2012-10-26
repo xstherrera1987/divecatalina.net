@@ -10,10 +10,20 @@ a: hover 	{ text-decoration: underline;}
 .alignleft 	{float: left;}
 .alignright	{float: right;}
 
+/************ WEB FONTS ************/
+@font-face {
+	font-family: 'ReklameScript-RegularDEMO';
+	src: url('webfonts/249B5B_0_0.eot');src: 
+		 url('webfonts/249B5B_0_0.eot?#iefix') format('embedded-opentype'),
+		 url('webfonts/249B5B_0_0.woff') format('woff'),
+		 url('webfonts/249B5B_0_0.ttf') format('truetype');
+		 font-weight: normal;
+		 font-style: normal;
+}
 /************ MAIN **********/
 body {
 	background: #000;
-	font-family: 'Lato', serif;
+	font-family: 'Numans', sans-serif;
 	font-size: 16px;
 	color: #414141;
 }
@@ -22,7 +32,7 @@ header { padding: 10px 0px;}
 
 h1 a {
 	text-decoration: none; 
-	font-family: 'Lato', sans-serif;
+	font-family: 'Syncopate', sans-serif;
 	font-size: 48px;
 	color: #0086ab;
 	padding: 10px;
@@ -31,35 +41,35 @@ h1 a {
 h1 a:hover { color: #000;}
 
 h2 {
-	font-family: 'Lato', sans-serif;
-	font-size: 30px;
+	font-family: 'Lobster Two', cursive;
+	font-size: 20px;
 	padding: 10px;
 }
 
 h3 {
-	font-family: 'Lato', sans-serif;
+	font-family: 'McLaren', cursive;
 	font-size: 24px;
 	color: #0086ab;
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
 h4 {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Short Stack', cursive;
 	font-size: 20px;
 	padding: 10px;
 }
 
 nav { 
 	display:block; 
-	margin:0 
+	margin:5px; 
 	auto 20px; 
 	border:1px 
 	solid #222; 
 	position:relative; 
 	z-index: 9999;
 	background-color:#000; 
-	font:16px Lato, 
-	Sans-serif; 
+	font-size:16px;
+	font-family: 'McLaren', cursive;
 
 }
 nav ul { 
@@ -177,99 +187,58 @@ nav ul ul a:hover {
 	-webkit-transform:rotate(-180deg); 
 }
 
-/* fallbacks */
-.no-cssgradients nav, .no-js nav { 
-	padding-bottom:4px; 
-	border:none; background:url(../fallback/navBG.gif) repeat-x 0 0;
-}
-.no-borderradius nav ul, .no-js nav ul { 
-	background:url(../fallback/navRight.gif) no-repeat 100% 0; 
-}
-.no-borderradius nav ul ul, .no-js nav ul ul { 
-	background:none; 
-}
-.no-borderradius nav li, .no-js nav li { 
-	height:44px; 
-}
-.no-cssgradients nav li:hover, .no-js nav li:hover { 
-	background:url(../fallback/navOverBG.gif) repeat-x 0 0; 
-}
-.no-borderradius nav li li, .no-js nav li li { 
-	height:auto; 
-	width:98%; 
-	left:-2px; 
-}
-.no-borderradius nav li:first-child, .no-js nav li:first-child { 
-	background:url(../fallback/navLeft.gif) no-repeat 0 0; 
-}
-.no-borderradius nav li:first-child:hover, .no-js nav li:first-child:hover { 
-	background:url(../fallback/navOverLeft.gif) no-repeat 0 0; 
-}
-.no-borderradius nav li li:first-child, .no-js nav li li:first-child { 
-	background:none; 
-}
-.no-rgba nav ul ul, .no-js nav ul ul { 
-	left:1px; padding-left:2px; 
-	background:url(../fallback/subnavBG.png) 
-	no-repeat 100% 100%; 
-}
-.no-rgba nav ul ul a, .no-js nav ul ul a { 
-	left:3px; 
-}
-.no-rgba nav ul ul a:hover { 
-	background:url(../fallback/subOverBG.png) repeat 0 0; 
-}
-.no-csstransforms ul a span { 
-	height:7px; 
-	width:12px; 
-	margin-top:8px; 
-	text-indent:-5000px; 
-	overflow:hidden; 
-	background:url(../fallback/indicator.png) no-repeat 0 0; 
-}
-.no-borderradius ul ul li.last { 
-	margin-bottom:10px; 
-}
-.no-cssgradients.boxshadow nav { 
-	box-shadow:none; 
-}
-
-#slideshow { 
-    margin: 10px auto;
-    position: relative;
-    max-width: 755px;
-    height: 256px;
-}
-
-#slideshow img {
-    position: absolute;
-    max-width: 100%;
-    height: auto;
-}
-
-
 #container {
 	background: #cacaca;
 	margin: 10px auto;
 	max-width: 980px;
 	min-height: 900px;
 	width: 90%;
-	padding 10px 0;
+	padding: 10px 0 0 0;
 	z-index: 500;
+	position: relative;
 
 }
 
-#content {
-	min-height: 700px;
-}
-#slideshow { 
-	text-align: center;
-}
-#slideshow img {
-	width: 90%;
-}
+img{  
+    display: block;  
+}  
+#gallery, #thumbs{  
+    float: left;  
+}  
+#gallery{  
+    width: 800px;  
+    height: 300px;  
+    overflow: hidden; 
+	 
+}  
+#gallery img{  
+    position: absolute;
+	padding-left: 45px;  
+	padding-right:0px;
+	
+}  
+#thumbs{  
+    width: 100px;  
+    height: 256px;  
+    overflow: hidden;  
+}  
+#next{  
+    display: block;  
+    width: 47px;  
+    height: 43px;  
+    background: url(../images/arrow.png);  
+    position: relative;  
+    top: 215px;  
+    left: 855px; 
+}  
+#next:hover{  
+    background: url(../images/arrowmo.png);  
+}  
+
 #main-content { 
-	padding: 20px; 
+	padding-top: 10px; 
+	padding-left:50px;
+	padding-right: 70px;
 	text-align: justify;
 }
 #sub-content { 
