@@ -32,15 +32,101 @@
 					<a href="#">Links</a>
 					<div class = "clear"></div>
 				</nav>
-			</header>
-
-			<section id="content">
-				<div id="main-content">
-					Content here...
-				</div>
-			</section>
 			
-			<hr/>
+	 			<script src="js/jquery-1.8.2.js"></script>
+	     			<script src="js/modernizr.js"></script>
+	     			<script>
+					(function($){
+	
+						//cache nav
+						var nav = $("#topNav");
+						
+						//add indicator and hovers to submenu parents
+						nav.find("li").each(function() {
+						if ($(this).find("ul").length > 0) {
+						$("<span>").text("^").appendTo($(this).children(":first"));
+						
+						//show subnav on hover
+						$(this).mouseenter(function() {
+						$(this).find("ul").stop(true, true).slideDown();
+						});
+						
+						//hide submenus on exit
+						$(this).mouseleave(function() {
+						$(this).find("ul").stop(true, true).slideUp();
+						});
+						}
+						});
+						})(jQuery);
+				</script>
+			</header>
+					
+			<section id="content">
+				<div id="slideshow">
+					<img src="images/slide1.png" />
+					</div><!-- END Slideshow -->
+					
+					<div id="main-content">
+					                <h3>Dive Classes</h3>
+					<span class="staff-img"></span>
+					                    <p>Learning to dive can be one of the most rewarding experiences of your life. It opens up a whole new world - quite literally! After completing even an entry level certification course, you will explore parts of the world and see life that most people only see on television. Once you start diving, you will probably find that you will want to do something other than just look and will want to expand your parameters. Maybe you will want to start taking pictures, maybe you will want to explore deeper or dive at night. Learning is a lifetime pursuit and for many, diving is not a hobby. It is a way of life. Let us help you to grow your abilities safely. "Safety through Education" is the NAUI motto.
+					
+					All of our our classes offer small student numbers and plenty of water time. What was true when dive [???] began is still true. Water time makes the diver. All of our classes offer water time and necessary academics to be prepared, competent, and confident with the certification level you have achieved.
+					
+					<h4>Scuba Diver</h4>
+					This entry level class takes 4 days. We will send you a textbook to get you started and then you will need 4 days on the island. Plan on 6-7 hours per day. You will actually do 8 dives for your certification. Scuba Diver classes are offered between Labor Day and Memorial Day.
+					<div id="sub-content">
+					<ul>
+					Cost:</br>
+					Private - $1,100.00</br>
+					Groups of 2-4 : $650.00 per person</br></br>
+					</ul>
+					Cost includes all diving related items such as text books, use of gear, the dives, and certification [???] upon successful completion. It does not include getting to the island or lodging.</br></br>
+					
+					<h4>Advanced</h4>
+					Our Advanced class includes 6 dives that focus on essential skills such as navigation and dives that expand your parameters such as night and deep diving. The advanced class is where you build a good solid foundation so that you can safely and enjoyably move forward to new challenges in your diving lifestyle. Following an instructor around does not challenge, building confidence, or really expand abilities. In this class, you make the decisions that affect the dives. You will plan the dives and lead the dives. Take control, make the decisions... Become an Advanced Diver.
+					<ul>
+					Cost:</br>
+					Private - $450.00</br>
+					Groups of 2-4 : $395.00 per person</br></br>
+					</ul>
+					Cost includes tanks, weights, dive light, and compass (if needed). Other gear will be available at a reduced rate if required.
+					
+					
+					<h4>Rescue</h4>
+					No one wants to be in a life and death struggle trying to save another person's life. And this is not the main emphasis of a rescue class. However, if something does go wrong, ignorance is not bliss. Consider, too, that the quickest help any of us has is his or her dive buddy. Certainly our rescue class will [???] you to understand and make intelligent decisions when dealing with uncomfortable and life threatening situations in the water. You will also learn to recognize potential problems and how yo make sure they are eliminated before entering the water. The best rescue is the one that never happens. If you are serious about your diving, this class is a must. Remember, "Safety through education." This class requires 2 days of your time.</br></br>
+					
+					Cost:
+					Private - $450.00
+					Groups of 2-4 : $375.00 each
+					
+					Cost includes tanks and weights. Other gear can be [???got cutoff???].</br></br>
+					
+					<h4>Specialty Classes</h4>
+					We offer many specialty classes. Since there are so many possibilities, call or email to get cost and details for the specialty you are interested in pursuing.</br></br>
+					
+					<h4>Dive Master</h4>
+					Call for details</br></br>
+					
+					<h4>NAUI Instructor</h4>
+					Call for details</br></br>
+					
+					<h4>Referral Dives</h4>
+					If all you need to complete your class is the open water dives, we can assist with that. Just bring your referral paperwork from your instructor showing what you have completed.
+					
+					Cost:
+					$90.00 per dive (includes all gear)
+					 
+					 
+					
+					</p>
+					
+					</ul>
+					</div>
+					</section>
+					
+					<hr/>
+
 			
 			<footer>
 				<p>&copy; 2012 - Dive Catalina</p>
