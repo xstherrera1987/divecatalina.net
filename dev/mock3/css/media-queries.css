@@ -15,6 +15,26 @@
 	#sub-content { padding: 10px;}
 
 	.about-sig {font-size: 18px;}
+	
+	#next {
+		display: none;
+	}
+	#thumbs{  
+    	display: none;  
+	}
+	#gallery {
+		float:none;
+		margin: 10px auto;
+   		position: relative;
+   		width: 90%;  
+    	height: 100px;
+	}
+	#gallery img {
+		padding-left: 0px;
+		padding-right: 0px;
+		margin-left: auto;
+    	margin-right: auto;
+	}
 }
 
 @media screen and (max-width: 740px) 	{}
