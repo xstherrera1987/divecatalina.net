@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/media-queries.css" />
+         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!--[if IE]>
@@ -15,16 +16,17 @@
 		<![endif]-->
 	</head>
 	<body>
-    <script>  
+        <script>  
     var el = document.getElementsByTagName("body")[0];  
     el.className = "";  
 	</script>  
 		<div id="container">
 			<header>
 				<h1 class = "alignleft"><a href="index.html">Dive Catalina</a></h1>
-				<h2 class = "alignright">Work less... Dive Moore!</h2>
+                <div class = "clear"></div>
+				<h2 class = "alignleft">Work less... Dive Moore!</h2>
 				<div class = "clear"></div>
-		
+				
 				<nav id="topNav">
                 <ul>
 					<li><a href="index.html">Home</a></li>
@@ -40,11 +42,15 @@
                     	<li class=last><a href="#">Rental</a></li>
                     </ul>
                     </li>
-					<li><a href="#">Gallery</a></li>
-					<li><a href="#">Getting to Catalina</a></li>
-					<li><a href="#">Contact us</a></li>
-					<li><a href="#">News</a></li>
-					<li><a href="#">Links</a></li>
+					<li>
+                    <a href="#">Gallery</a>
+                    <ul>
+						<li><a href="#">Getting to Catalina</a></li>
+						<li><a href="#">Contact us</a></li>
+						<li><a href="#">News</a></li>
+						<li class=last><a href="#">Links</a></li>
+                    </ul>
+                    </li>
                  </ul>
 				</nav>
                 <script src="js/jquery-1.8.2.js"></script>
@@ -74,41 +80,51 @@
 			})(jQuery);
 		</script>
 			</header>
-
-			<section id="content">
-				<div id="slideshow">
-					<img src="images/slide1.png" />
-				</div><!-- END Slideshow -->
-				
 				<div id="main-content">
                 <h3>Rental</h3>
-				<span class="staff-img"></span>
-                    <p>We offer a full rental department. Whether you don't have gear yet or just want to leave it at home, we have what you need.
-<ul>
-<li>Mask & Snorkel - $7.00</li>
-<li>Fins - $7.00</li>
-<li>Wetsuit (??? / one piece) - $15.00</li>
-<li>Boots - $7.00</li>
-<li>Gloves - $7.00</li>
-<li>??? - $7.00</li>
-<li>??? - $15.00</li>
-<li>??? - $15.00</li>
-<li>Tank - $12.00</li>
-<li>Refills - $7.00</li>
-<li>Weights - $7.00</li>
-<li>Full Gear Package - $65.00</li>
-</ul>
-<h4>25% off multi-day rentals</h4>
+				<span class="imgleft"><img id="about-img" src="images/aboutUs.jpg" /></span> <span class="imgright"><img id="about-img" src="images/aboutUs.jpg" /></span>
+                <p>We offer a full rental department. Whether you don't have gear yet or just want to leave it at home, we have what you need.<br><br>	
+				<article id="items">
+				<h4>Items:</h4><br>
+				Mask & Snorkel - <br>
+				Fins - <br>
+				Wetsuit (??? / one piece) -<br> 
+				Boots -<br>
+				Gloves - <br>
+				??? - <br>
+				??? - <br>
+				??? - <br>
+				Tank -<br>
+				Refills -<br>
+				Weights -<br>
+				Full Gear Package-
+				</article>
+				<article id="cost">
+				<h4>Price:</h4><br>
+				$7.00<br>
+				$7.00<br>
+				$15.00<br>
+				$7.00<br>
+				$7.00<br>
+				$7.00<br>
+				$15.00<br>
+				$15.00<br>
+				12.00<br>
+				$7.00<br>
+				$7.00<br>
+				$65.00
+				</article>
+				<div class="clear"></div>
+				<p><span class="imgleft"><img id="about-img" src="images/aboutUs.jpg" /></span> <span class="imgright"><img id="about-img" src="images/aboutUs.jpg" /></span>
+				<strong>25% off multi-day rentals</strong><br><br>
+				We will deliver your rented gear to Casino Point and pick it up when you are done.
+				<div class="clear"></div>
 
-We will deliver your rented gear to Casino Point and pick it up when you are done.
-</ul>
-</p>
-
-</ul>
-</div>
-			</section>
+				</p>
+				</div>
+				</section>
 			
-			<hr/>
+				<hr/>
 			
 			<footer>
 				<p>&copy; 2012 - Dive Catalina</p>

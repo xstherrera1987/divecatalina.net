@@ -18,7 +18,7 @@ body {
 	color: #414141;
 }
 
-header { padding: 20px 0px;}
+header { padding: 10px 0px;}
 
 h1 a {
 	text-decoration: none; 
@@ -41,6 +41,12 @@ h3 {
 	font-size: 24px;
 	color: #0086ab;
 	padding-bottom: 10px;
+	padding-top: 10px;
+}
+h4 {
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	padding: 10px;
 }
 
 nav { 
@@ -50,9 +56,11 @@ nav {
 	border:1px 
 	solid #222; 
 	position:relative; 
+	z-index: 9999;
 	background-color:#000; 
 	font:16px Lato, 
 	Sans-serif; 
+
 }
 nav ul { 
 	padding:0; margin:0; 
@@ -116,6 +124,116 @@ nav ul ul a:hover {
 	color:#08cae5
 }
 
+
+/* CSS3 for nav */
+.borderradius nav { 
+	-moz-border-radius:4px; 
+	-webkit-border-radius:4px; 
+	border-radius:4px; 
+}
+.cssgradients nav { 
+	background-image:-moz-linear-gradient(0% 22px 90deg, #222, #999); 
+	background-image:-webkit-gradient(linear, 0% 0%, 0% 70%, from(#999), to(#000)); 
+}
+.boxshadow.rgba nav { 
+	-moz-box-shadow:2px 2px 2px rgba(0,0,0,.75); 
+	-webkit-box-shadow:2px 2px 2px rgba(0,0,0,.75);
+	box-shadow:2px 2px 2px rgba(0,0,0,.75); 
+}
+.cssgradients nav li:hover { 
+	background-image:-moz-linear-gradient(0% 100px 90deg, #999, #222); 
+	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#222), to(#555)); 
+}
+.borderradius nav ul ul { 
+	-moz-border-radius-bottomleft:4px; 
+	-moz-border-radius-bottomright:4px; 
+	-webkit-border-bottom-left-radius:4px; 
+	-webkit-border-bottom-right-radius:4px; 
+	border-bottom-left-radius:4px; border-bottom-right-radius:4px; 
+}
+.boxshadow.rgba nav ul ul { 
+	background-color:rgba(0,0,0,0.8); 
+	-moz-box-shadow:2px 2px 2px rgba(0,0,0,.8); 
+	-webkit-box-shadow:2px 2px 2px rgba(0,0,0,.8); 
+	box-shadow:2px 2px 2px rgba(0,0,0,.8); }
+.rgba nav ul ul li { 
+	border-left:1px solid rgba(0,0,0,0.1); 
+	border-right:1px solid rgba(0,0,0,0.1); 
+}
+.rgba nav ul ul a:hover { 
+	background-color:rgba(85,85,85,.9); 
+}
+.borderradius.rgba nav ul ul li.last { 
+	border-left:1px solid rgba(0,0,0,0.1); 
+	border-bottom:1px solid rgba(0,0,0,0.1); 
+	-moz-border-radius-bottomleft:4px; 
+	-moz-border-radius-bottomright:4px; 
+	-webkit-border-bottom-left-radius:4px; 
+	-webkit-border-bottom-right-radius:4px; 
+	border-bottom-left-radius:4px; border-bottom-right-radius:4px; 
+}
+.csstransforms ul a span { 
+	-moz-transform:rotate(-180deg);
+	-webkit-transform:rotate(-180deg); 
+}
+
+/* fallbacks */
+.no-cssgradients nav, .no-js nav { 
+	padding-bottom:4px; 
+	border:none; background:url(../fallback/navBG.gif) repeat-x 0 0;
+}
+.no-borderradius nav ul, .no-js nav ul { 
+	background:url(../fallback/navRight.gif) no-repeat 100% 0; 
+}
+.no-borderradius nav ul ul, .no-js nav ul ul { 
+	background:none; 
+}
+.no-borderradius nav li, .no-js nav li { 
+	height:44px; 
+}
+.no-cssgradients nav li:hover, .no-js nav li:hover { 
+	background:url(../fallback/navOverBG.gif) repeat-x 0 0; 
+}
+.no-borderradius nav li li, .no-js nav li li { 
+	height:auto; 
+	width:98%; 
+	left:-2px; 
+}
+.no-borderradius nav li:first-child, .no-js nav li:first-child { 
+	background:url(../fallback/navLeft.gif) no-repeat 0 0; 
+}
+.no-borderradius nav li:first-child:hover, .no-js nav li:first-child:hover { 
+	background:url(../fallback/navOverLeft.gif) no-repeat 0 0; 
+}
+.no-borderradius nav li li:first-child, .no-js nav li li:first-child { 
+	background:none; 
+}
+.no-rgba nav ul ul, .no-js nav ul ul { 
+	left:1px; padding-left:2px; 
+	background:url(../fallback/subnavBG.png) 
+	no-repeat 100% 100%; 
+}
+.no-rgba nav ul ul a, .no-js nav ul ul a { 
+	left:3px; 
+}
+.no-rgba nav ul ul a:hover { 
+	background:url(../fallback/subOverBG.png) repeat 0 0; 
+}
+.no-csstransforms ul a span { 
+	height:7px; 
+	width:12px; 
+	margin-top:8px; 
+	text-indent:-5000px; 
+	overflow:hidden; 
+	background:url(../fallback/indicator.png) no-repeat 0 0; 
+}
+.no-borderradius ul ul li.last { 
+	margin-bottom:10px; 
+}
+.no-cssgradients.boxshadow nav { 
+	box-shadow:none; 
+}
+
 #slideshow { 
     margin: 10px auto;
     position: relative;
@@ -137,6 +255,8 @@ nav ul ul a:hover {
 	min-height: 900px;
 	width: 90%;
 	padding 10px 0;
+	z-index: 500;
+
 }
 
 #content {
@@ -149,7 +269,7 @@ nav ul ul a:hover {
 	width: 90%;
 }
 #main-content { 
-	padding: 50px; 
+	padding: 20px; 
 	text-align: justify;
 }
 #sub-content { 
@@ -165,7 +285,7 @@ ul {
 	padding: 50px 50px;
 	
 }
-
+/**** TEST IMAGES *****/
 .imgleft{
 	float:left;
 	padding-right:5px;
@@ -178,7 +298,7 @@ ul {
 }
 .imgcenter{
 	float:center;
-	margin:20px;
+	padding-left:260px;
 }
 
 footer { height: 50px; padding: 5px; text-align: center; font-size: 10px;}
@@ -188,6 +308,23 @@ footer { height: 50px; padding: 5px; text-align: center; font-size: 10px;}
 	font-size: 24px;
 	font-style: italic;
 }
+/*******BOAT DIVES***************/
+#items {
+	
+	width: 20;
+	height: 420px;
+	margin: 10px 10px;
+	padding: 10px;
+	float:left;
+	
+}
+#cost {
+	float: left;
+	width: 20px;
+	height: 420px;
+	margin: 10px 10px;
+	padding: 5px;
+}
 
 .staff-img {
 	height: 150px;
@@ -196,6 +333,8 @@ footer { height: 50px; padding: 5px; text-align: center; font-size: 10px;}
 	background: #cbcbcb;
 	margin: 10px;
 }
+
+
 
 
 

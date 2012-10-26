@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/media-queries.css" />
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!--[if IE]>
@@ -15,16 +16,17 @@
 		<![endif]-->
 	</head>
 	<body>
-    <script>  
+        <script>  
     var el = document.getElementsByTagName("body")[0];  
     el.className = "";  
 	</script>  
 		<div id="container">
 			<header>
 				<h1 class = "alignleft"><a href="index.html">Dive Catalina</a></h1>
-				<h2 class = "alignright">Work less... Dive Moore!</h2>
+                <div class = "clear"></div>
+				<h2 class = "alignleft">Work less... Dive Moore!</h2>
 				<div class = "clear"></div>
-		
+				
 				<nav id="topNav">
                 <ul>
 					<li><a href="index.html">Home</a></li>
@@ -40,11 +42,15 @@
                     	<li class=last><a href="#">Rental</a></li>
                     </ul>
                     </li>
-					<li><a href="#">Gallery</a></li>
-					<li><a href="#">Getting to Catalina</a></li>
-					<li><a href="#">Contact us</a></li>
-					<li><a href="#">News</a></li>
-					<li><a href="#">Links</a></li>
+					<li>
+                    <a href="#">Gallery</a>
+                    <ul>
+						<li><a href="#">Getting to Catalina</a></li>
+						<li><a href="#">Contact us</a></li>
+						<li><a href="#">News</a></li>
+						<li class=last><a href="#">Links</a></li>
+                    </ul>
+                    </li>
                  </ul>
 				</nav>
                 <script src="js/jquery-1.8.2.js"></script>
@@ -74,35 +80,21 @@
 			})(jQuery);
 		</script>
 			</header>
-
-			<section id="content">
-				<div id="slideshow">
-					<img src="images/slide1.png" />
-				</div><!-- END Slideshow -->
-				
 				<div id="main-content">
                 <h3>Boat Dives</h3>
-				<span class="staff-img"></span>
-                    <p>Boat Dives are available on the "Catalina Grace." The [???] is 36 feet long and carries 12 divers. We believe in personal service and getting you to the best diving available around Catalina Island. We typically leave at 9:00 am with 4-12 divers for two tank dives and returning at approximately 3:00 pm. We offer a choice of steel or aluminum tanks and soft weight or the boat. All trips include tanks, weights, lunch, and drinks.
-<ul>
-Cost: $115 per person
-</ul>
+				<span class="imgleft"><img id="about-img" src="images/aboutUs.jpg" /></span> <span class="imgright"><img id="about-img" src="images/aboutUs.jpg" /></span>
+                    <p>Boat Dives are available on the "Catalina Grace." The [???] is 36 feet long and carries 12 divers. We believe in personal service and getting you to the best diving available around Catalina Island. We typically leave at 9:00 am with 4-12 divers for two tank dives and returning at approximately 3:00 pm. We offer a choice of steel or aluminum tanks and soft weight or the boat. All trips include tanks, weights, lunch, and drinks.<br><br>
+                    
 
-<h4>Reservations highly recommended.
-</h4>
-
-</p>
-
-</ul>
-</div>
+					<strong>Cost:</strong> $115 per person<br><br>
+					<strong>Reservations highly recommended.</strong>
+				</p>
+				</div>
 			</section>
-			
 			<hr/>
-			
 			<footer>
 				<p>&copy; 2012 - Dive Catalina</p>
 			</footer>
 		</div>
-	
 	</body>
 </html> 
