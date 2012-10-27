@@ -1,5 +1,4 @@
 @media screen and (max-width: 478px) 	{
-
     header h1, header h2 { text-align: center;}
 
 	header h1 a { float: none; font-size: 36px; }
@@ -42,25 +41,28 @@
 
 	nav a:hover { background: #ebebeb; color: #414141;}
 
-    #slideshow img { 
-        width: 90%;
+    #slideshow { 
+        height: 120px;
     }
 
-	#main-content { padding: 10px;}
-	#sub-content { padding: 10px;}
+    #slideshow img {
+        position: absolute;
+        left: 50%;
+        width: 96%;
+        margin-left: -48%;
+        height: auto;
+    }
 
+	#main-content, #sub-content { padding: 10px;}
+
+    /************ ABOUT US ************/
     #about-img { float: none; display: block; margin: 10px auto;}
 	.about-sig {font-size: 18px;}
 
-	#introductory-dives, #guided-dives, #boat-dives { height: 360px; }
+    /************ SERVICES ************/
+	.services-offered { margin: 10px; height: 360px; }
 
-	#classes-offered {
-		width: 280px;
-		height: 980px;
-		margin: 20px 10px;
-		padding: 10px;
-    }
-
+}
 
 @media screen and (max-width: 740px) 	{}
 

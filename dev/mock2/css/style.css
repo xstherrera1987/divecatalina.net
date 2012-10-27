@@ -10,6 +10,7 @@ a:hover 	{ color: #436fa2;}
 .alignleft 	{float: left; margin-right: 10px;}
 .alignright	{float: right; margin-left: 10px;}
 .img-center {display: block; margin: 50px auto;}
+.center {text-align: center;}
 
 /************ WEB FONTS ************/
 @font-face{ 
@@ -138,21 +139,22 @@ nav a:hover {
 }
 
 #slideshow { 
-	display: block;
+	position: relative;
     margin: 10px auto;
     max-width: 755px;
-    max-height: 256px;
+    height: 256px;
 }
 
 #slideshow img {
-	display: block;
-    margin: 10px auto;
-    width: 90%;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    margin-left: -50%;
     height: auto;
 }
 
-#main-content { padding: 50px; text-align: justify;}
-#sub-content { padding: 50px; text-align: justify;}
+#main-content { padding: 20px 50px; text-align: justify;}
+#sub-content { padding: 20px 50px; text-align: justify;}
 
 ul {
 	padding: 0px 50px;
@@ -178,7 +180,9 @@ footer { padding: 5px; text-align: center; font-size: 10px;}
 
 /************ SERVICES ************/
 
-#introductory-dives, #guided-dives, #boat-dives {
+#dive-services, #dive-classes {padding-bottom: 20px;}
+
+.services-offered {
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
@@ -188,56 +192,43 @@ footer { padding: 5px; text-align: center; font-size: 10px;}
 	box-shadow: 0px 0px 5px #000000;
 	/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
 	
-	float: left;
+	display: inline-block;
+	left;
+	text-align: left;
 	width: 271px;
 	height: 420px;
-	margin: 20px 10px;
+	margin: 20px 5px;
 	padding: 10px;
 }
 
-#introductory-dives h3, #guided-dives h3, #boat-dives h3 {
+.services-offered h1 {
     text-align: center;
 	border-bottom: solid 5px #436fa2;
 	margin-bottom: 10px;
 }
 
-#introductory-dives a, #guided-dives a, #boat-dives a {
+.services-offered a {
 	float: right;
 }
 
-#dive-classes {padding: 10px;}
-
-#classes-offered {
-	/*
-    -moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS
-	-moz-box-shadow: 0px 0px 5px #000000;
-	-webkit-box-shadow: 0px 0px 5px #000000;
-	box-shadow: 0px 0px 5px #000000;
-	/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
-	width: 920px;
-	height: 420px;
-	margin: 10px 0;
-    padding: 5px;
-}
-
-#scuba-diver, #advanced, #rescue, #specialty-classes, #naui-instructor, #referral-dives {
-	float:left;
+.classes-offered {
+	display: inline-block;
+	left;
+	text-align: left;
     background: #e2e2e2;
 	width: 270px;
-	margin: 20px 5px;
+	height: 170px;
+	margin: 10px;
 	border: dashed 2px #cbcbcb;
 	padding: 10px;
 }
 
-#scuba-diver h3, #advanced h3, #rescue h3, #specialty-classes h3, #naui-instructor h3, #referral-dives h3 {
+.classes-offered h1 {
 	border-bottom: solid 5px #436fa2;
 	margin-bottom: 10px;
 }
 
-#scuba-diver a, #advanced a, #rescue a, #specialty-classes a, #naui-instructor a, #referral-dives a  {
+.classes-offered a  {
 	float: right;
 }
 
