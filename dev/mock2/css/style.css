@@ -9,7 +9,7 @@ a:hover 	{ color: #436fa2;}
 .clear	{clear: both;}
 .alignleft 	{float: left; margin-right: 10px;}
 .alignright	{float: right; margin-left: 10px;}
-.img-center {display: block; margin: 50px auto;}
+.img-center {display: block; margin: 0 auto;}
 .center {text-align: center;}
 
 /************ WEB FONTS ************/
@@ -140,7 +140,7 @@ nav a:hover {
 
 #slideshow { 
 	position: relative;
-    margin: 10px auto;
+    margin: 20px auto;
     max-width: 755px;
     height: 256px;
 }
@@ -196,7 +196,7 @@ footer { padding: 5px; text-align: center; font-size: 10px;}
 	left;
 	text-align: left;
 	width: 271px;
-	height: 420px;
+	height: 450px;
 	margin: 20px 5px;
 	padding: 10px;
 }
@@ -217,7 +217,7 @@ footer { padding: 5px; text-align: center; font-size: 10px;}
 	text-align: left;
     background: #e2e2e2;
 	width: 270px;
-	height: 170px;
+	height: 190px;
 	margin: 10px;
 	border: dashed 2px #cbcbcb;
 	padding: 10px;

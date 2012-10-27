@@ -1,6 +1,7 @@
 TODO:
 ---
-+ use this to keep track of NOTEs/TODOs
++ None
 
 NOTES:
 ---
++ Play around with the site and let me know if you see anything that doesn't look right.
