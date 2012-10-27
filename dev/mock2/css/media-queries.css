@@ -1,16 +1,16 @@
 @media screen and (max-width: 478px) 	{
-	header h1 {float: none;}
-	header h2 {float: none;}
 
-	h1 { text-align: center;}
-	h1 a { font-size: 36px; padding: 1px;}
-	h2 { font-size: 16px; padding: 1px; text-align: center;}
+    header h1, header h2 { text-align: center;}
+
+	header h1 a { float: none; font-size: 36px; }
+	header h2 { float: none; font-size: 18px; padding: 0;}
+
 	body { font-size: 13px; }
 
 	/* Give your nav elements that "blockie" look for mobile devices */
-    nav {background: none; border: none;}
+    nav {background: none; border: none; margin: 10px 0;}
 	nav a { 
-        width: 90%; 
+        width: 100%; 
         border: 1px solid #999999;
         -moz-border-radius: 4px;
         -webkit-border-radius: 4px;
@@ -35,9 +35,16 @@
         /*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
         /*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
         text-align: center;
+        padding: 0;
         
-        /*border: solid 1px #cbcbcb; text-align: center; margin: 1px;*/}
-	nav a:hover { background: #cbcbcb; }
+        /*border: solid 1px #cbcbcb; text-align: center; margin: 1px;*/
+    }
+
+	nav a:hover { background: #ebebeb; color: #414141;}
+
+    #slideshow img { 
+        width: 90%;
+    }
 
 	#main-content { padding: 10px;}
 	#sub-content { padding: 10px;}
@@ -59,8 +66,3 @@
 
 @media screen and (max-width: 480px) 	{}
 
-img {
-	max-width: 100%;
-	height: auto;
-	width: auto\9; /* ie8 */
-}
