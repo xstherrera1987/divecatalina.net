@@ -37,10 +37,4 @@
 	}
 }
 
-@media screen and (max-width: 740px) 	{}
-
-img {
-	max-width: 100%;
-	height: auto;
-	width: auto\9; /* ie8 */
-}
+@media screen and (min-width: 479px) and (max-width: 740px) {}

@@ -199,37 +199,50 @@ nav ul ul a:hover {
 
 }
 
-img{  
-    display: block;  
-}  
-#gallery, #thumbs{  
+img {  
+    display: block;
+    max-width: 100%;
+	height: auto;
+}
+
+#gallery-container {
+	margin: auto;
+	position: relative;
+	width: 80%;
+	height: 256px;
+}
+
+#gallery, #thumbs, #next {
     float: left;  
 }  
 #gallery{  
-    width: 800px;  
-    height: 300px;  
-    overflow: hidden; 
-	 
+    width: 80%;
+    height: 256px;
 }  
 #gallery img{  
-    position: absolute;
-	padding-left: 45px;  
-	padding-right:0px;
-	
+    height: 256px;
+    float: left;
+    width: 100%;
 }  
 #thumbs{  
-    width: 100px;  
+    width: 20%;
     height: 256px;  
     overflow: hidden;  
+}
+#thumbs img {
+	height: 85px;
+	float: left;
+	width: 100%;
 }  
-#next{  
+#next{
+	z-index: 9999;
     display: block;  
     width: 47px;  
     height: 43px;  
     background: url(../images/arrow.png);  
-    position: relative;  
-    top: 215px;  
-    left: 855px; 
+    position: absolute;
+    top: 215px;
+    right: 0px;
 }  
 #next:hover{  
     background: url(../images/arrowmo.png);  
