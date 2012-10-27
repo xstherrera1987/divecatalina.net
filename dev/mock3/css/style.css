@@ -60,13 +60,16 @@ h4 {
 }
 
 /*navigation*/
+#topNav{
+	z-index: 9999;	
+}
 #topNav ul {
     list-style: none;
     background: #1c1c1c;
     padding-left:2px;
 	padding-right:5px;
 }
-nav ul ul {
+#topNav ul ul {
 	 display:none; 
 	 width:100%; 
 	 position:absolute; 
@@ -75,19 +78,19 @@ nav ul ul {
 	 padding-left:2px;
 	 padding-right:5px;
 	 }
-nav ul ul li { 
+#topNav ul ul li { 
 	float:none; 
 	
 }
-nav ul ul a { 
+#topNav ul ul a { 
 	border-left:none; 
 	border-right:none; 
 	font-size:14px; 
 }
-nav ul ul a:hover { 
+#topNav ul ul a:hover { 
 	color:#08cae5
 }
-nav li a { 
+#topNav li a { 
 	display:block; 
 	padding:5px 2px; 
 	border-left:1px solid #999; 
@@ -95,17 +98,17 @@ nav li a {
 	color:#0086AB;
 	text-decoration:none; 
 }
-nav li a:focus { 
+#topNav li a:focus { 
 	outline:none; 
 	text-decoration:underline; 
 }
-nav li:first-child a {
+#topNav li:first-child a {
 	 border-left:none; 
 }
-nav li.last a { 
+#topNav li.last a { 
 	border-right:none; 
 }
-nav a span { 
+#topNav a span { 
 	display:block; 
 	float:right; 
 	margin-left:2px;
@@ -127,10 +130,6 @@ nav a span {
 #topNav li a:focus {
     color: #08cae5;
     background: #ccc;
-}
-
-@media only screen and (min-width: 900px) {
-
 }
 
 /*footer*/

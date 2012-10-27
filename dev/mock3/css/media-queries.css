@@ -68,7 +68,7 @@
 	
 	
 	/*nav*/
-nav { 
+	#topNav { 
 	display:block; 
 	margin:5px; 
 	auto 20px; 
@@ -77,112 +77,112 @@ nav {
 	position:relative; 
 	z-index: 9999;
 	background-color:#000; 
-	font-size:16px;
+	font-size:12px;
 	font-family: 'McLaren', cursive;
 
-}
-nav ul { 
+	}
+	#topNav ul { 
 	padding:0; margin:0; 
-}
-nav a:hover { 
+	}
+	#topNav a:hover { 
 	color:#08cae5
-}
+	}
 
-nav li { 
+	#topNav li { 
 	position:relative; 
 	float:left; 
 	list-style-type:none;
-}
-nav ul:after { 
+	}
+	#topNav ul:after { 
 	content:"."; 
 	display:block; 
 	height:0; 
 	clear:both; 
 	visibility:hidden; 
-}
-nav li a { 
+	}
+	#topNav li a { 
 	display:block; 
 	padding:11px 15px; 
 	border-left:1px solid #999; 
 	border-right:1px solid #222; 
 	color:#0086AB;
 	text-decoration:none; 
-}
-nav li a:focus { 
+	}
+	#topNav li a:focus { 
 	outline:none; 
 	text-decoration:underline; 
-}
-nav li:first-child a {
+	}
+	#topNav li:first-child a {
 	 border-left:none; 
-}
-nav li.last a { 
+	}
+	#topNav li.last a { 
 	border-right:none; 
-}
-nav a span { 
+	}
+	#topNav a span { 
 	display:block; 
 	float:right; 
 	margin-left:5px;
- }
-nav ul ul {
+ 	}
+	#topNav ul ul {
 	 display:none; 
 	 width:100%; 
 	 position:absolute; 
 	 left:0; 
 	 background:#000; }
-nav ul ul li { 
+	#topNav ul ul li { 
 	float:none; 
 	
-}
-nav ul ul a { 
+	}
+	#topNav ul ul a { 
 	padding:5px 10px; 
 	border-left:none; 
 	border-right:none; 
 	font-size:14px; 
-}
-nav ul ul a:hover { 
+	}
+	#topNav ul ul a:hover { 
 	color:#08cae5
-}
+	}
 
 
 /* CSS3 for nav */
-.borderradius nav { 
+.borderradius #topNav { 
 	-moz-border-radius:4px; 
 	-webkit-border-radius:4px; 
 	border-radius:4px; 
 }
-.cssgradients nav { 
+.cssgradients #topNav { 
 	background-image:-moz-linear-gradient(0% 22px 90deg, #222, #999); 
 	background-image:-webkit-gradient(linear, 0% 0%, 0% 70%, from(#999), to(#000)); 
 }
-.boxshadow.rgba nav { 
+.boxshadow.rgba #topNav { 
 	-moz-box-shadow:2px 2px 2px rgba(0,0,0,.75); 
 	-webkit-box-shadow:2px 2px 2px rgba(0,0,0,.75);
 	box-shadow:2px 2px 2px rgba(0,0,0,.75); 
 }
-.cssgradients nav li:hover { 
+.cssgradients #topNav li:hover { 
 	background-image:-moz-linear-gradient(0% 100px 90deg, #999, #222); 
 	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#222), to(#555)); 
 }
-.borderradius nav ul ul { 
+.borderradius #topNav ul ul { 
 	-moz-border-radius-bottomleft:4px; 
 	-moz-border-radius-bottomright:4px; 
 	-webkit-border-bottom-left-radius:4px; 
 	-webkit-border-bottom-right-radius:4px; 
 	border-bottom-left-radius:4px; border-bottom-right-radius:4px; 
 }
-.boxshadow.rgba nav ul ul { 
+.boxshadow.rgba #topNav ul ul { 
 	background-color:rgba(0,0,0,0.8); 
 	-moz-box-shadow:2px 2px 2px rgba(0,0,0,.8); 
 	-webkit-box-shadow:2px 2px 2px rgba(0,0,0,.8); 
 	box-shadow:2px 2px 2px rgba(0,0,0,.8); }
-.rgba nav ul ul li { 
+.rgba #topNav ul ul li { 
 	border-left:1px solid rgba(0,0,0,0.1); 
 	border-right:1px solid rgba(0,0,0,0.1); 
 }
-.rgba nav ul ul a:hover { 
+.rgba #topNav ul ul a:hover { 
 	background-color:rgba(85,85,85,.9); 
 }
-.borderradius.rgba nav ul ul li.last { 
+.borderradius.rgba #topNav ul ul li.last { 
 	border-left:1px solid rgba(0,0,0,0.1); 
 	border-bottom:1px solid rgba(0,0,0,0.1); 
 	-moz-border-radius-bottomleft:4px; 
