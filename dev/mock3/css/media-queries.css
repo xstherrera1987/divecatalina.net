@@ -16,11 +16,12 @@
 
 	.about-sig {font-size: 18px;}
 	
-	#next {
-		display: none;
+	#gallery-container-container {
+		height: 100px;
 	}
-	#thumbs{  
-    	display: none;  
+	#gallery-container {
+		width: 100%;
+		height: 100px;
 	}
 	#gallery {
 		float:none;
@@ -34,7 +35,37 @@
 		padding-right: 0px;
 		margin-left: auto;
     	margin-right: auto;
+    	height: 100px;
+	}
+	#next {
+		display: none;
+	}
+	#thumbs{  
+    	display: none;  
 	}
 }
 
-@media screen and (min-width: 479px) and (max-width: 740px) {}
+@media screen and (min-width: 479px) and (max-width: 740px) {
+	#gallery-container-container {
+		height: 192px;
+	}
+
+	#gallery-container {
+		height: 192px;
+	}
+	#gallery {
+		height: 192px;
+	}
+	#gallery img {
+		height: 192px;
+	}
+	#thumbs {
+		height: 192px;
+	}
+	#thumbs img {
+		height: 64px;
+	}
+	#next {
+		top: 149px;
+	}
+}
