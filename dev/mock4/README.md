@@ -2,17 +2,18 @@ TODO:
 ===
 #### MODIFY
 
-+ He prefers the entire gray page instead of the black container 
++ He prefers the entire gray page instead of the black container - Julia
 
-+ He prefers the darker gray from mock3
++ He prefers the darker gray from mock3 - Julia
 
-+ He likes the idea of combining the About Us and Staff pages
++ He likes the idea of combining the About Us and Staff pages - Julia
 
 + He prefers the Services and Gallery to be drop-down menus.
 
 + He prefers the mock2 tagline on the right, says it balance the page better
 
 + He prefers the blue in the mock3 nav
+  - Does this mean he wants mock3 navi instead ofd mock2 nav?
 
 + He prefers the font and boldness of mock2 nav
 
