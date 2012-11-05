@@ -1,0 +1,32 @@
+/*   
+Theme Name: DiveCatalina.net
+Description: theme for divecatalina.net
+Author: Team GREP
+Version: 1.0
+*/
+
+#mainnav {
+	height: 50px;
+	border:2px solid;
+	border-radius:15px;
+}
+#mainnav a {
+	float: left;
+	padding:0; 
+	margin:0 10px;
+}
+#mainnav li {
+	list-style-type: none;
+}
+.widget-area {
+	float: left;
+}
+#content {
+	float: left;
+}
+#gallery { 
+	position: relative;
+}
+#gallery img {
+    position: absolute;
+}
