@@ -32,3 +32,6 @@ wp-content/plugins/*
 wp-content/themes/*
 !wp-content/themes/index.php
 !wp-content/themes/DiveCatalina.net
+
+# uploads should go through media library
+wp-content/uploads
