@@ -1,8 +1,8 @@
 <?php
 
 /*
-Plugin Name: DC Admin
-Description: Testing the features for admin panel customization
+Plugin Name: DiveCatalina.net-Admin
+Description: DiveCatalina.net custom administration interface plugin
 Author: Team GREP
 Version: 1.0
 */
