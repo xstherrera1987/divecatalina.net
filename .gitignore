@@ -20,12 +20,6 @@ sitemap.xml.gz
 readme.html
 license.txt
 
-# phpmyadmin
-phpmyadmin/
-
-# Jose: other pages i'm serving that are unrelated to this project
-jh/
-
 # ignore OSX _notes directory
 _notes
 
@@ -33,3 +27,8 @@ _notes
 wp-content/plugins/*
 !wp-content/plugins/index.php
 !wp-content/plugins/DiveCatalina.net-Admin
+
+# themes directory
+wp-content/themes/*
+!wp-content/themes/index.php
+!wp-content/themes/DiveCatalina.net
