@@ -1,15 +1,20 @@
 booking
-===
-+ holds multiple booking plugins that we will investigate
-+ holds a summaries of these investigations (documentation/pricing/code)
+---
++ plugins we investigated
++ pull code for reservations page from here
 
 mock2
-===
-+ This is our preferred version of the site
-+ We'll take more liberties when it comes to the design in this mock
+---
++ first mockup phase - our preferred version
 
 mock3
-===
-+ This is Ron's version of the site
-+ We will follow Ron's requests more strictly in this design
-+ Every time we get a feedback from Ron, it will be reflected in this mock
+---
++ first mockup phase - client's exact requirements
+
+mock4
+---
++ second mockup phase - client's exact requirements
+
+mock5
+---
++ first mockup phase - our preferred version

@@ -27,11 +27,13 @@ _notes
 wp-content/plugins/*
 !wp-content/plugins/index.php
 !wp-content/plugins/DiveCatalina.net-Admin
+!wp-content/plugins/README.md
 
 # themes directory
 wp-content/themes/*
 !wp-content/themes/index.php
 !wp-content/themes/DiveCatalina.net
+!wp-content/themes/README.md
 
 # uploads should go through media library
 wp-content/uploads
