@@ -3,14 +3,14 @@
 	Author: Team Grep
 */
 
-a	{ text-decoration: none; color: #2098DA;}
-a:hover	{ color: #436fa2;}
+a		{ text-decoration: none; color: #2098DA;}
+a:hover		{ color: #436fa2;}
  
-.clear	{clear: both;}
+.clear		{clear: both;}
 .alignleft	{float: left; margin-right: 10px;}
 .alignright	{float: right; margin-left: 10px;}
 .img-center	{display: block; margin: 0 auto;}
-.center	{text-align: center;}
+.center		{text-align: center;}
 
 /************ WEB FONTS ************/
 @font-face{ 
@@ -46,7 +46,6 @@ a:hover	{ color: #436fa2;}
     font-style: normal;
 }
 
-
 @font-face {
     font-family: 'sanchez-regular';
     src: url('sanchez/Sanchez-Regular-webfont.eot');
@@ -60,8 +59,9 @@ a:hover	{ color: #436fa2;}
 }
 
 /************ MAIN ************/
+
 body {
-	background: #cacaca; /*previous color: #ebebeb;*/
+	background: #cacaca; /*changed*/
 	font-family: 'sanchez-regular', Garamond, serif;
 	font-size: 16px;
 	color: #414141;
@@ -121,7 +121,7 @@ nav {
 nav a {
 	font-family: 'nexa-bold-regular', Arial, sans-serif;
 	font-size: 18px;
-	color: #0086AB;	
+	color: #0086AB;	/*changed*/
 	display: block;
 	float: left;
 	padding: 0px 10px;
@@ -140,17 +140,17 @@ nav a:hover {
 
 #slideshow { 
 	position: relative;
-    margin: 20px auto;
-    max-width: 755px;
-    height: 256px;
+	margin: 20px auto;
+	max-width: 755px;
+	height: 256px;
 }
 
 #slideshow img {
-    position: absolute;
-    left: 50%;
-    width: 100%;
-    margin-left: -50%;
-    height: auto;
+	position: absolute;
+	left: 50%;
+	width: 100%;
+	margin-left: -50%;
+	height: auto;
 }
 
 #main-content { padding: 20px 50px; text-align: justify;}
@@ -202,7 +202,7 @@ footer { padding: 5px; text-align: center; font-size: 10px;}
 }
 
 .services-offered h1 {
-    text-align: center;
+	text-align: center;
 	border-bottom: solid 5px #436fa2;
 	margin-bottom: 10px;
 }
@@ -215,7 +215,7 @@ footer { padding: 5px; text-align: center; font-size: 10px;}
 	display: inline-block;
 	left;
 	text-align: left;
-    background: #e2e2e2;
+	background: #e2e2e2;
 	width: 270px;
 	height: 190px;
 	margin: 10px;

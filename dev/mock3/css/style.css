@@ -1,13 +1,13 @@
 /* 
-Project Name: Dive Catalina.net
-Author: Team Grep
+	Project Name: Dive Catalina.net
+	Author: Team Grep
 */
 
-a 			{ text-decoration: none;}
-a: hover 	{ text-decoration: underline;}
+a		{ text-decoration: none;}
+a: hover	{ text-decoration: underline;}
 
-.clear	{clear: both;}
-.alignleft 	{float: left;}
+.clear		{clear: both;}
+.alignleft	{float: left;}
 .alignright	{float: right;}
 
 /************ WEB FONTS ************/
@@ -20,6 +20,7 @@ a: hover 	{ text-decoration: underline;}
 		 font-weight: normal;
 		 font-style: normal;
 }
+
 /************ MAIN **********/
 body {
 	background: #000;

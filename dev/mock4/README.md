@@ -10,19 +10,17 @@ TODO:
 
 4. He prefers the Services and Gallery to be drop-down menus - Julia
 
-5. He prefers the mock2 tagline on the right, says it balance the page better -Julia [Done]
+5. He prefers the mock2 tagline on the right, says it balance the page better -Julia [DONE]
 
-6. He prefers the blue in the mock3 nav - Julia [Done]
-  - Does this mean he wants mock3 navi instead ofd mock2 nav?
-  - Nevermind, I get it hah. Totatlly missed the word "blue". -_-
+6. He prefers the blue in the mock3 nav - Julia [DONE]
   
-7. He prefers the font and boldness of mock2 nav - [Already Done]
+7. He prefers the font and boldness of mock2 nav - [Already DONE]
 
-8. The print (font) is not dark enough and should be generally darker.
+8. The print (font) is not dark enough and should be generally darker. (???)
 
 9. Specifically, “No experience is necessary” should be really dark and bolder than rest - Julia
 
-10. He prefers the mock2 font style - [Already Done]
+10. He prefers the mock2 font style - [Already DONE]
 
 11. He prefers alternating pictures (left & right) instead of one on the top for certain pages
 
