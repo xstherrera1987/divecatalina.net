@@ -9,21 +9,20 @@ get_header();
     <div id="content">
 
 <?
-the_post();
-the_content();
-
-// may need to use: 
-//   sort_column => menu_order
-// currently later subpages are on top
-$mypages = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'post_date', 'sort_order' => 'desc' ) );
-
-foreach( $mypages as $page ) {		
-	$content = $page->post_content;
+	// About Us Content
+	the_post();
+	the_content();
+	
+	// get Meet the Staff from DB
+	$subpages = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'post_date', 'sort_order' => 'desc' ) );
+	$title = $subpages[0]->post_title;
+	$content = $subpages[0]->post_content;
 	$content = apply_filters( 'the_content', $content );
-		echo '<hr />';
-		echo '<h2>'.$page->post_title.'</h2>';
-		echo '<div class="subpage">'.$content.'</div>';
-	}
+	
+	// Meet the Staff content
+	echo '<hr />';
+	echo '<h2>'.$title.'</h2>';
+	echo '<div class="subpage">'.$content.'</div>';
 ?>
     </div>
 </div>
