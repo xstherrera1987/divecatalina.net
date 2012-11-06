@@ -1,7 +1,11 @@
 TODO:
 ---
-+ None
++ Add links to index.html
++ Change nav bar
++ Add dive pages into mock 5
+
+
 
 NOTES:
 ---
-+ Play around with the site and let me know if you see anything that doesn't look right.
++ 
