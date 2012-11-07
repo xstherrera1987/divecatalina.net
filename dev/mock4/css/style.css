@@ -78,7 +78,7 @@ header h1 a {
 	float: left;
 	font-family: 'nexa-bold-regular', Arial, sans-serif;
 	font-size: 48px;
-	color: #436fa2;
+	color: #000000; /*#436fa2*/
 }
 
 h1 a:hover { color: #000;}
