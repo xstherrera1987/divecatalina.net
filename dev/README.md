@@ -1,3 +1,9 @@
+bin
+---
++ miscellaneous scripts for development and deployment
+  + remcomms.sh - remove comments from HTML files
+  + tozymic.sh - FTP upload to our zymic server for mockups
+
 booking
 ---
 + plugins we investigated
