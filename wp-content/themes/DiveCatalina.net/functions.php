@@ -51,4 +51,15 @@ function is_sidebar_active( $name ) {
   if ($widgetcolums[$name]) return true; 
   return false;
 }
+
 // build navigation menu
+function build_navmenu() {
+	$args = array( 'orderby' => 'menu_order', 'post_type' => 'page', 'parent' => 0); 
+
+$pages = get_posts($args);
+      foreach ($pages as $page) {
+          echo '<a href="'.get_permalink($page->ID).'" title="'.$page->post_title.'">'.$page->post_title.'</a></li>';
+      }
+    $out = '<ul class="page_post">' . $out . '</ul>';
+    echo $out;
+}

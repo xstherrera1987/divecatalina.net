@@ -1,6 +1,6 @@
 <?php 
 /**
-   Template Name:  FRONT-PAGE.PHP
+   Template Name:  HOME
  * this one is used on the HOME page
  */
 get_header(); 
@@ -18,11 +18,4 @@ while ( have_posts() ) {
 </div>
 <?
 get_sidebar();
-
-if (is_sidebar_active("primary_widget_area") ) {
-	echo "PRIMARY sidebar detected";
-} else {
-	echo "NO sidebar detected";
-}
-
 get_footer();

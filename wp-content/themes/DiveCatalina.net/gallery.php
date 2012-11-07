@@ -17,9 +17,8 @@ jQuery(document).ready( function() {
 		}, 3500);
 });
 </script>
-<div id="container">
-    <div id="content">
-		<div id="gallery">
+<div id="content">
+	<div id="gallery">
 <?php
 	// pull in all images attached to this post
 	$args = array('post_type' => 'attachment', 'post_mime_type' => 'image', 'post_parent' => $post->ID);
@@ -33,8 +32,7 @@ jQuery(document).ready( function() {
 		echo '<img src="'.$url.'" height="'.$height.'" width="'.$width.'" />';
 	}
 ?>
-		</div>
-    </div>
+	</div>
 </div>
 <?
 // NOTE: no sidebar

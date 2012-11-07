@@ -17,11 +17,10 @@
      
     <meta http-equiv="content-type" 
 		content="<?php bloginfo('html_type'); ?> charset=<?php bloginfo('charset'); ?>" />
-	<!-- main style sheet --> 
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
 
+	<!-- style sheets -->
 	<link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/reset.css" type="text/css" />
-	<link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/media-queries.css" type="text/css" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,24 +35,14 @@
 </head>
 
 <body>
-<div id="wrapper">
-	<div id="header">
+<div id="container">
 	<header>	
 		
 		<h1><a href="index.html">Dive Catalina</a></h1>
 		<h2>Work less... Dive Moore!</h2>
 		<div class = "clear"></div>
-		
-		<div id="dc-logo">
-			
-		</div>
-		<div id="tagline">
-			
-		</div>
-        <div id="mainnav">
+
         	<nav>
-	        <!-- pull in custom NAV menu, admin can change what appears here -->
-	        <!-- calls wp_page_menu if no menu is set in admin panel -->
 	        <?php
 	        // default menu if none is defined
 	        function default_menu_cb() {
@@ -62,9 +51,13 @@
 	        }
 			
 			// depth is the number of levels of child pages to show
-	        wp_nav_menu( array( 'theme_location' => 'mainnav-menu', 'fallback_cb' => 'default_menu_cb' , 'depth' => 1) );
+	        // wp_nav_menu( array( 'theme_location' => 'mainnav-menu', 'fallback_cb' => 'default_menu_cb' , 'depth' => 1) );
+	        
+	        // this builds nav with <li>
+	        // $args = array('depth' => 1, 'sort_column' => 'menu_order', 'post_type' => 'page', 'title_li' => '');
+	        // wp_list_pages($args);
+	        
+	        build_navmenu();
 	        ?>
 	        </nav>
-        </div>
-	</div>
 	</header>
