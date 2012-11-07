@@ -54,12 +54,24 @@ function is_sidebar_active( $name ) {
 
 // build navigation menu
 function build_navmenu() {
-	$args = array( 'orderby' => 'menu_order', 'post_type' => 'page', 'parent' => 0); 
+	$args = array( 'sort_column' => 'post_date', 'post_type' => 'page', 'parent' => 0);
+	$pages = get_pages($args);
 
-$pages = get_posts($args);
-      foreach ($pages as $page) {
-          echo '<a href="'.get_permalink($page->ID).'" title="'.$page->post_title.'">'.$page->post_title.'</a></li>';
-      }
-    $out = '<ul class="page_post">' . $out . '</ul>';
-    echo $out;
+	foreach ($pages as $page) {
+		echo '<a href="'.get_permalink($page->ID).'" title="'.$page->post_title.'">'.$page->post_title.'</a></li>';
+	}
+}
+
+// post walker for nav menu (non-default)
+class SimpleNavWalker extends Walker_Nav_Menu {
+	function start_el(&$output, $item) {
+    	// attributes set in admin panel (Menus section)
+		$attributes .= ! empty( $item->target ) ? ' target="' . $item->target . '"' : '';
+		$attributes .= ! empty( $item->xfn )    ? ' rel="'    . $item->xfn . '"' : '';
+		$attributes .= ! empty( $item->url )    ? ' href="'   . $item->url . '"' : '';
+		
+		$item_output .= '<a'. $attributes .'>' . $item->title . '</a>';
+		
+		$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item);
+	}
 }

@@ -9,8 +9,7 @@
 			echo " ".
 	 		bloginfo('description'); 
 		} else {
-			 bloginfo('name'); 
-			 print ' | Not Found'; 
+			 single_post_title();
 		}
 	?>
 	</title>
@@ -33,31 +32,20 @@
     <?php wp_head(); ?>
 
 </head>
-
 <body>
 <div id="container">
-	<header>	
-		
+	<header>
 		<h1><a href="index.html">Dive Catalina</a></h1>
 		<h2>Work less... Dive Moore!</h2>
 		<div class = "clear"></div>
 
         	<nav>
 	        <?php
-	        // default menu if none is defined
-	        function default_menu_cb() {
-	        	$args = array('sort_column' => 'menu_order', 'show_home' => true, 'depth' => 1);
-				wp_page_menu($args);
-	        }
-			
-			// depth is the number of levels of child pages to show
-	        // wp_nav_menu( array( 'theme_location' => 'mainnav-menu', 'fallback_cb' => 'default_menu_cb' , 'depth' => 1) );
-	        
-	        // this builds nav with <li>
-	        // $args = array('depth' => 1, 'sort_column' => 'menu_order', 'post_type' => 'page', 'title_li' => '');
-	        // wp_list_pages($args);
-	        
-	        build_navmenu();
+				// use menu from admin panel, or build_navmenu if none is defined
+		        wp_nav_menu( array( 'theme_location' => 'mainnav-menu', 'fallback_cb' => 'build_navmenu', 
+		        'depth' => 1, 'items_wrap' => '%3$s', 'walker' => new SimpleNavWalker(), 'container' => '',
+		        	'before' => '', 'after' => '' ));
 	        ?>
 	        </nav>
 	</header>
+

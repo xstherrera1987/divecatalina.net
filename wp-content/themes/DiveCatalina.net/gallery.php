@@ -1,6 +1,6 @@
 <?php 
 /**
-   Template Name:  GALLERY.PHP
+   Template Name:  gallery-test
    testing code for pulling in gallery images
  */
 get_header();
