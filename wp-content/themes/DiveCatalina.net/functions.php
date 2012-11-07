@@ -51,3 +51,4 @@ function is_sidebar_active( $name ) {
   if ($widgetcolums[$name]) return true; 
   return false;
 }
+// build navigation menu
