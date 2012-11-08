@@ -261,8 +261,9 @@ footer { padding: 5px; text-align: center; font-size: 10px;}
 
 /************ SERVICES ************/
 
-#dive-services, 
-#dive-classes {padding-bottom: 20px;}
+#dive-services, #dive-classes, #dive-travel {padding-bottom: 20px;}
+
+.section-content { padding: 20px 50px; text-align: justify;}
 
 .services-offered {
 	-moz-border-radius: 5px;
