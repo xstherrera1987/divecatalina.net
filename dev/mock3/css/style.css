@@ -177,6 +177,7 @@ img {
 }  
 #gallery img{  
     height: 256px;
+	position: absolute;
     float: left;
     width: 100%;
 }  
@@ -189,6 +190,7 @@ img {
 	height: 85px;
 	float: left;
 	width: 100%;
+	
 }  
 #next{
 	z-index: 9999;
