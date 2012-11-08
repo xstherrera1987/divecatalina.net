@@ -1,6 +1,6 @@
 <?php 
 /**
-   Template Name:  AboutUs + Meet the Staf
+   Template Name:  AboutUs + Meet the Staff
  * shows this page and subpages
  */
 get_header(); 
