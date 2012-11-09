@@ -247,7 +247,9 @@ header h2 {
 	padding: 0px 50px;
 }
 
+/************ FOOTER *************/
 footer { padding: 5px; text-align: center; font-size: 10px;}
+#footer-link {padding:10px; font-size:12px}
 
 /************ ABOUT US ************/
 .about-sig {
