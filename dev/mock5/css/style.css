@@ -4,7 +4,7 @@ Author: Team Grep
 Mock 5
 */
 
-a 		{ text-decoration: none; color: #2098DA;}
+a 			{ text-decoration: none; color: #0086AB;}
 a:hover 	{ color: #436fa2;}
 
 .clear		{clear: both;}
@@ -241,7 +241,34 @@ header h2 {
 	padding: 0px 50px;
 }
 
-footer { padding: 5px; text-align: center; font-size: 10px;}
+/************ FOOTER ************/
+footer { 
+	height: 100px;
+	font-size: 12px;
+	margin-bottom: 5%;
+}
+
+.footerLinks {
+	float: left;
+	padding: 2% 0;
+	margin: 0 1.5%;
+}
+
+.footerLinks li {
+	list-style: none;
+	text-transform: uppercase;
+}
+
+.subLinks a {
+	text-transform: none;
+}
+
+#footerContact {
+	float: left;
+	border-left: 1px solid #414141;
+	margin-top: 2%;
+	padding: 0 2%;
+}
 
 /************ ABOUT US ************/
 .about-sig {
@@ -261,7 +288,7 @@ footer { padding: 5px; text-align: center; font-size: 10px;}
 
 /************ SERVICES ************/
 
-#dive-services, #dive-classes, #dive-travel {padding-bottom: 20px;}
+#dive-services, #dive-classes, #dive-travel, #rental {padding-bottom: 20px;}
 
 .section-content { padding: 20px 50px; text-align: justify;}
 
@@ -315,12 +342,14 @@ footer { padding: 5px; text-align: center; font-size: 10px;}
 	float: right;
 }
 
-#rental {
-	padding: 20px;
-}
-
 #rental ul {
 	padding: 40px;
+}
+
+/************ CONTACT ************/
+#reservation-form
+{
+	padding: 120px; 
 }
 
 

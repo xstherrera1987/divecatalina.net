@@ -11,10 +11,6 @@ Mock 4 - update services.html to include dive travel section (just match it with
 Mock 4 - Create footer links
 Mock 4 - contact.html, getting-to-catalina.html, news.html, link.html
 
-#### JEM
-Mock 5 - contact.html, gallery.html, photo-gallery.html, video-gallery.html
-Mock 5 - create footer links
-
 NOTES:
 ===
 + none
