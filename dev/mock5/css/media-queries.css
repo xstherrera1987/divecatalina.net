@@ -56,7 +56,11 @@
 
     /************ SERVICES ************/
 	.services-offered { margin: 10px; height: 370px; }
-    .classes-offered {height: 170px}}
+    .classes-offered {height: 170px}
+
+   .elastislide-horizontal {
+        padding: 10px 40px;
+    }
 
 }
 

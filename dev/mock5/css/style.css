@@ -189,6 +189,7 @@ body {
 	font-family: 'sanchez-regular', Garamond, serif;
 	font-size: 16px;
 	color: #222222;
+	
 }
 
 #container {
@@ -345,6 +346,15 @@ footer {
 #rental ul {
 	padding: 40px;
 }
+
+/************ PHOTO GALLERY ************/
+#photo-gallery {
+	width: 90%;
+	max-width: 960px;
+	margin: 20px auto;
+}
+
+
 
 /************ CONTACT ************/
 #reservation-form img {

@@ -15,7 +15,7 @@
 
 .elastislide-wrapper {
 	position: relative;
-	background-color: #fff;
+	background-color: #222;
 	margin: 0 auto;
 	min-height: 60px;
 	box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
@@ -29,10 +29,6 @@
 
 .elastislide-horizontal {
 	padding: 10px 40px;
-}
-
-.elastislide-vertical {
-	padding: 40px 10px;
 }
 
 .elastislide-carousel {
@@ -79,7 +75,7 @@
 
 .elastislide-carousel ul li a img {
 	display: block;
-	border: 2px solid white;
+	margin: 5%;
 	max-width: 100%;
 }
 
@@ -87,7 +83,7 @@
 
 .elastislide-wrapper nav span {
 	position: absolute;
-	background: #ddd url(../images/nav.png) no-repeat 4px 3px;
+	background: #222 url(../images/nav.png) no-repeat 4px 3px;
 	width: 23px;
 	height: 23px;
 	border-radius: 50%;
@@ -125,19 +121,14 @@
 	background-position: -17px -18px;
 }
 
-.demo-1 .elastislide-horizontal {
+.elastislide-horizontal {
 	padding: 10px 37px;
 	border-radius: 10px/90px;
-	box-shadow: 
-		0 1px 3px rgba(0, 0, 0, 0.1), 
-		inset -2px 0 3px 2px rgba(255, 255, 255, 0.6), 
-		inset 2px 0 3px 2px rgba(255, 255, 255, 0.6), 
-		inset -10px 0 10px 1px rgba(155, 155, 155, 0.1), 
-		inset 10px 0 10px 1px rgba(155, 155, 155, 0.1);
+	border: 1px solid #999999;
 }
 
-.demo-1 .elastislide-wrapper:before,
-.demo-1 .elastislide-wrapper:after{
+.elastislide-wrapper:before,
+.elastislide-wrapper:after{
 	content: '';
 	position: absolute;
 	z-index: -2;
@@ -154,7 +145,7 @@
 	transform: rotate(-3deg);
 }
 
-.demo-1 .elastislide-wrapper:after {
+.elastislide-wrapper:after {
 	right: 20px;
 	left: auto;
 	-webkit-transform: rotate(3deg);
@@ -162,4 +153,44 @@
 	-ms-transform: rotate(3deg);
 	-o-transform: rotate(3deg);
 	transform: rotate(3deg);
+}
+
+.column {
+	width: 50%;
+	float: left;
+	padding: 20px;
+	min-height: 300px;
+}
+
+.column p {
+	text-align: left;
+}
+
+.column-20 {
+	width: 20%;
+}
+
+.column-80 {
+	width: 80%;
+}
+
+.js .fixed-bar {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+}
+
+.js .gallery {
+	width: 100%;
+	max-width: 450px;
+	margin: 0 auto;
+	border-radius: 20px;
+	position: relative;
+	background: #000 url(../images/black_denim.png);
+	box-shadow: 0 2px 1px rgba(255,255,255,0.9), 0 -2px 1px rgba(255,255,255,0.9);
+}
+
+.lt-ie8 .elastislide-list {
+	display: none;
 }
