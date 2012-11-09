@@ -347,10 +347,82 @@ footer {
 }
 
 /************ CONTACT ************/
-#reservation-form
-{
-	padding: 120px; 
+#reservation-form img {
+	margin: 50px;
 }
+
+#form {
+	float: left;
+	margin: 10px 10px 0 0;
+	color:#fff;
+	width:320px; /* customize width, this form have fluid layout */
+}
+
+#form h3 {
+	-moz-border-top-left-radius: 4px 4px;
+	-webkit-border-top-left-radius: 4px 4px;
+	border-top-left-radius: 4px 4px;
+	-moz-border-top-right-radius: 4px 4px;
+	-webkit-border-top-right-radius: 4px 4px;
+	border-top-right-radius: 4px 4px;
+	/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+	margin:0;
+	background:#0086AB;	
+	color:#fff;
+	font-size:20px;
+	border:1px solid #0086AB;
+	border-bottom:none;
+	padding: 10px 20px;
+}		
+
+
+#form fieldset {
+	-moz-border-bottom-left-radius: 4px 4px;
+	-webkit-border-bottom-left-radius: 4px 4px;
+	border-bottom-left-radius: 4px 4px;
+	-moz-border-bottom-right-radius: 4px 4px;
+	-webkit-border-bottom-right-radius: 4px 4px;
+	border-bottom-right-radius: 4px 4px;
+	/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+	margin:0;
+	padding:0;
+	border:none;	
+	border-top:3px solid #222222;
+	background:#222222;
+	padding-bottom:1em;
+}		
+
+#form legend { display:none; } 	
+#form p { margin:.5em 20px; }	
+#form label { display:block; }	
+
+#form input, #form textarea {		
+	width:272px;
+	border:1px solid #111;
+	background:#4d4d4d;
+	padding:5px 3px;
+	color:#fff;
+}		
+
+#form textarea {
+	height:125px;
+	overflow:auto;
+}					
+
+#form p.submit {
+	text-align:right;
+}	
+
+#form button {
+	padding:0 20px;
+	height:32px;
+	line-height:32px;		
+	border:1px solid #0086AB;
+	background: #0086AB;
+	color:#fff;
+	cursor:pointer;		
+	text-align:center;		
+}		
 
 
 
