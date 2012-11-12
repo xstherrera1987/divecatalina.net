@@ -6,16 +6,8 @@
 get_header();
 ?>
 <script type="text/javascript">
-// slideshow JS function
-jQuery(document).ready( function() {
-	jQuery("#gallery img:gt(0)").hide();
-	window.setInterval(
-		function() {
-			jQuery('#gallery img').eq(0).fadeOut(1200);
-			jQuery('#gallery img').eq(1).fadeIn(900);
-			jQuery('#gallery img').eq(0).appendTo('#gallery');
-		}, 3500);
-});
+	// slideshow JS function
+	home_slideshow();
 </script>
 <div id="content">
 	<div id="gallery">

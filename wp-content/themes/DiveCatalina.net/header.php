@@ -32,6 +32,14 @@
 	<![endif]-->
 
 	<?php wp_enqueue_script("jquery"); ?>
+	
+	<!-- load slideshow code -->
+	<?php 
+	if ( is_home() || is_front_page() ): ?> 
+		<script src="<?php bloginfo('template_directory');?>/js/slideshow.js">
+		</script>
+	<? endif; ?>
+	
 	<!-- more WP metadata, stylesheets -->
     <?php wp_head(); ?>
 

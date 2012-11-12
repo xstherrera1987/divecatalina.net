@@ -6,5 +6,8 @@ DiveCatalina.net
 
 TODO
 ---
-+ Services page structure
-+ subpages still show up in nav bar
++ Services page structure should not show XYZ-Widget but only top-level pages
+
++ nav bar doesn't drop down for subpages (missing .parent css class)
+
++ fonts on main page are off
