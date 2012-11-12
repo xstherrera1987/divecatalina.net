@@ -1,0 +1,15 @@
+*.php text
+*.html text
+*.md text
+*.sh text
+*.js text
+*.css text
+*.txt text
+
+*.png    binary
+*.jpg    binary
+*.jpeg	 binary
+*.eot	 binary
+*.svg	 binary
+*.ttf	 binary
+*.woff	 binary
