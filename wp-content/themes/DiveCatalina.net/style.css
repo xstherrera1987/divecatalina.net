@@ -94,9 +94,12 @@ header h2 {
 	font-size: 20px;
 	padding-top:25px;
 }
-	
-nav { 
-	border: 1px solid #999999;
+
+/* NAV styles */
+.nav {
+    list-style: none;
+     *zoom: 1;
+    border: 1px solid #999999;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
@@ -119,22 +122,56 @@ nav {
 	background-clip: padding-box;
 	/*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
 	/*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
-	margin: 20px 0;
-	padding: 10px;
 }
-
-nav a {
+.nav:before, .nav:after {
+    content: " "; 
+    display: table; 
+}
+.nav:after {
+    clear: both;
+}
+.nav ul {
+    list-style: none;
+    width: 9em;
+}
+.nav a {
 	font-family: 'nexa-bold-regular', Arial, sans-serif;
 	font-size: 18px;
-	color: #0086AB;	/*changed*/
-	display: block;
-	float: left;
-	padding: 0px 10px;
+	color: #0086AB;	
+	padding: 10px 15px;
 }
-
-nav a:hover {
+.nav a:hover {
 	color: #fff;
 }
+.nav li {
+    position: relative;
+}
+.nav > li {
+    float: left;
+}
+.nav > li > .parent {
+    background-image: url("../images/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.nav > li > a {
+    display: block;
+}
+.nav li ul {
+    position: absolute;
+    left: -9999px;
+}
+.nav > li.hover > ul {
+    left: 0;
+}
+.nav li li a {
+    display: block;
+    position: relative;
+    z-index:100;
+	background: #333333;
+	border-bottom: 1px solid #000;
+}
+/* END nav rules */
 
 #content h1 {
 	font-family: 'nexa-bold-regular', Arial, sans-serif;
