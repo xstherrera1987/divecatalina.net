@@ -7,7 +7,6 @@
 get_header(); 
 ?>
 <div id="content">
-    	<p><em>NEWS</em></p><hr />
 <?php
 while ( have_posts() ) {
 	the_post();

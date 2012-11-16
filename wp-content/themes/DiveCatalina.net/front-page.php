@@ -26,10 +26,12 @@ get_header();
 	}
 ?>
 	</div>
+	<div id="main-content">
 <?php
 	the_post();
 	the_content();
 ?>
+	</div>
 	</div>
 <?
 get_sidebar();
