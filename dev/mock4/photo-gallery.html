@@ -13,6 +13,17 @@
 		<!--[if IE]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
+          <!-- Syntax Highlighter -->
+		<!-- Syntax Highlighter -->
+		<link href="css/shCore.css" rel="stylesheet" type="text/css" />
+  		<link href="css/shThemeDefault.css" rel="stylesheet" type="text/css" />
+ 	 	<!-- Demo CSS -->
+		<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+        
+	
+	<!-- Modernizr -->
+  <script src="js/modernizr.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
               
 	</head>
 	<body>
@@ -48,31 +59,187 @@
 					<li><a href="contact.html">Contact us</a></li>
 					<li><a href="news.html">News</a></li>
 					<li><a href="links.html">Links</a></li>
-				</ul>			
+				</ul>
+				
+                <script>
+				(function($){
+				
+				//cache nav
+					var nav = $(".nav");
+				
+				//add indicator and hovers to submenu parents
+					nav.find("li").each(function() {
+						if ($(this).find("ul").length > 0) {
+						//	$("<span>").text("^").appendTo($(this).children(":first"));
+
+						//show subnav on hover
+							$(this).mouseenter(function() {
+							$(this).find("ul").stop(true, true).slideDown();
+						});
+						
+						//hide submenus on exit
+						$(this).mouseleave(function() {
+							$(this).find("ul").stop(true, true).slideUp();
+						});
+					}
+				});
+			})(jQuery);
+			</script>				
 			</header>
 
 			<div id="content">
-				<h1>PHOTO GALLERY</h1>
-				<a class="alignright", href="#top">Back to Top ^</a><br/>
+				<div id="main-content">
+				<h1>Photo Gallery</h1><br>
+                <div id="main" role="main">
+     				<section class="slider">
+        				<div id="slider" class="flexslider">
+          					<ul class="slides">
+            				<li>
+  	    	    				<img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
+  	    					</li>
+  	    					<li>
+  	    	    				<img src="images/kitchen_adventurer_lemon.jpg" />
+  	    					</li>
+  	    					<li>
+  	    	    				<img src="images/kitchen_adventurer_donut.jpg" />
+  	    					</li>
+  	    					<li>
+  	    	    				<img src="images/kitchen_adventurer_caramel.jpg" />
+  	    					</li>
+            				<li>
+  	    	    				<img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
+  	    					</li>
+  	    					<li>
+  	    	    				<img src="images/kitchen_adventurer_lemon.jpg" />
+  	    					</li>
+  	    					<li>
+  	    	    				<img src="images/kitchen_adventurer_donut.jpg" />
+  	    					</li>
+  	    					<li>
+  	    	    				<img src="images/kitchen_adventurer_caramel.jpg" />
+  	    					</li>
+            				<li>
+  	    	    				<img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
+  	    					</li>
+  	    					<li>
+  	    	    				<img src="images/kitchen_adventurer_lemon.jpg" />
+  	    					</li>
+  	    					<li>
+  	    	    				<img src="images/kitchen_adventurer_donut.jpg" />
+  	    					</li>
+  	    					<li>
+  	    	    				<img src="images/kitchen_adventurer_caramel.jpg" />
+  	    					</li>
+          					</ul>
+        			</div>
+        			<div id="carousel" class="flexslider">
+          				<ul class="slides">
+           				<li>
+  	    	    			<img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
+  	    				</li>
+  	    				<li>
+  	    	    			<img src="images/kitchen_adventurer_lemon.jpg" />
+  	    				</li>
+  	    				<li>
+  	    	    			<img src="images/kitchen_adventurer_donut.jpg" />
+  	    				</li>
+                    	<li>
+                    		<img src="images/kitchen_adventurer_caramel.jpg" />
+  	    				</li>
+            			<li>
+  	    	    			<img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
+  	    				</li>
+  	    				<li>
+  	    	    			<img src="images/kitchen_adventurer_lemon.jpg" />
+  	    				</li>
+                        <li>
+                        	<img src="images/kitchen_adventurer_donut.jpg" />
+                        </li>
+                        <li>
+                        	<img src="images/kitchen_adventurer_caramel.jpg" />
+                        </li>
+                        <li>
+                            <img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
+                        </li>
+                        <li>
+  	    	    			<img src="images/kitchen_adventurer_lemon.jpg" />
+  	    				</li>
+  	    				<li>
+  	    	    			<img src="images/kitchen_adventurer_donut.jpg" />
+  	    				</li>
+                        <li>
+                        	<img src="images/kitchen_adventurer_caramel.jpg" />
+                        </li>
+          				</ul>
+        		</div>
+      		</section>
+			<a class="alignright", a href="#top">Back to Top ^</a>
+			</div>
 			</div>
 			<hr/>	
-			
 			<footer>
-            			<div id="footer-link">
-					<a href="index.html">Home | </a>
-		                    	<a href="about.html">About Us | </a>
-		                    	<a href="services.html">Services | </a>
-		                    	<a href="gallery.html">Gallery | </a>
-		                    	<a href="getting-to-catalina.html">Getting to Catalina | </a>
-		                   	 <a href="contact.html">Contact Us | </a>
-		                    	<a href="news.html">News | </a>
-		                   	 <a href="links.html">Links</a>
-               			</div>
-                		<p>&copy; 2012 - Dive Catalina</p>
+            	<div id="footer-link">
+                    <a href="index.html">Home | </a>
+                    <a href="about.html">About Us | </a>
+                    <a href="services.html">Services | </a>
+                    <a href="gallery.html">Gallery | </a>
+                    <a href="getting-to-catalina.html">Getting to Catalina | </a>
+                    <a href="contact.html">Contact Us | </a>
+                    <a href="news.html">News | </a>
+                    <a href="links.html">Links</a>
+                </div>
+                <p>&copy; 2012 - Dive Catalina</p>
 			</footer>
-		</div>	
+		</div>
+        </div>
+        
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-		<script type="text/javascript" src="script.js"></script> 
+          <!-- jQuery -->
+  		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+  
+ 		<!-- FlexSlider -->
+  		<script defer src="js/jquery.flexslider.js"></script>
+  
+  		<script type="text/javascript">
+    	$(function(){
+      	SyntaxHighlighter.all();
+    	});
+    	$(window).load(function(){
+      	$('#carousel').flexslider({
+        	animation: "slide",
+        	controlNav: false,
+        	animationLoop: false,
+        	slideshow: false,
+        	itemWidth: 210,
+        	itemMargin: 5,
+        	asNavFor: '#slider'
+      	});
+      
+      $('#slider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        sync: "#carousel",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+
+  <!-- Syntax Highlighter -->
+  <script type="text/javascript" src="js/shCore.js"></script>
+  <script type="text/javascript" src="js/shBrushXml.js"></script>
+  <script type="text/javascript" src="js/shBrushJScript.js"></script>
+  
+  <!-- Optional FlexSlider Additions -->
+  <script src="js/jquery.easing.js"></script>
+  <script src="js/jquery.mousewheel.js"></script>
+  <script defer src="js/demo.js"></script>
+        
+        
+         
 	</body>
 </html> 

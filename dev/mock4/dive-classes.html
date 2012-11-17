@@ -10,11 +10,13 @@
 		<link rel="stylesheet" href="css/media-queries.css" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jquery-1.8.2.js"></script>
+    	<script src="js/modernizr.js"></script>
 	</head>
 	
 	<body>
 		<div id="container">
-        	<a href="top"></a>
+			<a href="top"></a>
 			<header>
 				<h1><a href="index.html">Dive Catalina</a></h1>
 				<h2>Work less... Dive Moore!</h2>
@@ -41,11 +43,36 @@
 							<li><a href="video-gallery.html">Video</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Getting to Catalina</a></li>
-					<li><a href="#">Contact us</a></li>
-					<li><a href="#">News</a></li>
-					<li><a href="#">Links</a></li>
+					<li><a href="getting-to-catalina.html">Getting to Catalina</a></li>
+					<li><a href="contact.html">Contact us</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="links.html">Links</a></li>
 				</ul>			
+				
+                <script>
+				(function($){
+				
+				//cache nav
+					var nav = $(".nav");
+				
+				//add indicator and hovers to submenu parents
+					nav.find("li").each(function() {
+						if ($(this).find("ul").length > 0) {
+						//	$("<span>").text("^").appendTo($(this).children(":first"));
+
+						//show subnav on hover
+							$(this).mouseenter(function() {
+							$(this).find("ul").stop(true, true).slideDown();
+						});
+						
+						//hide submenus on exit
+						$(this).mouseleave(function() {
+							$(this).find("ul").stop(true, true).slideUp();
+						});
+					}
+				});
+			})(jQuery);
+			</script>			
 			</header>
 					
 			<div id="content">		
@@ -132,9 +159,8 @@
 					Cost:
 					$90.00 per dive (includes all gear)
 		        	</p><br/><br/><br/>
-                   
 				</div>
-                <a class="alignright", href="#top">Back to Top ^</a><br/>
+				<a class="alignright", a href="#top">Back to Top ^</a><br/>
 			</div>		
 			<hr/>
             

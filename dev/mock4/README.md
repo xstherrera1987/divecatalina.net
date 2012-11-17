@@ -8,8 +8,8 @@ Mock 4 - gallery.html, photo-gallery.html, video-gallery.html<br/>
 #### JULIA
 Mock 4 - Change header colors back to mock 2 blue [DONE] <br/>
 Mock 4 - update services.html to include dive travel section (just match it with the rest of the page). [DONE] <br/>
-Mock 4 - Create footer links <br/>
-Mock 4 - contact.html, getting-to-catalina.html, news.html, link.html<br/>
+Mock 4 - Create footer links <br/> [DONE]
+Mock 4 - contact.html, getting-to-catalina.html, news.html, link.html<br/> [DONE/Work in progress]
 
 NOTES:
 ===
