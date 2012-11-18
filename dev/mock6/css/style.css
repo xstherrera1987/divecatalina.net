@@ -377,6 +377,36 @@ footer {
 
 textarea { resize: none;}
 
+/*********** Gallery ************/
+#page {
+    position: relative;
+}
+#images {
+    float: left;
+    width: 970px
+}
+.gallery {
+    width: 980px;
+    cursor: default;
+    list-style:none;
+}
+.gallery img {
+	background: #fff;
+	vertical-align: top;
+	width: 150px;
+	height: 100px;
+}
+.gallery li {
+	background: #999999;
+	border-style: none;
+    border-width: 2.5px;
+	color: inherit;
+	display: inline;
+	float: left;
+	margin: 3px;
+	padding: 5px;
+	position: relative;
+}
 
 
 
