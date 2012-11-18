@@ -11,3 +11,6 @@ TODO
 + nav bar doesn't drop down for subpages (missing .parent css class)
 
 + fonts on main page are off
+
++ pages appear further down (more padding on top) than the mockups
+
