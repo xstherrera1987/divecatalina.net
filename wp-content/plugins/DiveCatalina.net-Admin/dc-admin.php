@@ -57,4 +57,36 @@ add_filter('admin_footer_text', 'remove_footer_admin');
 add_action('wp_dashboard_setup', 'remove_dashboard_widgets');
 add_action('wp_dashboard_setup', 'set_dashboard_columns');
 
+// add column for reattaching images
+add_filter("manage_upload_columns", 'upload_columns');
+add_action("manage_media_custom_column", 'media_custom_columns', 0, 2);
+// remove old column, use our new one
+function upload_columns($columns) {
+	unset($columns['parent']);
+	$columns['better_parent'] = "Parent";
+	return $columns;
+}
+
+function media_custom_columns($column_name, $id) {
+	$post = get_post($id);
+
+	if($column_name != 'better_parent')
+		return;
+
+	if ( $post->post_parent > 0 ) {
+		if ( get_post($post->post_parent) ) {
+			$title =_draft_or_post_title($post->post_parent);
+		}
+		?>
+		<strong><a href="<?php echo get_edit_post_link( $post->post_parent ); ?>"><?php echo $title ?></a></strong><br />
+		<a onclick="findPosts.open('media[]','<?php echo $post->ID ?>');return false;" href="#the-list">Re-Attach</a></td>
+
+		<?php
+	} else {
+		?>Unattached<br />
+		<a onclick="findPosts.open('media[]','<?php echo $post->ID ?>');return false;" href="#the-list">Attach</a>
+		<?php
+	}
+}
+
 ?>
