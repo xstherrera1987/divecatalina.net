@@ -35,7 +35,7 @@
 	<?php wp_enqueue_script("jquery"); ?>
 	<?php /* defer script loading until end because depend on jquery */ ?>
 		<script type="text/javascript" defer='defer' 
-			src="<?php bloginfo('template_directory');?>/js/script.js">
+			src="<?php bloginfo('template_directory');?>/js/nav.js">
 			</script>
 	<?php 
 	if ( is_home() || is_front_page() ): ?> 
