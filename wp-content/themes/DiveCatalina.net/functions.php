@@ -66,7 +66,6 @@ function build_navmenu() {
 
 // build nav as <li>
 function build_navmenu2() {
-	echo '<ul class="nav">';
 	$args = array(
 	'depth'        => 2,
 	'sort_column'  => 'menu_order, post_title',
@@ -78,9 +77,9 @@ function build_navmenu2() {
 	);
 	
 	wp_list_pages( $args );
-	echo '</ul>';
 }
 
+// build footer navigation
 function minnav() {
 	
 }

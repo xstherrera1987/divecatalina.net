@@ -56,6 +56,7 @@
 		<h2><?php bloginfo('description');?></h2>
 		<div class = "clear"></div>
 
+			<ul class="nav">
 	        <?php
 				// use menu from admin panel, or fallback if none defined
 		        wp_nav_menu( array( 'theme_location' => 'mainnav-menu', 
@@ -63,5 +64,5 @@
 		        'items_wrap' => '%3$s', 'walker' => new SimpleNavWalker(),
 		        'container' => '', 'before' => '', 'after' => '' ));
 	        ?>
+	       </ul>
 	</header>
-
