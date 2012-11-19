@@ -25,3 +25,5 @@ TODO
 + figure out of how to change fonts through admin
 
 + custom post types for "Meet the Staff"
+
++ rename script.js to nav.js

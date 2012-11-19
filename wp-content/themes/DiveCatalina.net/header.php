@@ -33,7 +33,8 @@
 
 	<?php wp_enqueue_script("jquery"); ?>
 	
-	<!-- load slideshow code -->
+	<!-- load JS  -->
+		<script src="<?php bloginfo('template_directory');?>/js/script.js"></script>
 	<?php 
 	if ( is_home() || is_front_page() ): ?> 
 		<script src="<?php bloginfo('template_directory');?>/js/slideshow.js">
