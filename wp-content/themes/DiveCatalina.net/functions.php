@@ -95,7 +95,7 @@ class SimpleNavWalker extends Walker_Nav_Menu {
 		$attributes .= ! empty( $item->url )    ? ' href="'   . 
 			$item->url . '"' : '';
 		
-		$item_output .= '<a'. $attributes .'>' . $item->title . '</a>';
+		$item_output .= '<li><a'. $attributes .'>' . $item->title . '</a></li>';
 		
 		$output .= apply_filters( 'walker_nav_menu_start_el', 
 			$item_output, $item);

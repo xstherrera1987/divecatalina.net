@@ -58,11 +58,17 @@
 
 			<ul class="nav">
 	        <?php
+	        	wp_nav_menu(array('items_wrap' => '%3$s', 'depth' => 3, 
+	        	'theme_location' => 'mainnav-menu', 'container' => '',
+				'fallback_cb' => 'build_navmenu2'));
+	        
 				// use menu from admin panel, or fallback if none defined
+				/*
 		        wp_nav_menu( array( 'theme_location' => 'mainnav-menu', 
-		        'fallback_cb' => 'build_navmenu2', 'depth' => 1, 
+		        'fallback_cb' => 'build_navmenu2', 'depth' => 2, 
 		        'items_wrap' => '%3$s', 'walker' => new SimpleNavWalker(),
-		        'container' => '', 'before' => '', 'after' => '' ));
+		        'container' => '',));
+				 */
 	        ?>
 	       </ul>
 	</header>

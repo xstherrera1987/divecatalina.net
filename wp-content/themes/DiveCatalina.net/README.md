@@ -6,24 +6,12 @@ DiveCatalina.net
 
 TODO
 ---
-+ nav bar doesn't drop down for subpages (missing .parent css class)
-
-+ pages appear further down (more padding on top) than the mockups
-
-+ attaching images from media library doesn't display them properly (eg. home)
++ subpages for "Meet the Staff"
 
 + chrome renders footer address improperly, main title font is also different
 
-+ custom menu doesn't render the same as default nav menu
-
-+ determine strategy for adding generic images on pages
-
 + change theme colors, through admin 
-
-+ how to change images through admin
 
 + figure out of how to change fonts through admin
 
-+ custom post types for "Meet the Staff"
-
-+ rename script.js to nav.js
++ pages appear further down (more padding on top) than the mockups
