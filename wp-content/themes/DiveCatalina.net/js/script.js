@@ -1,15 +1,13 @@
 var ww = document.body.clientWidth;
 
-jQuery(document).ready(function() {
-	alert("testing");
-	
+
+
+jQuery(document).ready( function() {
 	jQuery(".nav li a").each(function() {
 		if (jQuery(this).next().length > 0) {
 			jQuery(this).addClass("parent");
 		}
 	});
-	
-	
 	
 	jQuery(".toggleMenu").click(function(e) {
 		e.preventDefault();
