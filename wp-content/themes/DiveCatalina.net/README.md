@@ -17,3 +17,11 @@ TODO
 + custom menu doesn't render the same as default nav menu
 
 + determine strategy for adding generic images on pages
+
++ change theme colors, through admin 
+
++ how to change images through admin
+
++ figure out of how to change fonts through admin
+
++ custom post types for "Meet the Staff"

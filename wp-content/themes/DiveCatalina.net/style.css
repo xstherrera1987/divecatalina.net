@@ -1,21 +1,16 @@
-/*   
-Theme Name: DiveCatalina.net
-Description: theme for divecatalina.net
-Author: Team GREP
-Version: 1.0
+/* 
+Project Name: Dive Catalina.net
+Author: Team Grep
 */
 
+a 			{ text-decoration: none; color: #0086AB;}
+a:hover 	{ text-decoration: underline;}
 
-/* from mock2 */
-
-a		{ text-decoration: none; color: #2098DA;}
-a:hover		{ color: #436fa2;}
- 
 .clear		{clear: both;}
-.alignleft	{float: left; margin-right: 10px;}
+.alignleft 	{float: left; margin-right: 10px;}
 .alignright	{float: right; margin-left: 10px;}
 .img-center	{display: block; margin: 0 auto;}
-.center		{text-align: center;}
+.center 	{text-align: center;}
 
 /************ WEB FONTS ************/
 @font-face{ 
@@ -51,6 +46,7 @@ a:hover		{ color: #436fa2;}
     font-style: normal;
 }
 
+
 @font-face {
     font-family: 'sanchez-regular';
     src: url('fonts/sanchez/Sanchez-Regular-webfont.eot');
@@ -63,39 +59,41 @@ a:hover		{ color: #436fa2;}
 
 }
 
-/************ MAIN ************/
-
-body {
-	background: #cacaca; /*changed*/
-	font-family: 'sanchez-regular', Garamond, serif;
-	font-size: 16px;
-	color: #343434;
+/************ NAV ************/
+.toggleMenu {
+    display: none;
+    padding: 5px 15px;
+    font-family: 'nexa-bold-regular', Arial, sans-serif;
+	font-size: 18px;
+	color: #0086AB;	
+	border: 1px solid #999999;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#4d4d4d', endColorstr = '#000000');
+	/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+	/*Element must have a height (not auto)*/
+	/*All filters must be placed together*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#4d4d4d', endColorstr = '#000000')";
+	/*Element must have a height (not auto)*/
+	/*All filters must be placed together*/
+	background-image: -moz-linear-gradient(top, #4d4d4d, #000000);
+	background-image: -ms-linear-gradient(top, #4d4d4d, #000000);
+	background-image: -o-linear-gradient(top, #4d4d4d, #000000);
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#4d4d4d), to(#000000));
+	background-image: -webkit-linear-gradient(top, #4d4d4d, #000000);
+	background-image: linear-gradient(top, #4d4d4d, #000000);
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	/*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
+	/*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
+	margin: 10px 0 0 5px;
 }
 
-#container {
-	margin: 0 auto;
-	max-width: 980px;
-	width: 90%;
-	padding: 20px 10px;
-}
+.toggleMenu:hover { color: #fff;}
 
-header h1 a { 
-	float: left;
-	font-family: 'nexa-bold-regular', Arial, sans-serif;
-	font-size: 48px;
-	color: #436fa2;
-}
-
-h1 a:hover { color: #000;}
-
-header h2 { 
-	float: right;
-	font-family: 'graphein-pro-italic', Arial, sans-serif;
-	font-size: 36px;
-	padding-top:10px;
-}
-
-/* NAV styles */
 .nav {
     list-style: none;
      *zoom: 1;
@@ -123,47 +121,61 @@ header h2 {
 	/*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
 	/*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
 }
-.nav:before, .nav:after {
+
+.nav:before, 
+.nav:after {
     content: " "; 
     display: table; 
 }
+
 .nav:after {
     clear: both;
 }
+
 .nav ul {
     list-style: none;
     width: 9em;
 }
+
 .nav a {
 	font-family: 'nexa-bold-regular', Arial, sans-serif;
 	font-size: 18px;
 	color: #0086AB;	
 	padding: 10px 15px;
 }
+
 .nav a:hover {
 	color: #fff;
+	text-decoration: none;
 }
+
 .nav li {
     position: relative;
 }
+
 .nav > li {
     float: left;
 }
+
 .nav > li > .parent {
     background-image: url("../images/downArrow.png");
     background-repeat: no-repeat;
     background-position: right;
 }
+
 .nav > li > a {
     display: block;
 }
+
 .nav li ul {
     position: absolute;
     left: -9999px;
 }
+
 .nav > li.hover > ul {
     left: 0;
 }
+
 .nav li li a {
     display: block;
     position: relative;
@@ -171,113 +183,238 @@ header h2 {
 	background: #333333;
 	border-bottom: 1px solid #000;
 }
-/* END nav rules */
+
+/************ MAIN ************/
+body {
+	background: #cacaca;
+	font-family: 'sanchez-regular', Garamond, serif;
+	font-size: 16px;
+	color: #222222;
+	
+}
+
+#container {
+	margin: 0 auto;
+	max-width: 980px;
+	width: 90%;
+	padding: 20px 10px;
+}
+
+header h1 a { 
+	float: left;
+	font-family: 'nexa-bold-regular', Arial, sans-serif;
+	font-size: 48px;
+	color: #436fa2;
+}
+
+header h1 a:hover { 
+	color: #000;
+	text-decoration: none;
+}
+
+header h2 { 
+	float: right;
+	font-family: 'graphein-pro-italic', Arial, sans-serif;
+	font-size: 36px;
+	padding: 10px;
+}
+
+#content {
+	margin-bottom: 50px;
+}
 
 #content h1 {
 	font-family: 'nexa-bold-regular', Arial, sans-serif;
 	font-size: 24px;
-	color: #436fa2;
+	color: #0086AB;
 	padding-bottom: 10px;
-}
-
-#slideshow { 
-	position: relative;
-	margin: 20px auto;
-	max-width: 755px;
-	height: 256px;
-}
-
-#slideshow img {
-	position: absolute;
-	left: 50%;
-	width: 100%;
-	margin-left: -50%;
-	height: auto;
 }
 
 #main-content { padding: 20px 50px; text-align: justify;}
 #sub-content { padding: 20px 50px; text-align: justify;}
 
-ul {
+#content ul {
 	padding: 0px 50px;
 }
 
-footer { padding: 5px; text-align: center; font-size: 10px;}
+/************ FOOTER ************/
+footer { 
+	height: 100px;
+	font-size: 12px;
+	margin-bottom: 5%;
+}
+
+.footerLinks {
+	float: left;
+	padding: 2% 0;
+	margin: 0 1.5%;
+}
+
+.footerLinks li {
+	list-style: none;
+	text-transform: uppercase;
+}
+
+.subLinks a {
+	text-transform: none;
+}
+
+#footerContact {
+	float: left;
+	border-left: 1px solid #414141;
+	margin-top: 2%;
+	padding: 0 2%;
+}
+
+/************ INDEX ************/
+#slideshow { 
+	position: relative;
+    margin: 20px auto;
+    max-width: 755px;
+    height: 256px;
+}
+
+#slideshow img {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    margin-left: -50%;
+    height: auto;
+}
 
 /************ ABOUT US ************/
-.about-sig {
+#about-sig {
 	font-size: 24px;
 	font-style: italic;
 }
 
 #about-img { float:left; margin-right: 10px;}
 
-.staff-img {
-	height: 150px;
-	width: 120px;
+/************ SERVICES PAGES ************/
+.servicesleft-img { float:left; margin-right: 10px;}
+.servicesright-img { float:right; margin-left: 10px;}
+
+/************ CONTACT ************/
+#reservation-form img {
+	margin: 50px 50px 10px 0;
+}
+
+#contact-info {
+	float: right;
+}
+
+#form {
 	float: left;
-	background: #cbcbcb;
-	margin: 10px;
+	margin: 50px 0 0 50px;
+	color:#fff;
+	width:398px; /* customize width, this form have fluid layout */
 }
 
-/************ SERVICES ************/
-
-#dive-services, #dive-classes {padding-bottom: 20px;}
-
-.services-offered {
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
+#form h3 {
+	-moz-border-top-left-radius: 4px 4px;
+	-webkit-border-top-left-radius: 4px 4px;
+	border-top-left-radius: 4px 4px;
+	-moz-border-top-right-radius: 4px 4px;
+	-webkit-border-top-right-radius: 4px 4px;
+	border-top-right-radius: 4px 4px;
 	/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
-	-moz-box-shadow: 0px 0px 5px #000000;
-	-webkit-box-shadow: 0px 0px 5px #000000;
-	box-shadow: 0px 0px 5px #000000;
-	/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
-	
-	display: inline-block;
-	left;
-	text-align: left;
-	width: 271px;
-	height: 450px;
-	margin: 20px 5px;
-	padding: 10px;
+	margin:0;
+	background:#0086AB;	
+	color:#fff;
+	font-size:20px;
+	border:1px solid #0086AB;
+	border-bottom:none;
+	padding: 10px 20px;
+}		
+
+#form fieldset {
+	-moz-border-bottom-left-radius: 4px 4px;
+	-webkit-border-bottom-left-radius: 4px 4px;
+	border-bottom-left-radius: 4px 4px;
+	-moz-border-bottom-right-radius: 4px 4px;
+	-webkit-border-bottom-right-radius: 4px 4px;
+	border-bottom-right-radius: 4px 4px;
+	/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+	margin:0;
+	padding:0;
+	border:none;	
+	border-top:3px solid #222222;
+	background:#222222;
+	padding-bottom:1em;
+}		
+
+#form legend { display:none; } 	
+#form p { margin:.5em 20px; }	
+#form label { display:block; }	
+
+#form input, #form textarea {		
+	width:350px;
+	border:1px solid #111;
+	background:#4d4d4d;
+	padding:5px 3px;
+	color:#fff;
+}		
+
+#form textarea {
+	height:125px;
+	overflow:auto;
+}					
+
+#form p.submit {
+	text-align:right;
+}	
+
+#form button {
+	padding:0 20px;
+	height:32px;
+	line-height:32px;		
+	border:1px solid #0086AB;
+	background: #0086AB;
+	color:#fff;
+	cursor:pointer;		
+	text-align:center;		
+}		
+
+textarea { resize: none;}
+
+/*********** Gallery ************/
+#page {
+    position: relative;
+}
+#images {
+    float: left;
+    width: 970px
+}
+.gallery {
+    width: 980px;
+    cursor: default;
+    list-style:none;
+}
+.gallery img {
+	background: #fff;
+	vertical-align: top;
+	width: 150px;
+	height: 100px;
+}
+.gallery li {
+	background: #4d4d4d;
+	border-style: none;
+    border-width: 2.5px;
+	color: inherit;
+	display: inline;
+	float: left;
+	margin: 3px;
+	padding: 5px;
+	position: relative;
 }
 
-.services-offered h1 {
-	text-align: center;
-	border-bottom: solid 5px #436fa2;
-	margin-bottom: 10px;
-}
 
-.services-offered a {
-	float: right;
-}
 
-.classes-offered {
-	display: inline-block;
-	left;
-	text-align: left;
-	background: #e2e2e2;
-	width: 270px;
-	height: 190px;
-	margin: 10px;
-	border: dashed 2px #cbcbcb;
-	padding: 10px;
-}
 
-.classes-offered h1 {
-	border-bottom: solid 5px #436fa2;
-	margin-bottom: 10px;
-}
 
-.classes-offered a  {
-	float: right;
-}
 
-#rental {
-	padding: 20px;
-}
 
-#rental ul {
-	padding: 40px;
-}
+
+
+
+
