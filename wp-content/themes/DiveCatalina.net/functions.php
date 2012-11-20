@@ -79,6 +79,21 @@ function build_navmenu2() {
 	wp_list_pages( $args );
 }
 
+// build nav for footer (each <li> in a <ul>)
+function build_navmenu3() {
+	$args = array(
+	'depth'        => 2,
+	'sort_column'  => 'menu_order, post_title',
+	'link_before'  => '<p class="bottomnav">',
+	'link_after'   => '</p>',
+	'title_li'     => '',
+	'post_type'    => 'page',
+    'post_status'  => 'publish'
+	);
+	
+	wp_list_pages( $args );
+}
+
 // build footer navigation
 function minnav() {
 	
