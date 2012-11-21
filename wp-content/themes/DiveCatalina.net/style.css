@@ -244,7 +244,7 @@ footer {
 	margin-bottom: 5%;
 }
 
-.bottomnav {
+.bottomnav-ul li {
 	float: left;
 	padding: 2% 0;
 	margin: 0 1.5%;
@@ -255,7 +255,7 @@ footer li {
 	text-transform: uppercase;
 }
 
-.children {
+.sub-menu li {
 	text-transform: none;
 }
 
