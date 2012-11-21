@@ -89,28 +89,4 @@ function media_custom_columns($column_name, $id) {
 	}
 }
 
-/*
-// add change color functionality
-add_action('admin_menu', 'themeoptions_admin_menu');
-function themeoptions_admin_menu() {
-	add_theme_page('Change Color', 'Colors', 'manage_options', 'plugin', 'color_pick_page');
-}
-
-function color_pick_page() {
-	if ($_POST['updated_posttypeoptions'] == 'true') { color_option_update(); }
-?>
-	<div class="wrap">
-        <div id="icon-themes" class="icon32"><br /></div>
-        <h2>Styles</h2>
-        <form method="POST" action="">
-            <input type="hidden" name="update_posttypeoptions" value="true" />
-            <p><input type="submit" name="search" value="Update Options" class="button" /></p>
-        </form>
- 
-    </div>
- 
-    <?php
- }
- */
-
 ?>
