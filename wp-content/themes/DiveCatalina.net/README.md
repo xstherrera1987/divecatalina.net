@@ -12,6 +12,4 @@ TODO
 
 + change theme colors, through admin 
 
-+ figure out of how to change fonts through admin
-
 + pages appear further down (more padding on top) than the mockups
