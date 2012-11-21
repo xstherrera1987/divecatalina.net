@@ -1,5 +1,17 @@
     <footer>
-		<?php build_navmenu3(); ?>
+    	<ul class="bottomnav-ul">
+		<?php
+		wp_nav_menu(array(
+			'items_wrap' => '%3$s', 
+			'depth' => 2, 
+			'theme_location' => 'mainnav-menu', 
+			'container' => '',
+			'link_before'  => '<p class="bottomnav">',
+			'link_after'   => '</p>',
+			'fallback_cb' => 'build_navmenu3'
+		));
+		?>
+		</ul>
 		
 		<div id="footerContact">
 			<p id="address"> Developer Drive <br/>
