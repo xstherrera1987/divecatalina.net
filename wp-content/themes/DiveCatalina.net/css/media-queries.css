@@ -61,8 +61,11 @@
 
     /************ SERVICES ************/
 	.services-offered { margin: 10px; height: 370px; }
-    .classes-offered {height: 170px}}
+    .classes-offered {height: 170px;}
 
+    /************ FOOTER ************/
+    .bottomnav-ul li { float: none; margin: 0 10px; }
+    #footerContact {display: none;}
 }
 
 @media screen and (max-width: 740px) 	{}
