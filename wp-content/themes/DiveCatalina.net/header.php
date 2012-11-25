@@ -52,7 +52,7 @@
 <body>
 <div id="container">
 	<header>
-		<h1><a href="index.html"><?php bloginfo('name'); ?></a></h1>
+		<h1><a href="index.php"><?php bloginfo('name'); ?></a></h1>
 		<h2><?php bloginfo('description');?></h2>
 		<div class = "clear"></div>
 
