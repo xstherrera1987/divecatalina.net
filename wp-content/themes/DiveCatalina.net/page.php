@@ -5,11 +5,13 @@
  */
 get_header(); 
 ?>
-<div id="content">
-	<?php
-	the_post();
-	the_content();
-	?>
+<div id="container">
+	<div id="content">
+		<?php
+			the_post();
+			the_content();
+		?>
+	</div>
 </div>
 <?
 get_sidebar();

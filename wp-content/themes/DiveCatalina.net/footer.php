@@ -1,3 +1,4 @@
+	<hr/>
     <footer>
     	<ul class="bottomnav-ul">
 		<?php

@@ -17,3 +17,5 @@ ADDED 12/24/12
 + Double check color and font changer.
 + Make a cheat sheet for color and font changer.
 + I need a walkthrough on the templates (2 Default, 1 single page) - JEM
++ We don't need a template for each page, could just use default on others
++ front-page.php overwrites the home page. Do we want that? 
