@@ -2,7 +2,7 @@
 /**
    Template Name:  AboutUs + Meet the Staff
  * shows this page and subpages
- */
+ */ 
 get_header(); 
 ?>
 <div id="container">
@@ -20,8 +20,8 @@ get_header();
 	$content = apply_filters( 'the_content', $content );
 	
 	// Meet the Staff content
-	echo '<hr />';
-	echo '<h2>'.$title.'</h2>';
+	echo '<br/><hr/><br/>';
+	echo '<h1>'.$title.'</h1>';
 	echo '<div class="subpage">'.$content.'</div>';
 ?>
     </div>

@@ -1,6 +1,6 @@
 <?php 
 /**
-   Template Name:  HOME
+   Template Name:  Home
  * this one is used on the HOME page
  */
 get_header(); 
