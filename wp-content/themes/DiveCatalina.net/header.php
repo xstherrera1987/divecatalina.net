@@ -7,10 +7,9 @@
 		// The Page's Title
 		if ( is_home() || is_front_page() ) {
 			bloginfo('name');
-			echo " ".
-	 		bloginfo('description');
 		} else {
-			 single_post_title();
+			bloginfo('name');
+			single_post_title(' | ');
 		}
 	?>
 	</title>
