@@ -14,5 +14,6 @@ ADDED 12/24/12
 + Double check color and font changer.
 + Make a cheat sheet for color and font changer.
 + front-page.php overwrites the home page. Do we want that? 
-+ Fix image link on Reservations page
++ Fix image link on Reservations page to make it dynamic
 + Fix Reservation form --> PHP not working yet.
++ My slideshow not working yet - JEM
