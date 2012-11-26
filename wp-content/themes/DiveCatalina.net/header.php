@@ -72,4 +72,5 @@
 				 */
 	        ?>
 		</ul>
+		<?php wp_head(); ?>
 	</header>

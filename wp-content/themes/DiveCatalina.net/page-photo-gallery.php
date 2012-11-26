@@ -11,8 +11,8 @@ get_header();?>
 	</script>
 	
 	<div id="content">
-		<div id="gallery">
-			<?php
+    <div id="gallery">
+        <?php
 				// pull in all images attached to this post
 				$args = array('post_type' => 'attachment', 'post_mime_type' => 'image', 'post_parent' => $post->ID);
 				$images = get_posts( $args );
@@ -25,7 +25,7 @@ get_header();?>
 					echo '<img src="'.$url.'" height="'.$height.'" width="'.$width.'" />';
 				}
 			?>
-		</div>
+      </div>
 	</div>
 
 <?php get_footer(); ?>
