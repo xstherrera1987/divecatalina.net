@@ -43,7 +43,7 @@
 		<script type="text/javascript" defer='defer' 
 			src="<?php bloginfo('template_directory');?>/js/slideshow.js">
 		</script>
-	<? endif; ?>
+	<?php endif; ?>
 	
 	<?php /* more WP metadata, stylesheets  */ ?>
     <?php wp_head(); ?>
