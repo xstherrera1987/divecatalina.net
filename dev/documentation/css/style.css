@@ -1,0 +1,235 @@
+/*
+	Project: Website Documentation for DC
+	Author: Team GREP
+*/
+
+/** Web Fonts: Consistent with divecatalina.net **/
+@font-face{ 
+	font-family: 'nexa-bold-regular';
+    src: url('nexa-bold-regular/Nexa_Free_Bold-webfont.eot');
+    src: url('nexa-bold-regular/Nexa_Free_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('nexa-bold-regular/Nexa_Free_Bold-webfont.woff') format('woff'),
+         url('nexa-bold-regular/Nexa_Free_Bold-webfont.ttf') format('truetype'),
+         url('nexa-bold-regular/Nexa_Free_Bold-webfont.svg#nexa-bold-regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'nexa-light-regular';
+    src: url('nexa_light/Nexa_Free_Light-webfont.eot');
+    src: url('nexa_light/Nexa_Free_Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('nexa_light/Nexa_Free_Light-webfont.woff') format('woff'),
+         url('nexa_light/Nexa_Free_Light-webfont.ttf') format('truetype'),
+         url('nexa_light/Nexa_Free_Light-webfont.svg#nexa-light-regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'graphein-pro-italic';
+    src: url('graphein-pro-italic/GrapheinPro-Italic-webfont.eot');
+    src: url('graphein-pro-italic/GrapheinPro-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('graphein-pro-italic/GrapheinPro-Italic-webfont.woff') format('woff'),
+         url('graphein-pro-italic/GrapheinPro-Italic-webfont.ttf') format('truetype'),
+         url('graphein-pro-italic/GrapheinPro-Italic-webfont.svg#GrapheinProBookItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sanchez-regular';
+    src: url('sanchez/Sanchez-Regular-webfont.eot');
+    src: url('sanchez/Sanchez-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sanchez/Sanchez-Regular-webfont.woff') format('woff'),
+         url('sanchez/Sanchez-Regular-webfont.ttf') format('truetype'),
+         url('sanchez/Sanchez-Regular-webfont.svg#sanchezregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/** Element/tag selectors **/
+ul, ol, dl, li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+/*consistent on any browsers*/
+h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    padding-left: 40px;
+    font-size: ;
+    padding-top: 0px;
+}
+a img {
+    border: none;
+}/*removes default border around the links on some browsers*/
+.clear {
+    clear: both;
+}
+/** Main **/
+body {
+    font-family: 'sanchez-regular', Garamond, serif;
+    font-size: 16px;
+    background-color: #cacaca;
+    margin: 0;
+    padding: 0;
+    color: #222222;
+    height: auto;
+}
+/* Links */
+a {
+    color: #436FA2;
+    text-decoration: none;
+}
+a:visited {
+	color: #424242;
+	text-decoration: none;
+}
+
+a:hover, a:active, a:focus { 
+	text-decoration: none;
+}
+/*.container*/
+.container {
+    width: 881px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+header h1 a, a:visited{
+    float: left;
+    font-family: 'nexa-bold-regular', Arial, sans-serif;
+    font-size: 45px;
+    color: #436fa2;
+    padding-bottom: 15px;
+    clear: none;
+}
+/** Sidebar **/
+.sidebar {
+    float: left;
+    width: 190px;
+    height: auto;
+    padding-top: 20px;
+    margin-left: 0px;
+}
+/** Content **/
+.content {
+    width: 668px;
+    float: left;
+    height: 2356px;
+    margin-right: 0px;
+}
+.content h1 {
+    font-family: 'nexa-bold-regular', Arial, sans-serif;
+    font-size: 22px;
+    color: #424242;
+    padding-left: 40px;
+    padding-bottom: 0px;
+}
+.content h2 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-variant: normal;
+    text-transform: inherit;
+    color: #008080;
+    margin-bottom: 0px;
+    padding-bottom: 15px;
+}
+/* .content list properties */
+.content ul {
+    font: inherit;
+    padding: 0px 15px 15px 55px;
+    list-style-type: none;
+}
+.content li {
+    font: inherit;
+    padding-bottom: 10px;
+    height: auto;
+}
+.content ol {
+    padding: 0 15px 15px 90px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+/** Scroll:used inside the content **/
+.scroll{
+	display:block;
+	border: hidden;
+	padding:5px;
+	margin-top:5px;
+	width:300px;
+	height:50px;
+	overflow:auto;
+}
+
+/** Navigation and styles **/
+ul.nav {
+	list-style: none; /*no marker*/
+	border-bottom: 1px solid #424242;
+    border-left: 1px solid #424242;
+    border-right: 1px solid #424242;
+	margin-bottom: 15px;
+    background-color: #99B2B7;
+}
+ul.nav li {
+    border-top: 1px solid #424242;
+    padding: 5px 5px 5px 15px;
+    font-weight: normal;
+    font: small-caption;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+ul.nav ol {
+    padding: 2px 0 0 20px;
+    font-weight: normal;
+    font: small-caption;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #424242;
+    width: auto;
+    background-color: #99B2B7;
+    padding-bottom: 5px;
+    font-style: italic;
+}
+ul.nav a, ul.nav a:active{
+    border: none;
+    display: block; /*selects the whole area*/;
+    width: auto; /*for IE*/;
+    text-decoration: none;
+    font: small-caption;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #424242;
+    font-style: inherit;
+    font-weight: normal;
+    height: auto;
+    background-color: #99B2B7;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
+	color: #FFF;
+}
+/** Footer **/
+footer {
+    padding: 5px;
+    text-align: center;
+    font-size: 10px;
+    max-width: 577px;
+    height: 12px;
+}
+#footer-link {padding:10px; font-size:12px}
+.style {
+    color: #FFFF66;
+}
+.tablecontent {
+    width: 26px;
+}
+.auto-style2 {
+    width: 245px;
+}
+.auto-style3 {
+    font-size: small;
+}
+.auto-style4 {
+    width: 20px;
+}
+.auto-style5 {
+    color: #FF9966;
+    font-size: 20px;
+}
