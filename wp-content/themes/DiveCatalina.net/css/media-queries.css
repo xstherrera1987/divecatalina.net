@@ -1,75 +1,4 @@
-@media screen and (orientation: portrait) 	{
-    /************ NAV ************/
-    .active {
-        display: block;
-    }
-
-    .nav {
-        background: #222222;
-        border-bottom: 1px solid #000;
-        margin: 0 5px;
-    }
-
-    .nav > li {
-        float: none;
-    }
-    .nav > li > .parent {
-        background-position: 95% 50%;
-    }
-    .nav li li .parent {
-        background-image: url("images/downArrow.png");
-        background-repeat: no-repeat;
-        background-position: 95% 50%;
-    }
-    .nav ul {
-        display: block;
-        width: 100%;
-    }
-   .nav > li.hover > ul {
-        position: static;
-    }
-
-    /************ MAIN ************/
-    header h1, header h2 { text-align: center;}
-
-	header h1 a { float: none; font-size: 36px; }
-	header h2 { float: none; font-size: 18px; padding: 0;}
-
-	body { font-size: 13px; }
-
-    #slideshow { 
-        height: 120px;
-    }
-
-    #slideshow img {
-        position: absolute;
-        left: 50%;
-        width: 96%;
-        margin-left: -48%;
-        height: auto;
-    }
-
-	#main-content, #sub-content { padding: 10px;}
-
-    /************ ABOUT US ************/
-    #about-img { float: none; display: block; margin: 10px auto;}
-	#about-sig {font-size: 18px;}
-
-    /************ SERVICES ************/
-	.servicesleft-img { float: none; display: block; margin: 10px auto;}
-    .servicesright-img { float: none; display: block; margin: 10px auto;}
-
-    /************ SERVICES ************/
-    #reservation-form img { display:block; margin: 10px auto; width: 90%;}
-    #form {float: none;  margin: 0 auto;}
-    #form, #form input, #form textarea { width: 90%; padding:5px 13px;}
-    #form p { margin:.5em 20px; }   
-    #contact-info {float: none; margin: 0 auto;}
-    #contact-info p {margin: 20px;}
-
-}
-
-@media screen and (orientation: landscape)    {
+@media screen and (max-width: 478px)    {
     /************ NAV ************/
     .active {
         display: block;
@@ -129,8 +58,7 @@
     /************ SERVICES ************/
     .servicesleft-img { float: none; display: block; margin: 10px auto;}
     .servicesright-img { float: none; display: block; margin: 10px auto;}
-
-    /************ SERVICES ************/
+    
     #reservation-form img { display:block; margin: 10px auto; width: 90%;}
     #form {float: none;  margin: 0 auto;}
     #form, #form input, #form textarea { width: 90%; padding:5px 13px;}
@@ -138,8 +66,135 @@
     #contact-info {float: none; margin: 0 auto;}
     #contact-info p {margin: 20px;}
 
+    /************ FOOTER ************/
+    .bottomnav-ul li { float: none; margin: 0 10px; }
+    #footerContact {display: none;}
+
 }
 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+    /************ NAV ************/
+    .active {
+        display: block;
+    }
 
-@media screen and (max-width: 480px) 	{}
+    .nav {
+        background: #222222;
+        border-bottom: 1px solid #000;
+        margin: 0 5px;
+    }
 
+    .nav > li {
+        float: none;
+    }
+    .nav > li > .parent {
+        background-position: 95% 50%;
+    }
+    .nav li li .parent {
+        background-image: url("images/downArrow.png");
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+    .nav ul {
+        display: block;
+        width: 100%;
+    }
+   .nav > li.hover > ul {
+        position: static;
+    }
+
+    /************ MAIN ************/
+    header h1, header h2 { text-align: center;}
+
+    header h1 a { float: none; font-size: 36px; }
+    header h2 { float: none; font-size: 18px; padding: 0;}
+
+    body { font-size: 13px; }
+
+    #slideshow { 
+        height: 120px;
+    }
+
+    #slideshow img {
+        position: absolute;
+        left: 50%;
+        width: 96%;
+        margin-left: -48%;
+        height: auto;
+    }
+
+   #main-content, #sub-content { padding: 10px;}
+
+    /************ ABOUT US ************/
+    #about-img { float: none; display: block; margin: 10px auto;}
+    #about-sig {font-size: 18px;}
+
+    /************ SERVICES ************/
+    .servicesleft-img { float: none; display: block; margin: 10px auto;}
+    .servicesright-img { float: none; display: block; margin: 10px auto;}
+    
+    #reservation-form img { display:block; margin: 10px auto; width: 90%;}
+    #form {float: none;  margin: 0 auto;}
+    #form, #form input, #form textarea { width: 90%; padding:5px 13px;}
+    #form p { margin:.5em 20px; }   
+    #contact-info {float: none; margin: 0 auto;}
+    #contact-info p {margin: 20px;}
+
+    /************ FOOTER ************/
+    .bottomnav-ul li { float: none; margin: 0 10px; }
+    #footerContact {display: none;}
+}
+ 
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* Styles */
+}
+ 
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+}
+ 
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+ 
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+ 
+/* The New iPad (iPad 3) ----------- */
+@media only screen
+and (min-device-width: 1536px) 
+and (max-device-width: 2048px) 
+and (-webkit-min-device-pixel-ratio: 2) {
+/* Styles */
+}
+ 
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}

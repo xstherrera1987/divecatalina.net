@@ -1,0 +1,84 @@
+/*
+CSS for Stone Divers 2 site
+*/
+
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  }
+
+#frame {
+  width: 600px;
+  padding: 10px 0 0 0;
+  left: 15px;
+  position: relative;
+  } 
+  
+  
+ 
+#pics {
+  width: 675px;
+  padding: 10px 0 0 0;
+  left: 30px;
+  position: relative;
+  }
+  
+#enroll {
+   left: 80px;
+   position: relative;
+   } 
+
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 36pt;
+  font-weight: strong;
+  color: #162C3D
+  }
+
+h2 {
+  font-family: Arial, sans-serif;
+  font-size: 16pt;
+  font-weight: strong;
+  color: #162C3D;
+  }
+  
+h3 {
+  font-family: Arial, sans-serif;
+  font-size: 14pt;
+  font-weight: strong;
+  color: #162C3D;
+  }
+  
+ h4 {
+  font-family: Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: strong;
+  color: #162C3D;
+  }
+  
+ h5 {
+  font-family: Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: strong;
+  color: #4E4E4E;
+  }
+  
+p {
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: strong;
+  color: #292929;
+  }
+  
+a {
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: strong;
+  font-style: italic;
+  color: #162C3D;
+  }
+

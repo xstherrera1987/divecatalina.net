@@ -1,0 +1,270 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+		  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>Dive Catalina - Offering NAUI Scuba Diving Lessons and Introductory Dives in the City of Avalon on Catalina Island</title>
+  <link rel="shortcut icon" href="favicon.ico" /> 
+  <link rel="icon" href="http://www.divecatalina.net/favicon.ico" type="image/vnd.microsoft.icon" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link href="style1.css" rel="stylesheet" type="text/css"/>
+  <meta name="DESCRIPTION" content="SCUBA DIVING instruction courses in Avalon, CA">
+  <meta name="KEYWORDS" content="SCUBA, ron moore, naui, catalina island, dive catalina island, scuba dive catalina island, southern california diving, diving, dive, scuba diving, underwater, snorkeling, guided dive tours, guided snorkel tours, dive travel, padi dive shop catalina island, naui instructor's course, avalon, casino point dive park, california, giant black sea bass, underwater cinematography, underwater dvd, travel, catalina dive shop, catalina island snorkel & scuba,  scuba luv, snorkel & scuba, diver's supply"/>
+  <meta name="robots" content="all"/>
+  <meta name="Revisit-after" content="7 days"/>
+  <meta name="author" content="ron moore"/>
+  <meta name="distribution" content="World Wide Web"/>
+  <meta name="location" content="W.W.W."/>
+  <meta name="Providing NAUI Scuba Diving Lessons in the City of Avalon on Catalina Island" content="NAUI, National, Association, Underwater, Instructors, Scuba, Diving, Avalon, Catalina, Casino Point, California, Two Harbors">
+  
+<script type="text/javascript">
+ 
+var fadeimages=new Array()
+//SET IMAGE PATHS. Extend or contract array as needed
+fadeimages[0]=["index_gallery/1.jpg", "", ""] //plain image syntax
+fadeimages[1]=["index_gallery/2.jpg", "", ""] 
+fadeimages[2]=["index_gallery/3.jpg", "", ""]  
+fadeimages[3]=["index_gallery/4.jpg", "", ""]  
+fadeimages[4]=["index_gallery/5.jpg", "", ""] 
+fadeimages[5]=["index_gallery/6.jpg", "", ""] 
+fadeimages[6]=["index_gallery/7.jpg", "", ""]
+fadeimages[7]=["index_gallery/8.jpg", "", ""] 
+fadeimages[8]=["index_gallery/9.jpg", "", ""]  
+fadeimages[9]=["index_gallery/10.jpg", "", ""] 
+fadeimages[10]=["index_gallery/11.jpg", "", ""] 
+fadeimages[11]=["index_gallery/12.jpg", "", ""] 
+fadeimages[12]=["index_gallery/13.jpg", "", ""]  
+fadeimages[13]=["index_gallery/14.jpg", "", ""]  
+fadeimages[14]=["index_gallery/15.jpg", "", ""] 
+fadeimages[15]=["index_gallery/16.jpg", "", ""] 
+fadeimages[16]=["index_gallery/17.jpg", "", ""]
+fadeimages[17]=["index_gallery/18.jpg", "", ""] 
+fadeimages[18]=["index_gallery/19.jpg", "", ""]  
+fadeimages[19]=["index_gallery/20.jpg", "", ""] 
+fadeimages[20]=["index_gallery/21.jpg", "", ""] 
+fadeimages[21]=["index_gallery/22.jpg", "", ""] 
+fadeimages[22]=["index_gallery/23.jpg", "", ""]  
+fadeimages[23]=["index_gallery/24.jpg", "", ""]
+ 
+ 
+var fadebgcolor="white"
+
+////NO need to edit beyond here/////////////
+ 
+var fadearray=new Array() //array to cache fadeshow instances
+var fadeclear=new Array() //array to cache corresponding clearinterval pointers
+ 
+var dom=(document.getElementById) //modern dom browsers
+var iebrowser=document.all
+ 
+function fadeshow(theimages, fadewidth, fadeheight, borderwidth, delay, pause, displayorder){
+this.pausecheck=pause
+this.mouseovercheck=0
+this.delay=delay
+this.degree=10 //initial opacity degree (10%)
+this.curimageindex=0
+this.nextimageindex=1
+fadearray[fadearray.length]=this
+this.slideshowid=fadearray.length-1
+this.canvasbase="canvas"+this.slideshowid
+this.curcanvas=this.canvasbase+"_0"
+if (typeof displayorder!="undefined")
+theimages.sort(function() {return 0.5 - Math.random();}) //thanks to Mike (aka Mwinter) :)
+this.theimages=theimages
+this.imageborder=parseInt(borderwidth)
+this.postimages=new Array() //preload images
+for (p=0;p<theimages.length;p++){
+this.postimages[p]=new Image()
+this.postimages[p].src=theimages[p][0]
+}
+ 
+var fadewidth=fadewidth+this.imageborder*2
+var fadeheight=fadeheight+this.imageborder*2
+ 
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers (ie: Firefox)
+document.write('<div id="master'+this.slideshowid+'" style="position:relative;width:'+fadewidth+'px;height:'+fadeheight+'px;overflow:hidden;"><div id="'+this.canvasbase+'_0" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div><div id="'+this.canvasbase+'_1" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div></div>')
+else
+document.write('<div><img name="defaultslide'+this.slideshowid+'" src="'+this.postimages[0].src+'"></div>')
+ 
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers such as Firefox
+this.startit()
+else{
+this.curimageindex++
+setInterval("fadearray["+this.slideshowid+"].rotateimage()", this.delay)
+}
+}
+
+function fadepic(obj){
+if (obj.degree<100){
+obj.degree+=10
+if (obj.tempobj.filters&&obj.tempobj.filters[0]){
+if (typeof obj.tempobj.filters[0].opacity=="number") //if IE6+
+obj.tempobj.filters[0].opacity=obj.degree
+else //else if IE5.5-
+obj.tempobj.style.filter="alpha(opacity="+obj.degree+")"
+}
+else if (obj.tempobj.style.MozOpacity)
+obj.tempobj.style.MozOpacity=obj.degree/101
+else if (obj.tempobj.style.KhtmlOpacity)
+obj.tempobj.style.KhtmlOpacity=obj.degree/100
+else if (obj.tempobj.style.opacity&&!obj.tempobj.filters)
+obj.tempobj.style.opacity=obj.degree/101
+}
+else{
+clearInterval(fadeclear[obj.slideshowid])
+obj.nextcanvas=(obj.curcanvas==obj.canvasbase+"_0")? obj.canvasbase+"_0" : obj.canvasbase+"_1"
+obj.tempobj=iebrowser? iebrowser[obj.nextcanvas] : document.getElementById(obj.nextcanvas)
+obj.populateslide(obj.tempobj, obj.nextimageindex)
+obj.nextimageindex=(obj.nextimageindex<obj.postimages.length-1)? obj.nextimageindex+1 : 0
+setTimeout("fadearray["+obj.slideshowid+"].rotateimage()", obj.delay)
+}
+}
+ 
+fadeshow.prototype.populateslide=function(picobj, picindex){
+var slideHTML=""
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML='<a href="'+this.theimages[picindex][1]+'" target="'+this.theimages[picindex][2]+'">'
+slideHTML+='<img src="'+this.postimages[picindex].src+'" border="'+this.imageborder+'px">'
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML+='</a>'
+picobj.innerHTML=slideHTML
+}
+ 
+ 
+fadeshow.prototype.rotateimage=function(){
+if (this.pausecheck==1) //if pause onMouseover enabled, cache object
+var cacheobj=this
+if (this.mouseovercheck==1)
+setTimeout(function(){cacheobj.rotateimage()}, 100)
+else if (iebrowser&&dom||dom){
+this.resetit()
+var crossobj=this.tempobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+crossobj.style.zIndex++
+fadeclear[this.slideshowid]=setInterval("fadepic(fadearray["+this.slideshowid+"])",50)
+this.curcanvas=(this.curcanvas==this.canvasbase+"_0")? this.canvasbase+"_1" : this.canvasbase+"_0"
+}
+else{
+var ns4imgobj=document.images['defaultslide'+this.slideshowid]
+ns4imgobj.src=this.postimages[this.curimageindex].src
+}
+this.curimageindex=(this.curimageindex<this.postimages.length-1)? this.curimageindex+1 : 0
+}
+ 
+fadeshow.prototype.resetit=function(){
+this.degree=10
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+if (crossobj.filters&&crossobj.filters[0]){
+if (typeof crossobj.filters[0].opacity=="number") //if IE6+
+crossobj.filters(0).opacity=this.degree
+else //else if IE5.5-
+crossobj.style.filter="alpha(opacity="+this.degree+")"
+}
+else if (crossobj.style.MozOpacity)
+crossobj.style.MozOpacity=this.degree/101
+else if (crossobj.style.KhtmlOpacity)
+crossobj.style.KhtmlOpacity=this.degree/100
+else if (crossobj.style.opacity&&!crossobj.filters)
+crossobj.style.opacity=this.degree/101
+}
+ 
+ 
+fadeshow.prototype.startit=function(){
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+this.populateslide(crossobj, this.curimageindex)
+if (this.pausecheck==1){ //IF SLIDESHOW SHOULD PAUSE ONMOUSEOVER
+var cacheobj=this
+var crossobjcontainer=iebrowser? iebrowser["master"+this.slideshowid] : document.getElementById("master"+this.slideshowid)
+crossobjcontainer.onmouseover=function(){cacheobj.mouseovercheck=1}
+crossobjcontainer.onmouseout=function(){cacheobj.mouseovercheck=0}
+}
+this.rotateimage()
+}
+
+</script>
+
+</head>
+<body>
+   
+   <div id="header">
+      <img src="images/header.jpg">
+	  </div><!-- end of header-->
+	  <div id="navigation">
+	     <ul class="list">
+		 <li id="nav_home" class="current"><a href="index.html">Home</a></li>
+		 <li id="nav_about"><a href="about.html">About Us</a></li>
+		 <li id="nav_learn"><a href="learn.html">Learn to Dive</a></li>	 
+		 <li id="nav_links"><a href="links.html">Links</a></li>
+		 <li id="nav_trips"><a href="trips.html">Gallery</a></li>
+         <li id="nav_contact"><a href="contact.html">Contact Us</a></li>
+		 <li id="nav_news"><a href="news.html">News</a></li>
+		 </ul>
+		 </div><!-- end of navigation div--> 	    
+      <div id="indexcontent">
+      <div class="featurephoto">
+	  
+	 <script type="text/javascript">
+//new fadeshow(IMAGES_ARRAY_NAME, slideshow_width, slideshow_height, borderwidth, delay, pause (0=no, 1=yes), optionalRandomOrder)
+new fadeshow(fadeimages, 275, 200, 1, 3000, 0, "R")
+</script>
+	 
+		 <p><span class="photocaption">Enjoying the Under Water World.</span></p>
+		 
+		 
+		 <div class="nauilogo"><p halign="center"><a href="http://www.naui.org/" target="blank"><img src="http://www.naui.org/Members/Logos/naui-diver-logo_member.jpg" width="150" height="72" border="0" alt="Click here to visit NAUI's official site."></a>Click logo to visit NAUI's official site.</p><br />
+		 
+		 
+		 </div>
+		 </div>
+   <p class="tagline"><h3>Do you want to experience Scuba?</h3></p>
+   <p><h4>Welcome to Dive Catalina!</h4></p>
+   <p>Catalina Island offers some of the most beautiful waters on the planet. 
+   The magnificent giant kelp forests and pristine water around the island continues 
+   to draw diver's from all over the world. Whether you are an avid diver or a complete 
+   non-diver we have something for everyone. For those only wanting to hit the water's 
+   surface we offer guided snorkeling tours, scenic boat tours and complete snorkel and 
+   scuba gear rental packages. In addition to guided scuba tours and introductory scuba 
+   dives we also offer a complete selection of classes from beginner to instructor 
+   training school. At Dive Catalina our entire staff is dedicated to going out of their 
+   way to make your experience unforgetable because we believe that "after all--without 
+   YOU there is no business."</p>
+   
+   <p><u><b>Experienced or Not, You Can Try Scuba Diving</b></u>- It's what we're famous 
+   for. OUR INTRODUCTORY DIVES are for those who want to try diving for the first time 
+   without the time and investment required for full scuba certification. Our 
+   Introductory Dive Specialists will give you a real full-on customized dive experience. 
+   We promise you won't feel rushed in and out of the water, and if you have any fears or 
+   concerns (no, there's nothing out there that will eat you alive!) our instructors will 
+   take the time to listen to you and will customize your introductory dive to fit your 
+   specific needs. Making sure that your water experience is safe, enjoyable and 
+   unforgettable is our goal. Most Frequently Asked Question: "When can we do it again?" 
+   Requirements: Good health, good comfort level in the water and a good sense of adventure</p>
+   
+   <p><u><b>Certified Divers</b></u>- Many times certified Scuba Divers need a little extra training or guidance after they spend a period 
+   of time away from the ocean. Our guided dives at Casino Point provide certified divers with a NAUI Scuba Instructor
+   who provides guidance in and out of the water. Divers are able to spend time refreshing and perfecting dive skills while enjoying the best diving 
+   in Southern California knowing they have an Instructor present to provide assistance.  The dive park at Casino Point is home to
+   many species of fish, giant black sea bass, bat rays, octopus and kelp forrest.</p>
+   
+   <p>We are also proud to be the only organization providing quality Scuba Instruction through the
+   National Association of Underwater Instructors (NAUI) in the City of Avalon.  Founded in 1959, 
+   NAUI is the world's oldest and most respected Diver Training Certification Agency.</p>
+    
+   <p>If you have any questions, feel free to <a href="contact.html" class="emailline">contact us</a>.</p>
+   <p>We hope you enjoy your stay on the island.<br />
+   Ron Moore, NAUI Course Director<br /><br />
+   Dive Catalina<br />
+   107 Pebbely Beach Road<br />
+   Avalon, CA<br />
+   (310) 510-3175 or toll free (877) 218-9156
+   
+   </div>
+   <!-- end of bodycontent div-->
+   &copy; Ron Moore - Dive Catalina <br />
+   &copy; Chad Stone - Stone Divers
+   </div>
+   <br />
+   
+
+</body>
+</html>
+

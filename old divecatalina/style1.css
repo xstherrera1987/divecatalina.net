@@ -1,0 +1,265 @@
+/*
+CSS for Stone Divers 2 site
+*/
+
+
+body {
+  width: 800px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+  background-color: white;
+
+  }    
+   
+#header {
+   background-color: #BC0707;
+   height: 150px;
+   width: 100%;
+   padding: 0;
+   }
+  
+#navigation {
+   height: 25px;
+   width: 798px;
+   padding: 0;
+   background: #BC0707;
+   border-left: 1px solid #041B2D;
+   border-right: 1px solid #041B2D;
+   } 
+  
+#navigation li {
+   padding: 0 0 0 40px;
+   list-style-type: none;
+   float: left;
+   font-weight: bold;
+	 }
+	 
+#navigation a {
+   padding: 0 3px 0 3px;
+   margin: 0;
+   float: left;
+   height: 25px;
+   color: #E6E6E6;
+   text-align: center;
+   text-decoration: none;
+   line-height: 1.5;
+   }
+   
+#navigation a:link {
+   padding: 0 3px 0 3px;
+   margin: 0;
+   }
+   
+#navigation a:visited {
+   padding: 0 3px 0 3px;
+   margin: 0;
+   }
+   
+#navigation a:hover {
+   padding: 0 3px 0 3px;
+   margin: 0;
+   background-color: #01506D;
+   height: 25px;
+   }
+   
+#navigation a:active {
+   padding: 0 3px 0 3px;
+   margin: 0;
+   } 
+   
+#navigation li.current a {
+   background-color: #720202;
+   height: 25px;
+   }
+  
+#indexcontent {
+  float: left;
+  background: #F0F0F0 url(images/content.gif) repeat-x;
+  height: 100%;
+  width: 798px;
+  padding: 5px 0 20px 0;
+  border-left: 1px solid #041B2D;
+  border-right: 1px solid #041B2D;
+  border-bottom: 10px solid #01506D;
+  }
+
+  
+#bodycontent {
+  height: 100%;
+  width: 350px;
+  }
+  
+#conveyor {
+   width: 450px;
+   height: 125px;
+   margin: 10px;
+   padding: 0;
+   border: 1px;
+   border-style: solid;
+   border-color: #162C3D;
+   }
+   
+#gallerytitle {
+   padding: 0 0 0 25px;
+   }
+   
+#gallerypics {
+   padding: 0 0 0 25px;
+   position: relative;
+   }   
+  
+  
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 36pt;
+  font-weight: strong;
+  color: #162C3D
+  }
+
+h2 {
+  font-family: Arial, sans-serif;
+  font-size: 16pt;
+  font-weight: strong;
+  color: #162C3D;
+  }
+  
+h3 {
+  font-family: Arial, sans-serif;
+  font-size: 14pt;
+  font-weight: strong;
+  color: #162C3D;
+  }
+  
+ h4 {
+  font-family: Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: strong;
+  color: #162C3D;
+  }
+  
+ h5 {
+  font-family: Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: strong;
+  color: #4E4E4E;
+  }
+  
+ h6 {
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: strong;
+  color: #4E4E4E;
+  }
+  
+ h1, h2, h3, h4, h5, h6 {
+   padding: 0 0 0 10px;
+   }
+   
+ table.info {
+    font-family: Arial-Rounded, sans-serif;
+    font-size: 12pt;
+    color: #4E4E4E;
+    border: 1px solid black;
+    background: #D0D8DF;
+    }
+   
+table.learn_tbl {
+    font-family: Arial-Rounded, sans-serif;
+    font-size: 12pt;
+    color: #4E4E4E;
+    background: silver;
+    }
+    
+table.learn_tbl tr {
+   border: 1px solid black;
+   }
+    
+.tagline {
+   margin-top: 20px;
+   }
+  
+.featurephoto {
+   float: right;
+   margin: 20px 10px 10px 10px;
+   padding: 10px 10px 100px 10px;
+   width: 275px;
+   background-color: white;
+   }
+   
+.featurephoto p {
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   font-style: italic;
+   text-align: center;
+   }
+   
+.featurephoto img {
+   margin: 0;
+   margin: 0;
+   padding: 0;
+   display: block;
+   }
+      
+.nauilogo img {
+   margin: 15px auto 0px;
+   border: 1px solid black;
+   } 
+ 
+.nauilogo p {
+   width: 100%;
+   margin: 0px auto;
+   padding: 0;
+   font-style: italic;
+   text-align: center;
+   }
+   
+.faq_pdf {
+   text-align: center;
+   } 
+   
+.faq_pdf img {
+   margin: auto;
+   }
+  
+.list {
+  margin: 0;
+  padding: 0;
+  } 
+  
+p {
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: strong;
+  color: #292929;
+  padding: 0 10px 0 20px;
+  }
+  
+a {
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: strong;
+  font-style: italic;
+  color: #162C3D;
+  }  
+  
+  
+  
+#enroll {
+  margin: 30px 10px 10px 80px;
+  }
+   
+.content_indent {
+   height: 100%;
+   padding: 0 10px 10px 50px;
+   }
+.index_video {
+   margin: 20px 10px 10px 10px;
+   width: 275px;
+   }
+
+
+
+
