@@ -110,7 +110,7 @@ header h1 a, a:visited{
 }
 /** Content **/
 .content {
-    width: 668px;
+    width: 688px;
     float: left;
     height: 2356px;
     margin-right: 0px;
@@ -140,9 +140,9 @@ header h1 a, a:visited{
     list-style-type: none;
 }
 .content li {
-    font: inherit;
     padding-bottom: 10px;
     height: auto;
+    width: auto;
 }
 .content ol {
     padding: 0 15px 15px 90px;
@@ -217,8 +217,8 @@ footer {
 .style {
     color: #FFFF66;
 }
-.tablecontent {
-    width: 26px;
+.table2 {
+    width: auto;
 }
 .auto-style2 {
     width: 245px;
@@ -230,6 +230,5 @@ footer {
     width: 20px;
 }
 .auto-style5 {
-    color: #FF9966;
-    font-size: 20px;
+    color: #d15f46;
 }
