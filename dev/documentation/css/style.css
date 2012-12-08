@@ -75,7 +75,7 @@ body {
 }
 /* Links */
 a {
-    color: #436FA2;
+    color: #0086AB;
     text-decoration: none;
 }
 a:visited {
@@ -117,21 +117,22 @@ header h1 a, a:visited{
 }
 .content h1 {
     font-family: 'nexa-bold-regular', Arial, sans-serif;
-    font-size: 22px;
-    color: #424242;
+    font-size: 25px;
+    color: #0086AB;
     padding-left: 40px;
     padding-bottom: 0px;
 }
 .content h2 {
     font-family: "Courier New", Courier, monospace;
-    font-size: 20px;
+    font-size: 24px;
     font-style: normal;
     font-weight: bold;
     font-variant: normal;
     text-transform: inherit;
-    color: #008080;
+    color: #424242;
     margin-bottom: 0px;
     padding-bottom: 15px;
+    padding-left: 55px;
 }
 /* .content list properties */
 .content ul {
@@ -230,5 +231,5 @@ footer {
     width: 20px;
 }
 .auto-style5 {
-    color: #d15f46;
+    color: #424242;
 }
