@@ -9,14 +9,9 @@ get_header();?>
 		<div id="reservation-form">
 			<div id="contact-info">
 				<img src="<?php bloginfo('template_directory');?>/images/contactImage.jpg"/>
-				<p>
-					Developer Drive <br/> 
-					123 Fake St. <br/>
-					Long Beach, CA 94014 <br/>
-					P: 562-999-9999 <br/>
-					F: 562-111-1111 <br/>
-					© Ron Moore <br/>
-				</p>
+				<?php 
+				the_post();
+				the_content(); ?>
 			</div>
 
 			<form id="form" action="/" method="post">	

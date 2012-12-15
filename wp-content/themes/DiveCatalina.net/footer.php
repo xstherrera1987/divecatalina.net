@@ -14,11 +14,13 @@
 		</ul>
 		
 		<div id="footerContact">
-			<p id="address"> Developer Drive <br/>
-				123 Fake St. <br/>
-				Long Beach, CA 94014 <br/>
-				P: 562-999-9999<br/>
-				F: 562-111-1111 <br/>
+			<p id="address"> Dive Catalina <br/>
+				107 Pebbly Beach Rd. <br/>
+				Avalon, Ca 90704 <br/>
+				P: 310-510-3175<br/> 
+				P: 562-472-4503 (Ron)<br/>
+				P: 562-472-4583 (Connie)<br/>
+				E: ron@divecatalina.net<br/>
 				&copy; Ron Moore
 			</p>
 		</div>      

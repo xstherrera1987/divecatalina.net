@@ -4,15 +4,16 @@ DiveCatalina.net
 + req'd reading
   + http://codex.wordpress.org/Theme_Development
 
-TODO
+TODO - 12/14/12
 ---
-+ chrome renders footer address improperly (fixed, double check on your machine)
-+ pages appear further down (more padding on top) than the mockups
++ Fix image link on Reservations page to make it dynamic - JEM
++ Fix Reservation form - JEM
++ Fix and add images to slideshow on home page - JOSE
++ Add images to all the other pages - JOSE
++ Add the links to documentation and cheat sheet on the WP Dashboard - JOSE
++ Photo Gallery - DENISE/JULIA
++ Video Gallery - DENISE
++ Finish Documentation/User Manual - JULIA
 
-ADDED 12/24/12
-+ Dive Catalina not going back to home page
-+ Double check color and font changer.
-+ Make a cheat sheet for color and font changer.
-+ Fix image link on Reservations page to make it dynamic
-+ Fix Reservation form --> PHP not working yet.
-+ My slideshow not working yet - JEM
+This is just the stuff that I saw, make sure you do your own quality checks please 
+and see if I missed something else that needs to be fixed or added. - JEM
