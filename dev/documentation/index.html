@@ -3,7 +3,7 @@
 	<head>
     	<meta charset="utf-8">
         
-		<title>Website Document</title>
+		<title>Dive Catalina | User Manual</title>
         
         <link rel="stylesheet" href="css/style.css" />
         
@@ -23,6 +23,7 @@
 	<body>
     	<div class="container">
       		<header>
+                <a name="top"></a>
             	<h1><a href="index.html">User Manual</a></h1>
                 <div class="clear"></div>
             </header>
@@ -31,39 +32,46 @@
             <div class="sidebar">
             	<ul class="nav">
                     <li><a href="#copyright">Copyright Information</a></li>
-                    <li><a href="#guide">Using the User Guide</a></li>
-                    <li><a href="#panel">Logging In</a></li>
+                    <li><a href="#login">Logging In</a></li>
                     <li><a href="#dashboard">The Dashboard</a>
-                        <ol><a href="#menuoptions">Menu</a></ol>
-                        <ol><a href="#menuusuages">Menu Option Usuages</a></ol>
+                        <ol><a href="#menu">Menu</a></ol>
+                        <ol><a href="#menuoptions">Menu Options</a></ol>
                     </li>
-                    <li><a href="#media">Media</a></li>
                     <li><a href="#editingpage">Editing a Page</a>
                         <ol><a href="#editpage">Edit Page</a></ol>
                         <ol><a href="#entertitle">Enter Title</a></ol>
                         <ol><a href="#editcontent">Edit Content</a></ol>
-                        <ol><a href="#add media">Add Media</a></ol>
+                        <ol><a href="#addmedia">Add Media</a></ol>
                         <ol><a href="#attributes">Attributes</a></ol>
                         <ol><a href="#publishbox">Publish Box</a></ol>
                         <ol><a href="#discussions">Discussions and Comments Box</a></ol>
-                        <ol><a href="#revisionsbox">Revisions Box</a></ol>
+                        <ol><a href="#revisions">Revisions Box</a></ol>
                     </li>
-                    <li><a href="#addapage">Adding a Page</a></li>
-                    <li><a href="#">Using the User Guide</a></li>
+                    <li><a href="#addpage">Adding a Page</a></li>
+                    <li><a href="#editingmedia">Editing Media</a></li>
+                    <li><a href="#addnewmedia">Add New Media</a></li>
+                    <li><a href="#appearance">Appearance</a></li>
+                    <li><a href="#plugins">Plugins</a></li>
+                    <li><a href="#users">Users</a></li>
                 </ul>
             </div>
 
             <div class="content">
       			<a name="copyright"><h1>Copyright</h1></a>
                 <p>The contents of this User Manual are subject to the <a href="http://www.divecatalina.net">Dive Catalina Website</a>.&nbsp; This documentation is created by Spring 2012 CSULB Senior Project Team GREP. Users All Rights Reserved. All trademarks within this guide belong to Ron Moore.</p>
+                
+                <div class="divider"><hr/></div>
+
                 <a name="login"><h1>Logging In</h1></a>
                 <p>User can use administration interface to modify content and set up stucture of the website.</p>
                 <ul>
                     <li>In order to access the administration interface, user must log in first.&nbsp; User can access the log in screen, as shown in Figure 1, by using the address <a href="http://www.yourdomain.com/wp-admin">www.divecatalina.net/wp-admin</a>. Then, user will be asked to enter the <em>username </em>and <em>password.</em></li>
                     <li>User must log off when done using the admin panel.&nbsp; It will stay logged in until user logs out.</li>
                     <li><img src="gallery/wordpresslogin.jpg" alt="Login Page" style="height: 299px; width: 306px"></li>
-                    <li><em><span class="auto-style3">Figure 1. </span> </em><span class="auto-style3">Log in screen</span></li> 
+                    <li><em><span class="auto-style3">Figure 1. </span> </em><span class="auto-style3">Log in screen</span></li>
                 </ul>
+
+                <div class="divider"><hr/></div>
 
                 <a name="dashboard"><h1>The Dashboard</h1></a>
                 <ul>
@@ -74,7 +82,7 @@
                     <li><em><span class="auto-style3">Figure 3. </span> </em><span class="auto-style3">Hovering over the name displays options to edit profile or log out.</span></li>
                 </ul>
 
-                <a name="menuoptions"><h2>Menu</h2></a>
+                <a name="menu"><h2>Menu</h2></a>
                 <ul>
                     <li>Along the left side of the <strong>Dashboard</strong>, user can locate main admin navigation menu as shown in Figure 4.  Menu contains main options user can use to edit and confgiure the website.</li>
                     
@@ -92,6 +100,7 @@
                 </ul>
 
                 <ul>
+                    <a name="menuoptions"></a>
                     <li class="auto-style5"><strong>Options</strong></li>
                     <li><table style="width: 100%;"> 
                         <tr>
@@ -129,8 +138,10 @@
                         </tr>
                       </table></li>
                 </ul>
+
+                <div class="divider"><a href="#top"> ^ Back to Top</a><hr/></div>
                 
-                <a name="editpage"><h1>Editing a Page</h1></a>
+                <a name="editingpage"><h1>Editing a Page</h1></a>
                 <p>When the cursor hovers on <strong>Pages</strong> link in the main menu on the left, it displays a &#39;fly out&#39; menu with two options: <strong>All Pages </strong>and <strong>Add New</strong>. To edit a page or view a list of existing pages, user can either click on&nbsp; the <strong>Pages</strong> link or click on the <strong>Add New</strong> link from its &#39;fly out&#39; menu. Once the user clicks on the link, user will be taken to Pages screen where it lists all existing pages as shown in Figure 5. </p>
                 
                 <a name="pagesscreen"><h2>Pages:List of Existing Pages</h2></a>
@@ -156,7 +167,7 @@
                     <li class="auto-style3"><em>Figure 9. </em>Short menu is displayed when the user hovers over the name of the page</li>
                 </ul>
 
-                <a name="editpagescreen"><h2>Edit Page</h2></a>
+                <a name="editpage"><h2>Edit Page</h2></a>
                 <ul>
                     <li>Once user clicks on the  the name of the page, user will be directed to Edit Page screen. User can update contents and media on a particular page here.&nbsp;  Figure 10 shows Edit Page screen for the Dive Catalina&#39;s Home page. Edit Page has many features available.&nbsp; In this section, user will be introduced to <strong>Title Bar</strong>, <strong>Text Editor</strong>, <strong>Publish box</strong>, <strong>Discussion box,</strong> <strong>Attributes box</strong>, <strong>Comments Box</strong>, and <strong>Revisions Box.</strong></li>
                     <li><img src="gallery/editpage.png" alt="Edit Page Screen"/></li>
@@ -171,7 +182,7 @@
                     <li><span class="auto-style3"><em>Figure 11. </em>Title of the page</span></li>
                 </ul>
 
-                <a name="addcontent"><h2>Edit Content</h2></a>
+                <a name="editcontent"><h2>Edit Content</h2></a>
                 <ul>
                     <li>User can edit or add page content by using the Text Editor as shown in Figure 10. In this section, user will learn about the functions of all the buttons on the Tool Bar which make text editing much easier, and about switching Text Editor to Visual or HTML mode.</li>
                 </ul>
@@ -316,7 +327,7 @@
                     </li>
                 </ul>
                 
-                <a name="discussion"><h2>Discussion and Comments Box</h2></a>
+                <a name="discussions"><h2>Discussion and Comments Box</h2></a>
                 <ul>
                     <li>By default, all checkboxes in Discussion box are checked.&nbsp; User can keep them checked if user would like to allow comments on the page. User should keep them unchecked if user wants to create the page consistent with rest of the pages on divecatalina.net. Comments box allow user to add comments to the current page. </li>
                     <li><img src="gallery/discussioncomments.png" alt="Discussion and Comments" style="width:607px; height: 200px;" /></li>
@@ -332,14 +343,18 @@
                     <li><span class="auto-style3"><em>Figure 33.</em> Revision page is displayed when user clicks on a link</span></li>
                 </ul>
 
-                <a name="addingpage"><h1>Adding a Page</h1></a>
+                <div class="divider"><a href="#top"> ^ Back to Top</a><hr/></div> 
+
+                <a name="addpage"><h1>Adding a Page</h1></a>
                 <p>When the cursor hovers on the <strong>Pages</strong> link in the main menu on the left, it displays a &#39;fly out&#39; menu with two options: <strong>All Pages</strong> and <strong>Add New</strong>. To create a new page, user must click on the <strong>Add New</strong> link from its &#39;fly out&#39; menu. Once the user clicks on the link, user will see the Add New Page screen as shown in Figure 34. Add New Page is exactly the same as the Edit Page except some features such as Comments box and Revisions box are not available.&nbsp; User can refer back to Editing a Page section in this documentation for tutorial on the features. </p>
                 <ul>
                     <li><img src="gallery/addnewpage.png" alt="Add New"/></li>
                     <li class="auto-style3"><em>Figure 34. </em>Add New Page</li>
                 </ul>
 
-                <a name="media"><h1>Editing Media</h1></a>
+                <div class="divider"><a href="#top"> ^ Back to Top</a><hr/></div> 
+
+                <a name="editingmedia"><h1>Editing Media</h1></a>
                 <p>User can enrich the website by adding media such as photos, images, audio, and video.&nbsp; Anything that are multimedia can be uploaded onto Media Library. However Media Library is not limited to only multimedia, user can also upload PDF files and ZIP files without converting them to a specifc format.&nbsp; </p>
                 <p>User can access this feature through the Dashboard.&nbsp; When the user hovers the cursor on Media link in the Dashboard menu on th left-side, a &#39;fly-out&#39; menu will display with two options: <strong>Library</strong> and <strong>Add new</strong>.&nbsp; Library allows user to manage the media items.&nbsp; <strong>Add new </strong>allows user to add new media such as photo, audio, video, pdf, and etc. </p>
              
@@ -382,7 +397,9 @@
                     <li class="auto-style3"><em>Figure 40. </em>Edit Image</li>
                 </ul>
 
-                <a name="medialibrary"><h1>Add New Media</h1></a>
+                <div class="divider"><a href="#top"> ^ Back to Top</a><hr/></div> 
+
+                <a name="addnewmedia"><h1>Add New Media</h1></a>
                 <p>There are couple ways to add new media.  User can Add New Media directly from the Media Library by clicking on the <strong>Add New</strong> button next to the title. Or user can select <strong>Add New </strong>option from the fly out menu by hovering on <strong>Media </strong>link in the Dashboard menu on left which is always accessible to the user.&nbsp; Once user clicks on either of the links, user will be directed to the Add Media screen as shown in Figure 41. </p>
                 <p>User can upload media by dragging file(s) to the box where it says "Drop files here" or click on the Select Files button. </p>
                
@@ -417,7 +434,9 @@
                     <li class="auto-style3"><em>Figure 47. </em>Find Post or Pages to Attach</li> 
                 </ul>
 
-                <a name="uploadone"><h1>Appearance</h1></a>
+                <div class="divider"><a href="#top"> ^ Back to Top</a><hr/></div> 
+
+                <a name="appearance"><h1>Appearance</h1></a>
                 <p>Appearance setting should be accessible by only the Admin user.&nbsp; User can access the Appearance setting by clicking on <strong>Appearance</strong> link on the Dashboard menu on the left-side, or click on one of the options from its fly out menu.&nbsp; Appearance allows the user to change the look of the site through different themes and headers, which helps manage the way the site content is displayed.</p>
                
                  <a name="uploadone"><h2>Themes</h2></a>
@@ -559,6 +578,8 @@
                         <li class="auto-style3"><em>Figure 56. </em>Appearance Editor Screen</li> 
                     </ul> 
 
+                    <div class="divider"><a href="#top"> ^ Back to Top</a><hr/></div> 
+
                     <a name="plugins"><h1>Plugins</h1></a>
                     <p>Plugins allow user to add more features to the website that do not come with the default installation.&nbsp; User can access Plugins by clicking on the <strong>Plugins</strong> link on the Dashboard menu on the left-side, or clicking on one of the options from its fly out menu.&nbsp; </p>
                     
@@ -577,6 +598,7 @@
                         <li><img src="gallery/bulkplugins.png" alt="Bulk Actions Plugins" /></li>
                         <li class="auto-style3"><em>Figure 59. </em>Bulk Actions Menu</li> 
                     </ul>
+
                     <a name="addnewplugins"><h2>Add New Plugin</h2></a>
                     <ul>
                         <li>User can install new plugin directly from the Plugins page by clicking on the <strong>Add New </strong>button.&nbsp; Once user clicks on the button, user will be directed to<strong> Install Plugin</strong> page as shown in Figure 60. User can also access the Install Plugin page by clicking on the <strong>Add New</strong> link from the fly-out menu by hovering the cursor on the <strong>Plugins</strong> link on the Dashboard menu. </li>
@@ -593,6 +615,8 @@
                         <li><img src="gallery/editor.png" alt="Plugin Editor" /></li>
                         <li class="auto-style3"><em>Figure 62. </em>Plugin Editor Screen</li> 
                     </ul>
+
+                    <div class="divider"><a href="#top"> ^ Back to Top</a><hr/></div> 
 
                     <a name="users"><h1>Users</h1></a>
                     <p>There are two users currently: admin and editor.&nbsp; Admin is initally created by WordPress and the user has access to all Administrative Settings such as Appearance and Plugins.&nbsp; If the user wants additional person to manage the website, it is recommended to create a new account for that person.&nbsp; User can create new account(s) by using the Users feature.&nbsp; <strong>User </strong>option in the Dashboard menu allows user to to set up and manage user accounts.&nbsp; When the user hovers on the User link, it will display a fly-out menu with three options: <strong>All Users</strong>, <strong>Add New</strong>, and <strong>Your Profile</strong>.</p>
@@ -620,7 +644,7 @@
                         <li class="auto-style3"><em>Figure 66. </em>User Your Profile Screen</li> 
                    </ul>
                     <ul>
-                        <li><a href="#top">Go to the Top</a></li>
+                        <li><a href="#top">^ Back to Top</a></li>
                     </ul>
                
             </div><!--End of content-->
