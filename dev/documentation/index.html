@@ -32,18 +32,23 @@
             	<ul class="nav">
                     <li><a href="#copyright">Copyright Information</a></li>
                     <li><a href="#guide">Using the User Guide</a></li>
-                    <li><a href="#panel">Getting Started: Admin Panel</a>
-                        <ol><a href="#login">Logging In</a></ol>
-                        <ol><a href="#dashboard">The Dashboard</a></ol>
-                        <ol><a href="#menuoptions">Menu Options</a></ol>
+                    <li><a href="#panel">Logging In</a></li>
+                    <li><a href="#dashboard">The Dashboard</a>
+                        <ol><a href="#menuoptions">Menu</a></ol>
                         <ol><a href="#menuusuages">Menu Option Usuages</a></ol>
                     </li>
-                    <li><a href="#content">Working with Content</a>
-                        <ol><a href="#addpage">Adding a Page</a></ol>
-                        <ol><a href="#editpage">Editing a Page</a></ol>
+                    <li><a href="#media">Media</a></li>
+                    <li><a href="#editingpage">Editing a Page</a>
+                        <ol><a href="#editpage">Edit Page</a></ol>
+                        <ol><a href="#entertitle">Enter Title</a></ol>
+                        <ol><a href="#editcontent">Edit Content</a></ol>
+                        <ol><a href="#add media">Add Media</a></ol>
+                        <ol><a href="#attributes">Attributes</a></ol>
+                        <ol><a href="#publishbox">Publish Box</a></ol>
+                        <ol><a href="#discussions">Discussions and Comments Box</a></ol>
+                        <ol><a href="#revisionsbox">Revisions Box</a></ol>
                     </li>
-                    <li>Blah</li>
-                    <li><a href="#">Using the User Guide</a></li>
+                    <li><a href="#addapage">Adding a Page</a></li>
                     <li><a href="#">Using the User Guide</a></li>
                 </ul>
             </div>
@@ -51,10 +56,8 @@
             <div class="content">
       			<a name="copyright"><h1>Copyright</h1></a>
                 <p>The contents of this User Manual are subject to the <a href="http://www.divecatalina.net">Dive Catalina Website</a>.&nbsp; This documentation is created by Spring 2012 CSULB Senior Project Team GREP. Users All Rights Reserved. All trademarks within this guide belong to Ron Moore.</p>
-                <h1>Getting Started: Admin Panel</h1>
+                <a name="login"><h1>Logging In</h1></a>
                 <p>User can use administration interface to modify content and set up stucture of the website.</p>
-                
-                <a name="login"><h2>Logging In</h2></a>
                 <ul>
                     <li>In order to access the administration interface, user must log in first.&nbsp; User can access the log in screen, as shown in Figure 1, by using the address <a href="http://www.yourdomain.com/wp-admin">www.divecatalina.net/wp-admin</a>. Then, user will be asked to enter the <em>username </em>and <em>password.</em></li>
                     <li>User must log off when done using the admin panel.&nbsp; It will stay logged in until user logs out.</li>
@@ -62,7 +65,7 @@
                     <li><em><span class="auto-style3">Figure 1. </span> </em><span class="auto-style3">Log in screen</span></li> 
                 </ul>
 
-                <a name="dashboard"><h2>The Dashboard</h2></a>
+                <a name="dashboard"><h1>The Dashboard</h1></a>
                 <ul>
                     <li>Once the user is logged in, <strong>Dashboard</strong> page appears as shown in Figure 2. This is the main administration homepage.&nbsp; At every top of the pages, name of the site is located in the header area which is also hyperlinked to site&#39;s homepage. On upper right corner, user can locate the name of the person who is currently logged in.&nbsp; User can find edit profile and log out link by putting a cursor on the name of the person [Figure 3].</li>
                     <li><img src="gallery/dashboard.jpg" alt="Dashboard" style="width: 620px"></li>
@@ -71,7 +74,7 @@
                     <li><em><span class="auto-style3">Figure 3. </span> </em><span class="auto-style3">Hovering over the name displays options to edit profile or log out.</span></li>
                 </ul>
 
-                <a href="menuoptions"><h2>Menu Options</h2></a>
+                <a name="menuoptions"><h2>Menu</h2></a>
                 <ul>
                     <li>Along the left side of the <strong>Dashboard</strong>, user can locate main admin navigation menu as shown in Figure 4.  Menu contains main options user can use to edit and confgiure the website.</li>
                     
@@ -88,8 +91,8 @@
                         </li>
                 </ul>
 
-                <a href="menuusuages"><h2>Menu Option Usuages</h2></a>
                 <ul>
+                    <li class="auto-style5"><strong>Options</strong></li>
                     <li><table style="width: 100%;"> 
                         <tr>
                             <td><i>Dashboard<b>:</b></i></td>   
@@ -127,109 +130,126 @@
                       </table></li>
                 </ul>
                 
-                <a href="addpage"><h1>Adding a Page</h1></a>
-                <p>When the cursor is hovering on Pages under main menu, it displays 'fly out' menu with two options: All Pages and Add New.  To create a page, user clicks on the Add New link and it will direct to 'Add New Page' Screen.  Figure 5 shows the default 'Add New Page' screen.</p>
+                <a name="editpage"><h1>Editing a Page</h1></a>
+                <p>When the cursor hovers on <strong>Pages</strong> link in the main menu on the left, it displays a &#39;fly out&#39; menu with two options: <strong>All Pages </strong>and <strong>Add New</strong>. To edit a page or view a list of existing pages, user can either click on&nbsp; the <strong>Pages</strong> link or click on the <strong>Add New</strong> link from its &#39;fly out&#39; menu. Once the user clicks on the link, user will be taken to Pages screen where it lists all existing pages as shown in Figure 5. </p>
                 
+                <a name="pagesscreen"><h2>Pages:List of Existing Pages</h2></a>
                 <ul>
-                    <li><img src="gallery/addnew.jpg" alt="Add New" style="height: 331px; width: 619px"/></li>
-                    <li class="auto-style3"><em>Figure 5. </em>Add New Page</li>
+                    <li><img src="gallery/pageslist.png" alt="List of Pages" style="height: 396px; width: 607px" /></li>
+                    <li class="auto-style3"><em>Figure 5. </em> Pages page lists all existing pages </li>
                 </ul>
 
-                <a href="entertitle"><h2>Enter Title</h2></a>
-
                 <ul>
-                    <li>This is where user can put the title of the new page. Once user puts a title in the entry field where it says &#39;Enter title here&#39; and moves the cursor to the <strong>Text Editor,</strong> a new permalink is created for the page. Permalinks are permanent URL&#39;s to all pages. Permalinks can be edited by clicking on it. </li>
-                    <li><img src="gallery/newtitle.png" alt="Page Title" style="width: 618px; height: 96px" /></li>
-                    <li><span class="auto-style3"><em>Figure 6. </em>Title of the page</span></li>
-                    <li><img src="gallery/permalink.png" alt="Example of Permalinks" style="width: 618px; height: 99px"/></li>
-                    <li><span class="auto-style3"><em>Figure 7.</em> Creates Permalink</span></li>
+                    <li class="auto-style5"><strong>Header</strong></li>
+                    <li>The first row in the header displays <strong>All</strong>, <strong>Published</strong>, <strong>Draft</strong>, and <strong>Trash</strong> links with (number) beside each link. The links indicate the status of the pages and the number shows how many pages are under Draft, Trash, All, or Published.&nbsp; When user clicks on the <strong>All</strong> link, it will display a list of all existing pages including all Drafts and Published . <strong>&nbsp;Publish</strong> link will only display a list of pages that are already published to the website.&nbsp; <strong>Draft</strong> link will display the pages that are saved as drafts and not published to website.&nbsp; By clicking on <strong>Trash </strong>link, user will be able to retrieve pages that have been deleted. User can search for a page by typing the name of the page in the <strong>Search Box </strong>located on the far right as shown in Figure 6.  </li>
+                    <li><img src="gallery/pagesheader.jpg" alt="First Header of Pages" /></li>
+                    <li class="auto-style3"><em>Figure 6. </em> First header of Pages screen</li>
+                    <li>The second row in the header displays <strong>Bulk Actions</strong> menu and<strong> Show by dates Filter</strong> menu.&nbsp; User can use <strong>Bulk Actions </strong>menu to make the same changes on some or all pages by checking off the checkbox located next to the name of the page as shown in Figure 7.</li>
+                    <li><img src="gallery/bulkactions.jpg" alt="Bulk Actions Menu"/></li>
+                    <li class="auto-style3"><em>Figure 7. </em> Bulk Actions Menu</li>
+                    <li><strong>Show by dates Filter</strong> menu allows user to display only the pages that were published or last modified during a particular month and year.  For instance, if user filters the list of pages by choosing October 2012 from the menu as shown in Figure 8, user will see a list of all the pages that were last modified or published in October 2012. User must&nbsp; note that if a page was published in October 2012 but it was last modified in November 2012, that page should be listed under November 2012 and not October 2012. </li>
+                    <li><img src="gallery/showalldate.png" alt="Show by Dates Menu"/></li>
+                    <li class="auto-style3"><em>Figure 8. </em> Show by Dates Menu filters pages by the dates published or last modified</li>
+                    <li class="auto-style5"><strong>Select a Page to Edit</strong></li>
+                    <li>User can edit a page by hovering the mouse pointer over the name of the page as shown in Figure 9.  A short menu will appear on the bottom of that page name: <strong>Edit</strong>,<strong> Quick Edit</strong>, <strong>Trash</strong>, and <strong>View</strong>. User can click on <strong>Edit </strong>link or name of the page to direct to Edit a Page screen to add or delete page content and media.&nbsp; <strong>Quick Edit </strong>option allows user to make quick changes such as updating the page name.&nbsp; User can delete the page by clicking <strong>Trash </strong>link.&nbsp; Lastly, <strong>View </strong>option allows user to view the page as how it is displayed in the website. For general editing, user can click on the name of the page or click on the<strong> Edit </strong>link.  </li>
+                    <li><img src="gallery/shortmenu.png" alt="Short Menu"/></li>
+                    <li class="auto-style3"><em>Figure 9. </em>Short menu is displayed when the user hovers over the name of the page</li>
                 </ul>
 
-                <a name="addcontent"><h2>Add Content</h2></a>
+                <a name="editpagescreen"><h2>Edit Page</h2></a>
                 <ul>
-                    <li>User will add page content by using the <strong>Text Editor</strong> as shown in Figure 5. In this section, user will learn about the functionatlies of all the buttons on the Tool Bar which makes text editing much easier, and about switching <strong>Text Editor</strong> to Visual or HTML mode. <em>This section will focus on the Visual Text Editor and covers little about the HTML mode. </em> </li>
+                    <li>Once user clicks on the  the name of the page, user will be directed to Edit Page screen. User can update contents and media on a particular page here.&nbsp;  Figure 10 shows Edit Page screen for the Dive Catalina&#39;s Home page. Edit Page has many features available.&nbsp; In this section, user will be introduced to <strong>Title Bar</strong>, <strong>Text Editor</strong>, <strong>Publish box</strong>, <strong>Discussion box,</strong> <strong>Attributes box</strong>, <strong>Comments Box</strong>, and <strong>Revisions Box.</strong></li>
+                    <li><img src="gallery/editpage.png" alt="Edit Page Screen"/></li>
+                    <li class="auto-style3"><em>Figure 10. </em>Edit Page Screen</li>
+                </ul>
+                <a name="entertitle"><h2>Enter Title</h2></a>
+
+                <ul>
+                    <li>The name or title of the page is located on top of page.&nbsp; Permalink is displayed below the name of the page.&nbsp; Permalink is a permanent URL&#39;s to a particular page as shown in Figure 6.&nbsp; User can change the permalink by clicking on it or click on <strong>View Page </strong>button to display the current page.&nbsp; </li>
+                    <li>To change the name of the page, user should delete the original name and type in new name in the &quot;Enter Title Here&quot; entry field box as highlighted in Figure 11.&nbsp; Once completed, user can see the new permalink by moving the cursor to Text Editor box. </li>
+                    <li><img src="gallery/newtitle.png"/></li>
+                    <li><span class="auto-style3"><em>Figure 11. </em>Title of the page</span></li>
+                </ul>
+
+                <a name="addcontent"><h2>Edit Content</h2></a>
+                <ul>
+                    <li>User can edit or add page content by using the Text Editor as shown in Figure 10. In this section, user will learn about the functions of all the buttons on the Tool Bar which make text editing much easier, and about switching Text Editor to Visual or HTML mode.</li>
                 </ul>
 
                 <ul>
                     <li class="auto-style5"><strong>Visual vs HTML Mode</strong></li>
-                    <li>User can switch between Visual and HTML mode by clicking on the tabs on the right corner of the Text Editor&#39;s header bar as shown below. Visual mode is displayed as default. On Visulal mode, text is displayed in a WYSIWYG format just like the word processor and its Tool Bar is also displayed like the one in word processor. User will be working on the Visual mode most of the time, but user has the option to switch to HTML mode to code in HTML.</li>
-                    <li><img src="gallery/visual.jpg" alt="visual mode" style="height: 102px; width: 621px" /></li>
-                    <li><span class="auto-style3"><em>Figure 7.</em> Text Editor on Visual Mode</span></li>
-                    <li><img src="gallery/html.jpg" alt="html mode" style="height: 91px; width: 621px"/></li>
-                    <li><span class="auto-style3"><em>Figure 8.</em> Text Editor on HTML Mode</span></li>
+                    <li>User can switch between Visual and HTML modes by clicking on the tabs on the right corner of the Text Editor&#39;s header bar as shown below. Visual mode is displayed as default when user is brought to Add New Page screen. On Visulal mode, text is displayed in a WYSIWYG format just like the word processor and its Tool Bar is also displayed like the one in word processor. User will be working on the Visual mode most of the time, but user has the option to switch to HTML mode to code in HTML.</li>
+                    <li><img src="gallery/visual.jpg" alt="visual mode" style="width: 607px" /></li>
+                    <li><span class="auto-style3"><em>Figure 12.</em> Text Editor on Visual Mode</span></li>
+                    <li><img src="gallery/html.jpg" alt="html mode" style="width: 607px"/></li>
+                    <li><span class="auto-style3"><em>Figure 13.</em> Text Editor on HTML Mode</span></li>
                 </ul>
                 
                 <ul>
                     <li class="auto-style5"><strong>Tool Bar</strong></li>
-                    <li>By default, Visual mode has only top row of the Tool Bar displayed. User can expand the Tool Bar by clicking on the <em>Kitchen Sink</em> button located at the end of the bar as marked in Figure 8. The following two screen captures show the functions of each buttons on the Tool Bar on Visual Mode.</li>
+                    <li>By default, Visual mode has only top row of the Tool Bar displayed. User can expand the Tool Bar by clicking on the <em>Kitchen Sink</em> button located at the end of the first bar.&nbsp; The following two screen captures show the function of each button on the Tool Bar on Visual Mode.</li>
                     <li><img src="gallery/defaultbar.jpg" alt="Single Row ToolBar" /></li>
-                    <li><em><span class="auto-style3">Figure 9.</span></em><span class="auto-style3"> By default, only single row of tool bar is displayed.</span></li>
+                    <li><em><span class="auto-style3">Figure 14. </span></em><span class="auto-style3">&nbsp;By default, only single row of tool bar is displayed.</span></li>
                     <li><img src="gallery/secondbar.jpg" alt="Two Bars ToolBar"  /></li>
-                    <li><em><span class="auto-style3">Figure 10.</span></em><span class="auto-style3"> User clicks on Kitchen Sink button and full Tool Bar is displayed</span></li>
-                </ul>
-
-                <ul>
-                    <li class="auto-style5"><strong>Sizing the Text Editor</strong></li>
-                    <li>User can resize the Visual Text Editor to get more space to work by clicking on the three lines on the lower right-hand corner and dragging the editor box downward as shown in Figure 10. User can also make the size smaller by dragging it upward. This functionality is not available in HTML mode.   </li>
+                    <li><em><span class="auto-style3">Figure 15.</span></em><span class="auto-style3"> User clicks on Kitchen Sink button and full Tool Bar is displayed</span></li>
+                    <li class="auto-style5"><strong>Sizing the Text Editor Box</strong></li>
+                    <li>User can resize the Visual Text Editor to get more space to work by clicking on three lines located on the lower right-hand corner and dragging the editor box downward as shown in Figure 12. User can also make the size smaller by dragging it upward. This functionality is not available in HTML mode.   </li>
                     <li><img src="gallery/resize.png" alt="Resize the Text Area" /></li>
-                    <li><span class="auto-style3"><em>Figure 11.</em> Resize the text area by dragging on this</span>
+                    <li><span class="auto-style3"><em>Figure 16.</em> Resize the text area by dragging the three lines located on lower right-hand corner of the box</span>
                 </ul>
-
-
-                <a name="addcontent"><h2>Discussion and Comments</h2></a>
-
+                <a name="addmedia"><h2>Add Media</h2></a>
                 <ul>
-                    <li>By default, all checkboxes in Discussion box are checked. But they are unchecked on all pages on divecatalina.net. When creating a new page, keep them unchecked to make the page consistent with other pages.&nbsp; User can keep them if user would like to allow comments on the page.&nbsp; Also, user can leave comments on the page using the comment box.&nbsp; </li>
-                    <li><img src="gallery/discussioncomments.png" alt="Discussion and Comments"" style="height: 187px; width: 620px" /></li>
+                    <li>User can add or edit media by clicking on the&nbsp;<strong>Upload/Insert</strong> icon above the Tool Bar as shown in Figure 17.&nbsp; Once user clicks on the icon, Add Media box will appear. Uploading media through Edit Page or Add Page is useful when user wishes to upload many media items at once.&nbsp; If user uploads them using Media Library or Add New Media,&nbsp; user will have to manually attach each media item to a particular page or pages. </li>
+                    <li><img src="gallery/media.png" alt="Upload Media Link"/></li>
+                    <li><em><span class="auto-style3">Figure 17.</span></em><span class="auto-style3"> Upload/Insert Media Icon</span></li>
+                    <li>User can add media <strong>From Computer </strong>by dragging the media files to the box that says "Drop files here" or select files by clicking on the <strong>Select Files</strong> button as shown in Figure 18.&nbsp; User can add photos, audio, video, and any other media files just by dragging them into the box. </li>
+                    <li><img src="gallery/mediaopen.png" alt="Media Box" /></li>
+                    <li><em><span class="auto-style3">Figure 18.</span></em><span class="auto-style3"> Add Media From Computer</span></li>
+                    <li>User can also add media <strong>From URL</strong> by providing the media&#39;s URL link. User must fill out the entry fields marked with * symbol.&nbsp; Other entry fields are optional for the user to fill them in. </li>
+                    <li><img src="gallery/url.png" alt="From URL" /></li>
+                    <li><em><span class="auto-style3">Figure 19.</span></em><span class="auto-style3"> Add Media From URL</span></li>
+                    <li>User can add media through <strong>Media Library </strong> as shown in Figure 20. Media Library lists all the media that are already uploaded.&nbsp; User can select the media by clicking on the <strong>Show</strong> link and add it to the page.&nbsp; If user would like to find a particular media, user can search for its name in the search box. </li>
+                    <li><img src="gallery/medialibrary.png" alt="Media Library" /></li>
+                    <li><em><span class="auto-style3">Figure 20.</span></em><span class="auto-style3"> Add Media From Media LibraryL</span></li>
                 </ul>
-
-                <a name="discussion"><h2>Revisions Box</h2></a>
-                <ul>
-                    <li>Revisions box is displayed at the bottom of the Add Page.  Once the user clicks on the Revisions header, it will display a list of all the revisions made by the users ordered by date. User can click on a link to see the original page before the changes were made. This feature comes in handy when user would like to view or restore the older versions of the page. </li>
-                    <li><img src="gallery/revisions.png" alt="Revisions" /></li>
-                    <li><span class="auto-style3"><em>Figure 12.</em> List of all the revisions made since the day page was first published</span></li>
-                    <li><img src="gallery/revisionsex.png" style="height: 439px; width: 618px" /></li>
-                    <li><span class="auto-style3"><em>Figure 13.</em> Revision page is displayed when user clicks on a link</span></li>
-                </ul>
-
+                           
                 <a name="attributes"><h2>Attributes</h2></a>
-
                 <ul>
-                    <li>Attributes box provide additional options. It includes Parent menu, template menu, and order input box as shown in Figure 14.</li>
+                    <li>Attributes box provides additional options. It includes <strong>Parent menu</strong>, <strong>Template setting</strong>, and <strong>Order </strong>input box as shown in Figure 21.&nbsp; To see the changes, user must save the changes by clicking on the <strong>Update</strong> button.&nbsp; Clicking on the <strong>Update </strong>button will not publish the changes to actual site.</li>
                     <li><img src="gallery/attributes.png" alt="Attributes Box" /></li>
-                    <li><span class="auto-style3"><em>Figure 14.</em> Attributes Box</span></li>
+                    <li><span class="auto-style3"><em>Figure 21.</em> Attributes Box</span></li>
                     <li class="auto-style5"><strong>Parent Menu</strong></li>
-                    <li>The first option in the Attributes box is the Parent menu.&nbsp; It allows user to choose a parent for the new page user is creating.&nbsp; Parent is the existing page and the new page would be its sub-page.&nbsp; By default, (no parent) would be selected to set the page as main or Parent page.&nbsp; User can choose a Parent page by clicking on the dropdown arrow next to the default Parent as shown in Figure 15.&nbsp; When the user clicks on the dropdown arrow, all the existing pages will be displayed as shown in Figure 15.&nbsp;  </li>
-                    <li>Some of the pages are indented because they are sub-pages of a particular parent page.&nbsp; For instance, Staff is a sub-page of the About Us page.  </li>
+                    <li>The first option in the Attributes box is the Parent menu. Parent menu allows user to choose a parent page for the page.&nbsp; By default, (no parent) is selected.&nbsp; If user wants to make the page a sub-page of an existing page, user needs to select another existing page, parent page, by clicking on the dropdown arrow.&nbsp; Once user clicks on the drop down arrow, all the existing pages will be displayed as shown in Figure 22.&nbsp; As shown in Figure 22, some of the page title are indented because they are sub-pages of a particular parent page.&nbsp; For instance, Staff is a sub-page of the About Us page, and About Us page would be the parent page.  </li>
                     <li><img src="gallery/parentmenu.png" alt="Parent Menu" /></li>
-                    <li><span class="auto-style3"><em>Figure 15.</em> Parent Menu </span></li>
-                    <li class="auto-style5"><strong>Template Menu</strong></li>
-                    <li>Template menu allows user to change the page layout. By default, Default Template is set as current template for the new page. Template menu has five different templates: Default, About Us, Photo Gallery, Reservations, and Services.  Each template differ from each other and displays specific information.  Templates are named under a particular page such as About Us Template is created particulary for About Us page.&nbsp; User will be using Default Template most of the time.&nbsp; User can use other templates if he or she would like to create a page with the same layout as About Us page, Photo Gallery page, Reservation page, or Services Page.&nbsp; Figure 15 shows an example of Photo Gallery page using Photo Gallery Template. </li>
+                    <li><span class="auto-style3"><em>Figure 22.</em> Parent Menu </span></li>
+                    <li class="auto-style5"><strong>Template Setting</strong></li>
+                    <li>Template setting allows user to change the page layout. By default, Default template is set as default. Template setting has five different templates: Default, About Us, Photo Gallery, Reservations, and Services.  Each template differs from each other and displays specific information.  Templates are named under a particular page such as About Us Template is created particulary for About Us page.&nbsp; User will be using Default Template most of the time.&nbsp; But, user can use other templates if he or she would like to make the page have the same layout as About Us page, Photo Gallery page, Reservation page, or Services Page.&nbsp; Figure 24 shows an example of Photo Gallery page using the Photo Gallery Template. </li>
                     <li><img src="gallery/template.png" alt="Template Menu" /></li>
-                    <li><span class="auto-style3"><em>Figure 14.</em> Attributes Box</span></li>
+                    <li><span class="auto-style3"><em>Figure 23.</em> Template Setting</span></li>
                     <li>    
                         <table style="width: 100%;"> 
                             <tr>
-                                <td><img src="gallery/picturegallery.png" alt="Template Menu" style="height: 216px; width: 309px" /><span class="auto-style3"> <em>Figure 15.</em> Photo Gallery Template</span></td>   
-                                <td><img src="gallery/photo.png" alt="Photo Gallery Tempalte" /></td>
+                                <td><img src="gallery/picturegallery.png" alt="Template Menu" style="height: 216px; width: 309px" /><span class="auto-style3"> </span></td>   
+                                <td><img src="gallery/photo.png" alt="Photo Gallery Template" /></td>
                             </tr>
                           </table>
                     </li>
-                    <li><span class="auto-style3"><em>Figure 15.</em> Photo Gallery Template</span></li>
+                    <li><span class="auto-style3"><em>Figure 24.</em> Photo Gallery Template</span></li>
                     <li class="auto-style5"><strong>Order Input Box</strong></li>
-                    <li>Ordered Input Box is located under Template setting.&nbsp; Pages are ordered alphaetically according to their titles by default. User can override this default by using the Order box.&nbsp; By entering numbers in Order boxes for each page, pages are ordered according to the numbers. </li>
+                    <li>Ordered Input Box is located under Template setting.&nbsp; Pages are ordered alphabetically according to their titles by default. User can override this default by using the Order box.&nbsp; By entering numbers in Order boxes for each page, pages are ordered according to the numbers. </li>
                 </ul>
 
                 <a name="publishbox"><h2>Publish Box</h2></a>
 
                 <ul>
-                    <li><img src="gallery/publish.png" alt="Publish Box" /></li>
-                    <li><span class="auto-style3"><em>Figure 15.</em>Publish box is located on the right-hand side of the page</span></li>
+                    <li>Once user is done editing the page, user can either save the page as a Draft or Publish it to the website. It is recommended to click on <strong>Preview</strong> link to preview the page before making it page active.&nbsp; Publish box has options for publishing the page to the site: Status menu, Visibility menu, and Publish date setting.&nbsp; In this section, user will learn how to use these options. If user wishes to delete the current page, user can click on the <strong>Move to Trash</strong> link and the page will be deleted. For any available options, user must click on the <strong>Update </strong>button to save the changes. </li>
+                    <li><img src="gallery/publishbutton.png" alt="Publish Button" /></li>
+                    <li><span class="auto-style3"><em>Figure 25. </em>Publish box is located on the right-hand side of the page</span></li>
                     <li class="auto-style5"><strong>Status Menu</strong></li>
-                    <li>Status Menu is a contextual menu that allows user to move page from one state to another.  Contextual menu shows possible options at any particular time.  Status menu shows only possible options depending on the current state. &nbsp; The current state is already indicated by default.&nbsp; Figure 15 shows that the page&#39;s status is Draft. User can click the Edit link next to the current state to change the status of the page.</li>
+                    <li>Status Menu allows user to move page from one state to another.&nbsp; It is a contextual menu that shows only possible options at a particular time depending on the current state of the new page.&nbsp;&nbsp; By default, the state of the new page is set as Draft.&nbsp; User can click the Edit link next to the current state to change the status of the page. Once user has picked the state, user must click Ok button and Update button to save the changes. </li>
                     <li><img src="gallery/publishstatus.png" alt="Status Menu" /></li>
-                    <li><span class="auto-style3"><em>Figure 16. </em> Status menu</span></li>
-                    <li>States has four different states: Draft, Pending Review, Scheduled, and Published. Not all choices are shown everytime. Figure 16 shows only Pending Review and Draft. The following lists the states and their functions.</li>
+                    <li><span class="auto-style3"><em>Figure 26. </em> Status menu</span></li>
+                    <li>State menu has four different states: Draft, Pending Review, Scheduled, and Published. Not all choices are shown everytime. Figure 18 shows only Pending Review and Draft states. The following lists the states and their functions.</li>
                     <li>
                         <table style="width: 100%;"> 
                             <tr>
@@ -255,9 +275,10 @@
                         </table>
                     </li>
                     <li class="auto-style5"><strong>Visibility Setting</strong></li>
-                    <li>Visibility Setting allows user to decide who can see the page when it is published onto website as shown on Figure 17. The current visilibity state is Public by default. To change the visibility, user must click one of the options press Ok button to confirm or click Cancel link to cancel changing the visibility setting. In order to update the changes, user must ensure he or she clicks on Update button.</li>
+                    <li>Visibility Setting allows user to decide who can see the page when it is published onto website as shown on Figure 27. The current visilibity state is Public by default. To change the visibility, user must choose an option by checking the radio button located next to the state name.&nbsp; Once user has chosen the state, user must press Ok button to confirm or click Cancel link to cancel changing the visibility setting. In order to update the changes, user must ensure to click on the Update button which will be displayed after user cliks on Ok button.&nbsp; </li>
                     <li><img src="gallery/publishvisibility.png" alt="Visibility Menu" /></li>
-                    <li><span class="auto-style3"><em>Figure 17. </em> Visibility Setting</span></li>
+                    <li><span class="auto-style3"><em>Figure 27. </em> Visibility Setting</span></li>
+                    <li>Here is a list of available Visibility options: </li>
                     <li>
                         <table style="width: 100%;"> 
                             <tr>
@@ -268,79 +289,220 @@
                             <tr>
                                 <td class="auto-style7"><i>Password Protected</i></td>   
                                 <td class="tablecontent">&nbsp;</td>
-                                <td>Prompts viewers for password to view the page as shown on Figure 18. Enter the designated password and click Ok to confirm. </td>
+                                <td>Prompts viewers for password to view the page as shown on Figure 28. User must chose a password that will be used by the viewers. </td>
                             </tr>
                             <tr>
                                 <td class="auto-style7"><i>Private</i></td>   
                                 <td class="tablecontent">&nbsp;</td>
-                                <td>Only editors and administrator have the access to view the content by logging on to Wordpress. Anyone else cannot view the page. </td>
+                                <td>Only editors and administrator have the access to view the content by logging on to Wordpress. Anyone else cannot view the page even if he or she has an access to Wordpress. </td>
                             </tr>
                         </table>
                     </li>
                     <br />
                     <li><img src="gallery/password.png" alt="Password" /></li>
-                    <li><span class="auto-style3"><em>Figure 18. </em> Enter Password</span></li>
+                    <li><span class="auto-style3"><em>Figure 28. </em> Enter Password</span></li>
                     <br />
                     <li class="auto-style5"><strong>Publish Setting</strong></li>
-                    <li>The default setting is set to Immediately. When user clicks on the Edit link next to the default Public setting, it will display Figure 18.&nbsp; It allows user to choose a date and time to publish the page automatically.&nbsp; User needs to click Ok button to confirm the changes and click Schedule or Update button to save the changes as shown in Figure 20.</li>
+                    <li>The default setting is set to Immediately. When user clicks on the Edit link next to the default Public setting, it will display Figure 29.&nbsp; It allows user to choose a date and time to publish the page automatically.&nbsp; User needs to click Ok button to confirm the changes and click Schedule or Update button to save the changes as shown in Figure 30.</li>
                     <li>
                         <table style="width: 100%;"> 
                             <tr>
-                                <td><img src="gallery/immediate.png" alt="Publish Setting" /><br /><span class="auto-style3"><em>Figure 19.</em> Publish Setting</span></td>
+                                <td><img src="gallery/immediate.png" alt="Publish Setting" /><br /><span class="auto-style3"><em>Figure 26.</em> Publish Setting</span></td>
                                 <td>&nbsp</td>
                                 <td>&nbsp</td>
-                                <td><img src="gallery/schedule.png" alt="Schedule Button" /><span class="auto-style3"><em>Figure 20.</em> Schedule Button</span></td>
+                                <td><img src="gallery/schedule.png" alt="Schedule Button" /><span class="auto-style3"><em>Figure 30.</em> Schedule Button</span></td>
                             </tr>
                         </table>
                     </li>
-                    <li>
-                        <table style="width: 100%;"> 
-                            <tr>
-                                <td class="auto-style7"><i>Public</i></td>   
-                                <td class="tablecontent">&nbsp;</td>
-                                <td>This is the default setting. Anyone can see the page. </td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style7"><i>Password Protected</i></td>   
-                                <td class="tablecontent">&nbsp;</td>
-                                <td>Prompts viewers for password to view the page. Enter the designated password and click Ok to confirm. </td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style7"><i>Private</i></td>   
-                                <td class="tablecontent">&nbsp;</td>
-                                <td>Only editors and administrator have the access to view the content by logging on to Wordpress. Anyone else cannot view the page. </td>
-                            </tr>
-                        </table>
-                    </li>
-                    <li class="auto-style5"><strong>Publish Button</strong></li>
-                    <li><img src="gallery/publishbutton.png" alt="Publish Button" /></li>
-                    <li>Once user is done editing the page, user can either save the page as a Draft or Publish to the website. It is recommended to click on Preview link to preview the page before making it page active.&nbsp; If user wishes to delete the current page, user can click on the Move to Trash and the page will be deleted.</li>
                 </ul>
+                
+                <a name="discussion"><h2>Discussion and Comments Box</h2></a>
                 <ul>
-                    <li>There are two ways to display &quot;<em>List of Pages</em>&quot; page that the site contains. User can access it by clicking on <strong>Pages</strong> from main menu or <strong>All Pages</strong> from the <strong>Pages&#39;</strong>s &#39;fly out&#39; menu. The &quot;<em>List of Pages</em>&quot; screen looks like in Figure 6. Information includes the page&#39;s title, author, and published date or last date modified.</li>
-                    <li><img src="gallery/pages.jpg" alt="All Pages fly out" style="height: 273px; width: 285px" /></li>
-                    <li><em><span class="auto-style3">Figure 10. &#39;</span></em><span class="auto-style3">Fly Out&#39; Menu for </span> <strong><span class="auto-style3">Pages</span></strong></li>
-                    <li><img src="gallery/listofpagesinfo.jpg" alt="Page information"</li style="height: 128px; width: 619px">
-                    <li><em><img src="gallery/listofpages.jpg" alt="List of Pages" style="height: 333px; width: 618px"/></em></li>
-                    <li><em><span class="auto-style3">Figure 11. </span> </em><span class="auto-style3">List of Pages Screen</span></li>
-                    <li>On top of the page, user can see total of published pages and number of pages published or in drafts. Drafts are only visible under list of pages whereas published pages are active pages on the current website. User can also view the pages by the date they were published or modified using the filter option above. Bulk actions allow user to make changes to several pages at once.&nbsp; If user would like to make changes to some of the pages, user must select those pages by checking the checkboxes next to titles and click apply button. User can apply changes to all pages by checking the main checkbox which is the first checkbox on top. </li>
+                    <li>By default, all checkboxes in Discussion box are checked.&nbsp; User can keep them checked if user would like to allow comments on the page. User should keep them unchecked if user wants to create the page consistent with rest of the pages on divecatalina.net. Comments box allow user to add comments to the current page. </li>
+                    <li><img src="gallery/discussioncomments.png" alt="Discussion and Comments" style="width:607px; height: 200px;" /></li>
+                    <li><span class="auto-style3"><em>Figure 31.</em> Discussion and Comments box</span>
                 </ul>
 
-                <h2>Options for Page</h2>
-                    <ul>
-                        <li>When hovering a cursor on one of the rows, it displays four links below the page title as shown in Figure 7.  These are options that user can perform to make any necessary changes to the particular page. 
-                            The options are <strong>Edit</strong>, <strong>Quick</strong> <strong>Edit</strong>, <strong>Trash</strong>, and <strong>View</strong>.<li><img src="gallery/pageeditoption.jpg" alt="Page edit option" style="height: 265px; width: 356px"/></li>
-                        <li class="auto-style3"><em>Figure 7. </em>Page editing options</li>
-                    </ul>
+                <a name="revisions"><h2>Revisions Box</h2></a>
+                <ul>
+                    <li>Revisions box is displayed at the bottom of the Add Page.  Once the user clicks on the Revisions header, it will display a list of all the revisions made by the users ordered by date. User can click on a link to see the original page before the changes were made. This feature comes in handy when user would like to view or restore the older versions of the page. </li>
+                    <li><img src="gallery/revisions.png" alt="Revisions" /></li>
+                    <li><span class="auto-style3"><em>Figure 32.</em> List of all the revisions made since the day page was first published</span></li>
+                    <li><img src="gallery/revisionsex.png" alt:"Revisions Example" style="width: 607px; height: 429px;"/></li>
+                    <li><span class="auto-style3"><em>Figure 33.</em> Revision page is displayed when user clicks on a link</span></li>
+                </ul>
 
-                <h2>Editing a Page</h2>
-                   <ul>
-                       <li><strong>Edit </strong>option allows user to edit a particular page. When user clicks on this <strong>Edit </strong>option below the title or clicks on the title of the page, it will display <em>'Edit Page' </em>as shown in Figure 8. </li>
-                        <li><em><img src="gallery/editpagescreen.jpg" alt="List of Pages" style="height: 314px; width: 609px"/></em></li>
-                       <li><em><span class="auto-style3">Figure 8. </span></em><span class="auto-style3">Edit page screen.</span></li>
-                       <li>User can use the content box to edit the contents of the page. </li>
-                   </ul>
-                <a href="#top">Go to the Top</a>
+                <a name="addingpage"><h1>Adding a Page</h1></a>
+                <p>When the cursor hovers on the <strong>Pages</strong> link in the main menu on the left, it displays a &#39;fly out&#39; menu with two options: <strong>All Pages</strong> and <strong>Add New</strong>. To create a new page, user must click on the <strong>Add New</strong> link from its &#39;fly out&#39; menu. Once the user clicks on the link, user will see the Add New Page screen as shown in Figure 34. Add New Page is exactly the same as the Edit Page except some features such as Comments box and Revisions box are not available.&nbsp; User can refer back to Editing a Page section in this documentation for tutorial on the features. </p>
+                <ul>
+                    <li><img src="gallery/addnewpage.png" alt="Add New"/></li>
+                    <li class="auto-style3"><em>Figure 34. </em>Add New Page</li>
+                </ul>
+
+                <a name="media"><h1>Editing Media</h1></a>
+                <p>User can enrich the website by adding media such as photos, images, audio, and video.&nbsp; Anything that are multimedia can be uploaded onto Media Library. However Media Library is not limited to only multimedia, user can also upload PDF files and ZIP files without converting them to a specifc format.&nbsp; </p>
+                <p>User can access this feature through the Dashboard.&nbsp; When the user hovers the cursor on Media link in the Dashboard menu on th left-side, a &#39;fly-out&#39; menu will display with two options: <strong>Library</strong> and <strong>Add new</strong>.&nbsp; Library allows user to manage the media items.&nbsp; <strong>Add new </strong>allows user to add new media such as photo, audio, video, pdf, and etc. </p>
+             
+                <a name="medialibrary"><h2> Media Library</h2></a>
+                <ul>
+                    <li>User can add and manage media items in the Media Library.    Library looks a lot like the <a href="#pagesscreen">Pages</a> screen where it displays a list of existing pages. However Media Library has additional features such as<strong> Images </strong>link,<strong> Unattached</strong> link and <strong>Parent</strong> category<strong>.</strong></li>
+                    <li>
+                    <img src="gallery/medialibrarytwo.png" alt="Media Library" /></li>
+                    <li class="auto-style3"><em>Figure 35. </em>Library lists all existing media items</li>
+                    <li class="auto-style5"><strong>Header</strong></li>
+                    <li>The header of Media Library looks a lot like the one from <a href="#pagesscreen">Pages</a> screen. User can add new media directly from the Media Library by clicking on the <strong>Add New</strong> link located next to the Media Library title.&nbsp; Underneath the title of the page, Media Library, user can find a short menu consists of <strong>All</strong>, <strong>Images</strong>, <strong>Unattached</strong>, and etc.&nbsp; These options indicate the status of the media items and how many there are.&nbsp; <strong>All </strong>represents all the media items in the library.&nbsp;<strong> Images</strong> link indicates only the image media items.&nbsp; <strong>Unattached</strong> link indicates media items that are existing in the library but not attached nor used in the actual website.&nbsp;</li>
+                    <li>User can search for a particular media item by searching the name in the search box located far right. Right below the short menu, user can find <strong>Bulk Actions</strong> menu that allows user to make the same changes to selected media items at once.&nbsp; User can also filter the media items by using the <strong>Show by Dates Filter</strong> menu so that user can view only the items from a specifc month and year. For more information on<strong> Bulk Actions</strong> and <strong>Show by Dates Filter</strong> menu, user can refer back to <a href="pagesheader">Pages header</a> section. </li>
+                    <li><img src="gallery/mediaheader.png" alt="Media Header" /></li>
+                    <li class="auto-style3"><em>Figure 35. </em>Library header</li>
+                    <li class="auto-style5"><strong>Media List</strong></li>
+                    <li>User can find list of media items underneath the header of the Media Library.  Each media item is identified by its<strong> File</strong> name<strong> Author</strong>, <strong>Date</strong>, and <strong>Parent</strong>.  <strong>File</strong> link allows user to order the list alphabetically by media item's name. <strong> Author </strong>link allows user to order by the media's author who uploaded the media.  User can also order the list by the <strong>Date</strong> which  makes the list order from the latest to oldest.  The <strong>Parent </strong>category shows the location(s) of where a particular media is attached or used. For instance, figure 36 shows garibaldiAndGorgonian-MD.jpg file uploaded and edited by Admin on December 6, 2012 is attached only in Ron Gallery.</li>
+                    <li><img src="gallery/gallerylist.png" alt="Media List" /></li>
+                    <li class="auto-style3"><em>Figure 35. </em>Library lists all existing media items</li>
+                    <li class="auto-style5"><strong>Attach Media to a Page</strong></li>
+                    <li>Uploaded media items to the Media Library will not automatically visible or attached to the web pages.&nbsp; Once user uploads a media item such as an image through Media Library, user must attach it to a page(s) to see it on the website.&nbsp; For instance, Figure 36 shows that the media is attached to <strong>Ron Gallery </strong>page.&nbsp;User can click on <strong>Ron Gallery</strong> link to direct to Edit Page screen for Ron Gallery page.&nbsp; <strong>Re-Attach</strong> and <strong>attach </strong>links allow user to select more pages to attach the media to.&nbsp; Once user clicks on the link, Find Posts or Pages box will pop up as shown in Figure 37. </li>
+                    <li>If user wishes to add many media items to a particular page, user may want to upload them directly from the Edit Page screen for that specific page.&nbsp; For instance, it is recommended to upload photos directly to Ron Gallery page through Edit Page screen for Ron Gallery.&nbsp; More information is provided in the <a href="#addmedia">Add Media </a> section in the documentation. </li>
+                    <li><img src="gallery/parent.png" alt="Choose Parent" /></li>
+                    <li class="auto-style3"><em>Figure 36. </em>Choose Parent Page</li>
+                    <li><img src="gallery/findpostsorpages.png" alt="Choose another page" /></li>
+                    <li class="auto-style3"><em>Figure 37. </em>Find Posts or Pages to Attach</li>
+                    <li class="auto-style5"><strong>Select Media Item to Edit</strong></li>
+                    <li>User can edit a media by hovering the mouse pointer over the name of the media as shown in Figure 36. A short menu will appear on the bottom of that page name: <strong>Edit</strong>,<strong> Delete Permanently,</strong> and <strong>View</strong>. User can click on the <strong>Edit </strong>link or the name of media to direct to to Edit Media page as shown in Figure 39.&nbsp; User can delete the media item by clicking on <strong>Delete Permanently.&nbsp; View </strong>option allows user to view the media item.&nbsp; </li>
+                    <li><img src="gallery/selectmedia.png" alt="Image Short Menu" /></li>
+                    <li class="auto-style3"><em>Figure 38. </em>Short menu</li>
+                </ul>
+
+                <a name="editmedia"><h2>Edit Media</h2></a>
+                <ul>
+                    <li>Once user clicks on the the name of the media, user will be directed to Edit Media screen as shown in Figure 39.&nbsp; Figure 39 shows an example of Edit Media screen when image media type is selected.&nbsp; User has an option to change the Title, Alternate Text, Caption, and Description for the image.&nbsp; It is recommended not to modify the File URL since it is automatically generated when the user uploaded the image or any type of media.&nbsp;</li>
+                    <li><img src="gallery/editmedia.png" alt="Edit Page Screen" /></li>
+                    <li class="auto-style3"><em>Figure 39. </em>Edit Media</li>
+                    <li class="auto-style5"><strong>Edit Image</strong></li>
+                    <li>When editing an image type of media, user can click on the <strong>Edit Image</strong> button.&nbsp; This allows user to edit the image on the fly without using any image editor.&nbsp; The Tool Bar located on top allows users to flip the image vertically and horizontally, and more. User can hover over each button to see the description.&nbsp; User can also scale and crop the image, and maintain aspect ratio. Once user is done editing the image, user must click on <strong>Save all changes</strong> button to save all changes.&nbsp; </li>
+                    <li><img src="gallery/editimage.png" alt="Edit Image on fly" /></li>
+                    <li class="auto-style3"><em>Figure 40. </em>Edit Image</li>
+                </ul>
+
+                <a name="medialibrary"><h1>Add New Media</h1></a>
+                <p>There are couple ways to add new media.  User can Add New Media directly from the Media Library by clicking on the <strong>Add New</strong> button next to the title. Or user can select <strong>Add New </strong>option from the fly out menu by hovering on <strong>Media </strong>link in the Dashboard menu on left which is always accessible to the user.&nbsp; Once user clicks on either of the links, user will be directed to the Add Media screen as shown in Figure 41. </p>
+                <p>User can upload media by dragging file(s) to the box where it says "Drop files here" or click on the Select Files button. </p>
+               
+                <ul>
+                    <li><img src="gallery/mediabox.png" alt="Media Box" /></li>
+                    <li class="auto-style3"><em>Figure 41. </em>Media Box</li>
+                </ul>
+
+                <a name="uploadone"><h2>Uploading a Media</h2></a>
+                <ul>
+                    <li>Here is an example of what will happen when one media is uploaded.&nbsp;&nbsp; It displays Edit Media screen below the &quot;Drop files here&quot; box.&nbsp; Picture&#39;s properties such as its name, type, date, and dimensions are indicated next to a thumbnail of the media. Since this is an image type, user can click <strong>Edit Image</strong> button to edit the image without using any other editors.&nbsp; User has the ability to change the Title, Alternate Text, Caption, and Description of the media.&nbsp; If user wishes to delete the current media file, user can click on the <strong>Delete </strong>link. Once user clicks on the Save All Changes button, user will be directed back to the Media Library screen where user can see the photo has been added to the list as shown in Figure 43.</li>
+                    <li>Since the media was not uploaded through Edit Page or Add Page, it is not attached to any page by default.&nbsp; User has the ability to change this by clicking on the <strong>Attach </strong>link.</li>
+                    <li><img src="gallery/uploadone.png" alt="Uploading One Media" /></li>
+                    <li class="auto-style3"><em>Figure 42. </em>Uploading One Media</li>
+                    <li><img src="gallery/uploadonesolution.png" alt="Uploaded Media Added to the List" /></li>
+                    <li class="auto-style3"><em>Figure 43. </em>Uploaded Media Added to the List</li>
+                    
+                </ul>
+
+                <a name="uploadone"><h2>Uploading Multiple Media </h2></a>
+                <ul>
+                    <li>User is allowed to upload multiple media items at once.&nbsp; User can upload them dragging them to the &quot;Drop files here&quot; box as shown in Figure 44.&nbsp; User can watch the process of the media files being processed at the bottom as shown in Figure 45. Once all the medial files are uploaded, user can edit individual media file by clicking on the <strong>Show </strong>link.&nbsp; User will be directed back to the Media Library page when user clicks on the <strong>Save All Pages</strong> button. </li>
+                    <li>Figure 45 indicates an error when uploading the files.&nbsp;&nbsp; User must note that the maximum uploaded file size is 2MB. If the file exceeds the maximum file size,&nbsp; it will not upload. </li>
+                    <li>By default, none of the media files are attached to any of the pages.&nbsp; User can attach the files to page(s) by clicking on the <strong>Attach </strong>link as shown in Figure 46. </li>
+                    <li><img src="gallery/dragging.png" alt="Dragging Media Files" /></li>
+                    <li class="auto-style3"><em>Figure 44. </em>Dragging Four Media Files</li>
+                    <li><img src="gallery/uploadigstatus.png" alt="Status of the Uploading Media Files" /></li>
+                    <li class="auto-style3"><em>Figure 45. </em>Process Media Being Uploaded </li>
+                    <li><img src="gallery/multiple.png" alt="Multiple Media" /></li>
+                    <li class="auto-style3"><em>Figure 46. </em>Click on Attach link to attach to page </li>
+                    <li><img src="gallery/findpostsorpages.png" alt="Find Posts or Pages"</li>
+                    <li class="auto-style3"><em>Figure 47. </em>Find Post or Pages to Attach</li> 
+                </ul>
+
+                <a name="uploadone"><h1>Appearance</h1></a>
+                <p>Appearance setting should be accessible by only Admin user.&nbsp; Appearance allows the user to change the look of the site through different themes and headers, which helps manage the way the site content is displayed.</p>
+               
+                 <a name="uploadone"><h2>Themes</h2></a>
+                <ul>
+                    <li>Theme is the overall design of the site and emcompasses graphics, content, and color.&nbsp; The current theme for this website is the divecatalina.net theme created by Team GREP as shown in Figure 48. If user would like to change the theme or try a different theme, user can install new themes by selecting Install Themes tab which will display the screen shown in Figure 49.</li>
+                    <li><img src="gallery/themes.png" alt="Theme" /></li>
+                    <li class="auto-style3"><em>Figure 48. </em>Themes</li> 
+                    <li><img src="gallery/installtheme.png" alt="Theme" /></li>
+                    <li class="auto-style3"><em>Figure 49. </em>Themes</li> 
+                </ul>
+
+                <a name="uploadone"><h2>Widgets</h2></a>
+                <ul>
+                    <li>Widgets allows user to add more features or information to the Theme&#39;s sidebar content.&nbsp; Each section in the sidebar is known as a widget and it can be added, removed, and moved around.&nbsp; User can add widgets such as Recent Posts, Recent Comments, or Arhives through Appearce Widgets Screen as shown in Figure 50. </li>
+                    <li><img src="gallery/widgets.png" alt="Widgets" /></li>
+                    <li class="auto-style3"><em>Figure 50. </em>Appearance Widget Screen</li> 
+                </ul>
+
+                <a name="uploadone"><h2>Menus</h2></a>
+                <ul>
+                    <li>The Menus feature allows the user to create a website navigation menu of pages, custom links, and categories as shown in Figure 51.&nbsp; User can create and edit navigation menus on Appearance Meus Screen as shown in Figure 52.&nbsp; Depending on the theme, user can use one or more navigation menus. For divecatalina.net theme, user is allowed to use only one navigation menu, Main.&nbsp; User can add the pages to the navigation menu by using the Pages box as shown below. Then, user can delete, edit, and move around the pages navigation links. </li>
+                    <li>The indented navigation links such as Boat Dive represents sub-menu of a parent-menu.&nbsp; Boat drive is a sub-menu of Services, therefore its link will be displayed when the visitor clicks on the arrow button next to Services link as shown in Figure 51. </li>
+                    <li><img src="gallery/nav.png" alt="Navigation Bar" /></li>
+                    <li class="auto-style3"><em>Figure 51. </em>Navigation Bar</li> 
+                    <li><img src="gallery/menu.png" alt="Menus" /></li>
+                    <li class="auto-style3"><em>Figure 52. </em>Menus</li> 
+                </ul>
+
+                 <a name="themeoptions"><h2>Color Manager</h2></a>
+                <ul>
+                    <li>Color Manager is a plug-in that allows user to easily change the color scheme without accessing the source code. For example user can use this plug-in if user wishes to change the color the header.&nbsp; Example is shown in Figure 52. </li>
+                    <li>The indented navigation links such as Boat Dive represents sub-menu of a parent-menu.&nbsp; Boat drive is a sub-menu of Services, therefore its link will be displayed when the visitor clicks on the arrow button next to Services link as shown in Figure 51. </li>
+                    <li><img src="gallery/nav.png" alt="Navigation Bar" /></li>
+                    <li class="auto-style5"><strong>Cheat Sheet</strong></li>
+                    <li>
+                        <table style="width: 100%;"> 
+                            <tr>
+                                <td><strong>CSS Selector:</strong></td>
+                            </tr>
+                            <tr>
+                                <td>a</td>
+                                <td>Universal links</td>
+                            </tr>
+                            <tr>
+                                <td>.nav</td>
+                                <td>Menu navigation background</td>
+                            </tr>
+                            <tr>
+                                <td>.nav a</td>
+                                <td>Menu navigation links</td>
+                            </tr>
+                            <tr>
+                                <td>header h1 a</td>
+                                <td>Main header: Dive Catalina</td>
+                            </tr>
+                            <tr>
+                                <td>header h2</td>
+                                <td>Work Less, Dive Moore!</td>
+                            </tr>
+                            <tr>
+                                <td>body</td>
+                                <td>Background of the site or text color of the site</td>
+                            </tr>
+                            <tr>
+                                <td>#content h1</td>
+                                <td>Page headers (i.e. Meet the staff)</td>
+                            </tr>
+                            <tr>
+                                <td>#form h3</td>
+                                <td>Back ground and text color of Make a reservation today</td>
+                            </tr>
+                            <tr>
+                                <td>#form button</td>
+                                <td>Submit button from Reservation page</td>
+                            </tr>
+                            <tr>
+                                <td>#footerContact</td>
+                                <td>Footer contact section</td>
+                            </tr>
+                        </table>
+                    </li>
+                <ul>
+                    <li><a href="#top">Go to the Top</a></li>
+                </ul>
+               
             </div><!--End of content-->
        </div>
         
