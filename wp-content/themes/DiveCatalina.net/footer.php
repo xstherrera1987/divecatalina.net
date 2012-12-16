@@ -28,6 +28,8 @@
 </div>
 
 <?php wp_footer(); ?>
-
+	<?php /* load JS as late as possible */?>
+	<?php /* animated navigation */?>
+	<script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/nav.js"></script>
 </body>
 </html>

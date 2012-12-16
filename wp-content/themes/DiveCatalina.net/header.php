@@ -40,9 +40,7 @@
 	
 	<?php 
 	if ( is_home() || is_front_page() ): ?> 
-		<script type="text/javascript" defer='defer' 
-			src="<?php bloginfo('template_directory');?>/js/slideshow.js">
-		</script>
+
 	<?php endif; ?>
 	
 	<?php /* more WP metadata, stylesheets  */ ?>

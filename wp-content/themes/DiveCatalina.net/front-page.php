@@ -3,12 +3,6 @@
  * This template overrides the Home page to always show a slideshow
  */
 get_header(); ?>
-
-	<script type="text/javascript">
-		// slideshow JS function
-		home_slideshow();
-	</script>
-    
     <div id="content">
     	<div id="slideshow">
 			<?php
@@ -35,4 +29,7 @@ get_header(); ?>
 	</div>
 
 <?php get_sidebar(); ?>
+	<?php /* load JS as late as possible */?>
+	<?php /* slideshow image fadein/fadeout code */?>
+	<script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/slideshow.js"></script>
 <?php get_footer(); ?>
