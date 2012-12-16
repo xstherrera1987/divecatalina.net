@@ -14,7 +14,8 @@ get_header(); ?>
 				the_content();
 				
 				// get Meet the Staff from DB
-				$subpages = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'post_date', 'sort_order' => 'desc' ) );
+				$subpages = get_pages( array( 'child_of' => $post->ID, 'parent' => $post->ID, hierarchical => '1', 'sort_column' => 'post_date', 'sort_order' => 'desc' ) );
+				
 				$content = $subpages[0]->post_content;
 				$content = apply_filters( 'the_content', $content );
 				
