@@ -55,6 +55,8 @@ get_header(); ?>
 				  echo '  </div>';
 				  
 				  echo '</div>';
+				  echo '<div class="clear"></div>';
+				  echo '<br />';
 				}
 				echo '	</div>';
 				

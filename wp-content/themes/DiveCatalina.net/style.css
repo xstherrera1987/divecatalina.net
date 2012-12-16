@@ -382,6 +382,14 @@ footer li {
 
 textarea { resize: none;}
 
+.portrait img {
+    float: left;
+}
+
+.staffbio {
+    float: left;
+    margin-left: 5px;
+}
 
 
 
