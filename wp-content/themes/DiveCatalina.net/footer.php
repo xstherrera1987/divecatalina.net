@@ -9,7 +9,7 @@
 				'container' => '',
 				'link_before'  => '<p class="bottomnav">',
 				'link_after'   => '</p>',
-				'fallback_cb' => 'build_navmenu3'));
+				'fallback_cb' => 'foot_navmenu_fallback'));
 			?>
 		</ul>
 		

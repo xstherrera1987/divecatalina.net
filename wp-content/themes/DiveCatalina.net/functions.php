@@ -52,20 +52,8 @@ function is_sidebar_active( $name ) {
   return false;
 }
 
-// build navigation menu as bare <a>
-function build_navmenu() {
-	$args = array( 'sort_column' => 'post_date', 'post_type' => 'page'
-	,'parent' => 0);
-	$pages = get_pages($args);
-
-	foreach ($pages as $page) {
-		echo '<a href="'.get_permalink($page->ID).'" title="'.
-		$page->post_title.'">'.$page->post_title.'</a></li>';
-	}
-}
-
 // build nav as <li>
-function build_navmenu2() {
+function main_navmenu_fallback() {
 	$args = array(
 	'depth'        => 2,
 	'sort_column'  => 'menu_order, post_title',
@@ -80,7 +68,7 @@ function build_navmenu2() {
 }
 
 // build nav for footer (each <li> in a <ul>)
-function build_navmenu3() {
+function foot_navmenu_fallback() {
 	$args = array(
 	'depth'        => 2,
 	'sort_column'  => 'menu_order, post_title',
@@ -93,27 +81,3 @@ function build_navmenu3() {
 	
 	wp_list_pages( $args );
 }
-
-// build footer navigation
-function minnav() {
-	
-}
-
-// post walker for nav menu (non-default)
-class SimpleNavWalker extends Walker_Nav_Menu {
-	function start_el(&$output, $item) {
-    	// attributes set in admin panel (Menus section)
-		$attributes .= ! empty( $item->target ) ? ' target="' . 
-			$item->target . '"' : '';
-		$attributes .= ! empty( $item->xfn )    ? ' rel="'    . 
-			$item->xfn . '"' : '';
-		$attributes .= ! empty( $item->url )    ? ' href="'   . 
-			$item->url . '"' : '';
-		
-		$item_output .= '<li><a'. $attributes .'>' . $item->title . '</a></li>';
-		
-		$output .= apply_filters( 'walker_nav_menu_start_el', 
-			$item_output, $item);
-	}
-}
-?>

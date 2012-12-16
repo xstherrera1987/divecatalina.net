@@ -29,22 +29,14 @@
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
 		</script>
 	<![endif]-->
-
-	<?php /* load JS */ ?>
-	<?php wp_enqueue_script("jquery"); ?>
-	<?php /* defer script loading until end because depend on jquery */ ?>
-	
-	<script type="text/javascript" defer='defer' 
-		src="<?php bloginfo('template_directory');?>/js/nav.js">
-	</script>
-	
-	<?php 
-	if ( is_home() || is_front_page() ): ?> 
-
-	<?php endif; ?>
 	
 	<?php /* more WP metadata, stylesheets  */ ?>
     <?php wp_head(); ?>
+
+	<?php /* load JS libraries in HEAD section*/ ?>
+	
+	<?php /* safe include for jQuery */ ?>
+	<?php wp_enqueue_script("jquery"); ?>
 </head>
 
 <body>
@@ -59,15 +51,7 @@
 	    	<?php
 	        	wp_nav_menu(array('items_wrap' => '%3$s', 'depth' => 3, 
 	        	'theme_location' => 'mainnav-menu', 'container' => '',
-				'fallback_cb' => 'build_navmenu2'));
-	        
-				// use menu from admin panel, or fallback if none defined
-				/*
-		        wp_nav_menu( array( 'theme_location' => 'mainnav-menu', 
-		        'fallback_cb' => 'build_navmenu2', 'depth' => 2, 
-		        'items_wrap' => '%3$s', 'walker' => new SimpleNavWalker(),
-		        'container' => '',));
-				 */
+				'fallback_cb' => 'main_navmenu_fallback'));
 	        ?>
 		</ul>
 		<?php wp_head(); ?>
