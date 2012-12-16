@@ -6,6 +6,6 @@
 // get parent page (about us)
 $aboutus_url = get_permalink($post->post_parent);
 // anchor into the staff section
-$aboutus_url .= "#staffpages";
+$aboutus_url .= "#meetthestaff";
 // go there
 header( 'Location: '.$aboutus_url ) ;

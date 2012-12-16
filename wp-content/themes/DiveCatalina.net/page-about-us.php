@@ -21,7 +21,7 @@ get_header(); ?>
 				$meetstaff_content = apply_filters( 'the_content', $meetstaff->post_content );
 				
 				// Meet the Staff content (title and maybe short description)
-				echo '<div class="subpage">';
+				echo '<div id="meetthestaff">';
 				echo $meetstaff_content;
 				echo '<br />';
 				
