@@ -14,7 +14,7 @@ get_header();?>
 				the_content(); ?>
 			</div>
 
-			<form id="form" action="/" method="post">	
+			<form id="form" action="<?php bloginfo('template_directory');?>/sendreservation.php" method="post">	
 				<h3>Make a reservation today!</h3>
 		
 				<fieldset><legend>Reservation form</legend>
