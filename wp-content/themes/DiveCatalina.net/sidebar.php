@@ -1,4 +1,4 @@
-<!-- this creates the 3 widget areas -->
+<?php /* this creates the 3 widget areas*/ ?>
 <?php if ( is_sidebar_active('primary_widget_area') ) : ?>
         <div id="primary-widget" class="widget-area">
             <ul class="widgetlist">

@@ -26,7 +26,7 @@ get_header(); ?>
     echo '  <div class="service-section">';
     
     // alternate image and text positions
-    if(i%2==0) {
+    if(i==0) {
       the_serviceimage($pg);
       the_servicecontent($pg);
     } else {
