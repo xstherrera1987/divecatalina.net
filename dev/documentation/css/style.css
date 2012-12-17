@@ -152,10 +152,6 @@ header h1 a, a:visited{
     left: 0px;
 }
 
-.divider {
-    padding-left: 40px;
-}
-
 /** Scroll:used inside the content **/
 .scroll{
 	display:block;

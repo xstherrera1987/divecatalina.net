@@ -35,7 +35,6 @@
                     <li><a href="#login">Logging In</a></li>
                     <li><a href="#dashboard">The Dashboard</a>
                         <ol><a href="#menu">Menu</a></ol>
-                        <ol><a href="#menuoptions">Menu Options</a></ol>
                     </li>
                     <li><a href="#editingpage">Editing a Page</a>
                         <ol><a href="#editpage">Edit Page</a></ol>
@@ -48,11 +47,43 @@
                         <ol><a href="#revisions">Revisions Box</a></ol>
                     </li>
                     <li><a href="#addpage">Adding a Page</a></li>
-                    <li><a href="#editingmedia">Editing Media</a></li>
-                    <li><a href="#addnewmedia">Add New Media</a></li>
-                    <li><a href="#appearance">Appearance</a></li>
-                    <li><a href="#plugins">Plugins</a></li>
-                    <li><a href="#users">Users</a></li>
+                    <li><a href="#editingmedia">Editing Media</a>
+                        <ol><a href="#medialibrary">Media Library</a></ol>
+                        <ol><a href="#editmedia">Edit Media</a></ol>
+                    </li>
+                    <li><a href="#addnewmedia">Add New Media</a>
+                        <ol><a href="#uploadingone">Uploading a Media</a></ol>
+                        <ol><a href="#uploadingmultiple">Uploading Multiple Media</a></ol>
+                    </li>
+                    <li><a href="#appearance">Appearance</a>
+                        <ol><a href="#theme">Theme</a></ol>
+                        <ol><a href="#widgets">Widgets</a></ol>
+                        <ol><a href="#menus">Menus</a></ol>
+                        <ol><a href="#colormanager">Color Manager</a></ol>
+                        <ol><a href="#fontific">Fontific</a></ol>
+                        <ol><a href="#themeeditor">Theme Editor</a></ol>
+                    </li>
+                    <li><a href="#plugins">Plugins</a>
+                        <ol><a href="#installedplugin">Installed Plugins</a></ol>
+                        <ol><a href="#addnewplugin">Add New Plugin</a></ol>
+                        <ol><a href="#plugineditor">Plugin Editor</a></ol>
+                    </li>
+                    <li><a href="#users">Users</a>
+                        <ol><a href="#allusers">All Users</a></ol>
+                        <ol><a href="#addnewuser">Add New Users</a></ol>
+                        <ol><a href="#yourprofile">Your Profile</a></ol>
+                    </li>
+                    <li><a href="#setting">Setting</a>
+                        <ol><a href="#general">General</a></ol>
+                        <ol><a href="#writing">Writing</a></ol>
+                        <ol><a href="#reading">Reading</a></ol>
+                        <ol><a href="#discussion">Discussion</a></ol>
+                        <ol><a href="#media">Media</a></ol>
+                        <ol><a href="#privacy">Privacy</a></ol>
+                        <ol><a href="#permalinks">Permalinks</a></ol>
+                        <ol><a href="#jquery">jQuery Lightbox</a></ol>
+                    </li>
+
                 </ul>
             </div>
 
@@ -63,10 +94,8 @@
                 <div class="divider"><hr/></div>
 
                 <a name="login"><h1>Logging In</h1></a>
-                <p>User can use administration interface to modify content and set up stucture of the website.</p>
+                <p>User can use administration interface to modify content and set up stucture of the website.In order to access the administration interface, user must log in first.  User can access the log in screen, as shown in Figure 1, by using the address <a href="http://www.yourdomain.com/wp-admin">www.divecatalina.net/wp-admin</a>.Then, user will be asked to enter the username and password. User must log off when done using the admin panel.  It will stay logged in until user logs out.</p>
                 <ul>
-                    <li>In order to access the administration interface, user must log in first.&nbsp; User can access the log in screen, as shown in Figure 1, by using the address <a href="http://www.yourdomain.com/wp-admin">www.divecatalina.net/wp-admin</a>. Then, user will be asked to enter the <em>username </em>and <em>password.</em></li>
-                    <li>User must log off when done using the admin panel.&nbsp; It will stay logged in until user logs out.</li>
                     <li><img src="gallery/wordpresslogin.jpg" alt="Login Page" style="height: 299px; width: 306px"></li>
                     <li><em><span class="auto-style3">Figure 1. </span> </em><span class="auto-style3">Log in screen</span></li>
                 </ul>
@@ -88,7 +117,7 @@
                     
                             <table style="width: 107%; margin-right: 55px;"> 
                                 <tr>
-                                    <td class="auto-style2"><img src="gallery/flyout.jpg" alt="Sidebar" style="width: 290px; margin-right: 0px; height: 259px;"><em><span class="auto-style3">Figure 4. </span> </em><span class="auto-style3">Media Fly Out</span></td>   
+                                    <td class="auto-style2"><img src="gallery/flyout.jpg" alt="Sidebar"><em><span class="auto-style3">Figure 4. </span> </em><span class="auto-style3">Media Fly Out</span></td>   
                                     <td class="auto-style4"></td>
                                     <td>Menu has been adjusted to show only the options that are applicable to the user. Menu includes six options:&nbsp; <strong>Media</strong>, <strong>Pages</strong>, <strong>Appearance</strong>, <strong>Plugins, Users</strong>, and <strong>Settings</strong>.
                                         <br />
@@ -408,7 +437,7 @@
                     <li class="auto-style3"><em>Figure 41. </em>Media Box</li>
                 </ul>
 
-                <a name="uploadone"><h2>Uploading a Media</h2></a>
+                <a name="uploadingone"><h2>Uploading a Media</h2></a>
                 <ul>
                     <li>Here is an example of what will happen when one media is uploaded.&nbsp;&nbsp; It displays Edit Media screen below the &quot;Drop files here&quot; box.&nbsp; Picture&#39;s properties such as its name, type, date, and dimensions are indicated next to a thumbnail of the media. Since this is an image type, user can click <strong>Edit Image</strong> button to edit the image without using any other editors.&nbsp; User has the ability to change the Title, Alternate Text, Caption, and Description of the media.&nbsp; If user wishes to delete the current media file, user can click on the <strong>Delete </strong>link. Once user clicks on the Save All Changes button, user will be directed back to the Media Library screen where user can see the photo has been added to the list as shown in Figure 43.</li>
                     <li>Since the media was not uploaded through Edit Page or Add Page, it is not attached to any page by default.&nbsp; User has the ability to change this by clicking on the <strong>Attach </strong>link.</li>
@@ -419,7 +448,7 @@
                     
                 </ul>
 
-                <a name="uploadone"><h2>Uploading Multiple Media </h2></a>
+                <a name="uploadingmultiple"><h2>Uploading Multiple Media </h2></a>
                 <ul>
                     <li>User is allowed to upload multiple media items at once.&nbsp; User can upload them dragging them to the &quot;Drop files here&quot; box as shown in Figure 44.&nbsp; User can watch the process of the media files being processed at the bottom as shown in Figure 45. Once all the medial files are uploaded, user can edit individual media file by clicking on the <strong>Show </strong>link.&nbsp; User will be directed back to the Media Library page when user clicks on the <strong>Save All Pages</strong> button. </li>
                     <li>Figure 45 indicates an error when uploading the files.&nbsp;&nbsp; User must note that the maximum uploaded file size is 2MB. If the file exceeds the maximum file size,&nbsp; it will not upload. </li>
@@ -439,7 +468,7 @@
                 <a name="appearance"><h1>Appearance</h1></a>
                 <p>Appearance setting should be accessible by only the Admin user.&nbsp; User can access the Appearance setting by clicking on <strong>Appearance</strong> link on the Dashboard menu on the left-side, or click on one of the options from its fly out menu.&nbsp; Appearance allows the user to change the look of the site through different themes and headers, which helps manage the way the site content is displayed.</p>
                
-                 <a name="uploadone"><h2>Themes</h2></a>
+                 <a name="theme"><h2>Themes</h2></a>
                 <ul>
                     <li>Theme is the overall design of the site and emcompasses graphics, content, and color.&nbsp; The current theme for this website is the divecatalina.net theme created by Team GREP as shown in Figure 48. If user would like to change the theme or try a different theme, user can install new themes by selecting Install Themes tab which will display the screen shown in Figure 49.</li>
                     <li><img src="gallery/themes.png" alt="Theme" /></li>
@@ -448,14 +477,14 @@
                     <li class="auto-style3"><em>Figure 49. </em>Themes</li> 
                 </ul>
 
-                <a name="uploadone"><h2>Widgets</h2></a>
+                <a name="widgets"><h2>Widgets</h2></a>
                 <ul>
                     <li>Widgets allows user to add more features or information to the Theme&#39;s sidebar content.&nbsp; Each section in the sidebar is known as a widget and it can be added, removed, and moved around.&nbsp; User can add widgets such as Recent Posts, Recent Comments, or Arhives through Appearce Widgets Screen as shown in Figure 50. </li>
                     <li><img src="gallery/widgets.png" alt="Widgets" /></li>
                     <li class="auto-style3"><em>Figure 50. </em>Appearance Widget Screen</li> 
                 </ul>
 
-                <a name="uploadone"><h2>Menus</h2></a>
+                <a name="menus"><h2>Menus</h2></a>
                 <ul>
                     <li>The Menus feature allows the user to create a website navigation menu of pages, custom links, and categories as shown in Figure 51.&nbsp; User can create and edit navigation menus on Appearance Meus Screen as shown in Figure 52.&nbsp; Depending on the theme, user can use one or more navigation menus. For divecatalina.net theme, user is allowed to use only one navigation menu, Main.&nbsp; User can add the pages to the navigation menu by using the Pages box as shown below. Then, user can delete, edit, and move around the pages navigation links. </li>
                     <li>The indented navigation links such as Boat Dive represents sub-menu of a parent-menu.&nbsp; Boat drive is a sub-menu of Services, therefore its link will be displayed when the visitor clicks on the arrow button next to Services link as shown in Figure 51. </li>
@@ -571,7 +600,7 @@
                         </table>
                         </li>
                     </ul>
-                    <a name="editor"><h2>Theme Editor</h2></a>
+                    <a name="themeeditor"><h2>Theme Editor</h2></a>
                     <ul>
                         <li>Theme Editor allows user to edit the various files that comprise the Themes.&nbsp; Appearance Editor Screen allows user to select the theme and edit the CSS and Template files in the large text box as shown in Figure 56. </li>
                         <li><img src="gallery/editthemes.png" alt="Edit Themes" /></li>
@@ -583,7 +612,7 @@
                     <a name="plugins"><h1>Plugins</h1></a>
                     <p>Plugins allow user to add more features to the website that do not come with the default installation.&nbsp; User can access Plugins by clicking on the <strong>Plugins</strong> link on the Dashboard menu on the left-side, or clicking on one of the options from its fly out menu.&nbsp; </p>
                     
-                    <a name="installedplugins"><h2>Installed Plugins</h2></a>
+                    <a name="installedplugin"><h2>Installed Plugins</h2></a>
                     <ul>
                         <li>Once user clicks on the <strong>Plugins </strong>link or <strong>Installed Plugins</strong> link from <strong>Plugins</strong>&#39; fly-out menu, user will be directed to Plugins Installed Screen as shown in Figure 57.  Not all installed plugins are activated on the website.&nbsp; User can choose which plugins to activate or deactivate on the site.  </li>
                         <li><img src="gallery/plugin.png" alt="Plugins" /></li>
@@ -599,7 +628,7 @@
                         <li class="auto-style3"><em>Figure 59. </em>Bulk Actions Menu</li> 
                     </ul>
 
-                    <a name="addnewplugins"><h2>Add New Plugin</h2></a>
+                    <a name="addnewplugin"><h2>Add New Plugin</h2></a>
                     <ul>
                         <li>User can install new plugin directly from the Plugins page by clicking on the <strong>Add New </strong>button.&nbsp; Once user clicks on the button, user will be directed to<strong> Install Plugin</strong> page as shown in Figure 60. User can also access the Install Plugin page by clicking on the <strong>Add New</strong> link from the fly-out menu by hovering the cursor on the <strong>Plugins</strong> link on the Dashboard menu. </li>
                         <li><img src="gallery/installplugins.png" alt="Install Plugins" /></li>
@@ -642,11 +671,62 @@
                         <li>User can change any information through Users Your Profile Screen as shown in Figure 66.  A particular user's Your Profile Screen can only be accessible by that user.  No one else can make changes to other users' Profiles. </li>
                         <li><img src="gallery/profile.png" alt="Profile" /></li>
                         <li class="auto-style3"><em>Figure 66. </em>User Your Profile Screen</li> 
-                   </ul>
-                    <ul>
-                        <li><a href="#top">^ Back to Top</a></li>
                     </ul>
-               
+                    <div class="divider"><a href="#top"> ^ Back to Top</a><hr/></div> 
+                    <a name="setting"><h1>Setting</h1></a>
+                    <p><strong>Setting</strong> feature deals with the settings that define the website as a whole.  It has additional settings to control the compatability, usuability, and security of the site.  It determines how the site behaves, how users interact with the site, and how viewers interact with the site. <strong>Setting</strong> feature can be accessed by clicking on the <strong>Setting </strong>option in the Dashboard Menu on the left side.  When user hovers on the <strong>Setting</strong> link, it will display a fly-out menu with options: <strong>General</strong>,<strong> Writing</strong>, <strong>Reading</strong>, <strong>Discussion</strong>, <strong>Media</strong>, <strong>Privacy</strong>,<strong> Permalinks</strong>, and <strong>jQuery Lightbox</strong>.</p>
+                      
+                    <a name="general"><h2>General</h2></a>
+                    <ul>
+                        <li>General sceen is the default screen for Setting feature. When user clicks on <strong>Setting </strong>link from the main menu, user will be directed to General screen. It allows user to control some of the basic configuration settings for the site such as the calculating times and dats, and site's title as shown in Figure 67.</li>
+                        <li><img src="gallery/general.png" alt="General" /></li>
+                        <li class="auto-style3"><em>Figure 67. </em>General Screen</li> 
+                    </ul>
+                    <a name="writing"><h2>Writing</h2></a>
+                    <ul>
+                        <li>Wrting screen allows user to control the interface which is used when wrting new posts.&nbsp; User can resize the post box, category, link cateogory, post format, image size, and optional post vis e-mail feature. </li>
+                        <li><img src="gallery/writing.png" alt="Writing" /></li>
+                        <li class="auto-style3"><em>Figure 68. </em>Writing Screen</li> 
+                    </ul>
+                    <a name="reading"><h2>Reading</h2></a>
+                    <ul>
+                        <li>Reading screen allows user to decide to display static page or post as the main page of the website.  User can adjust how many posts can be displayed and syndication feed features as shown in Figure 69.  Syndication feed determins how information from the site is setnt o reader's web browser. </li>
+                        <li><img src="gallery/reading.png" alt="General" /></li>
+                        <li class="auto-style3"><em>Figure 69. </em>Reading Screen</li> 
+                    </ul>
+                    <a name="discussion"><h2>Discussion</h2></a>
+                    <ul>
+                        <li>Discussion Screen allows user to control incoming and outgoing comments, pingbacks, and trackbacks. One of the features&nbsp; it allows user to do is to set it up so that the blog sends automatic emails to the user about the happenings on the website.&nbsp; For instance, user would get an email if there was a change on a page by another user.&nbsp; </li>
+                        <li><img src="gallery/discussions.png" alt="Discussion" /></li>
+                        <li class="auto-style3"><em>Figure 70. </em>Discussion</li> 
+                    </ul>
+                    <a name="media"><h2>Media</h2></a>
+                    <ul>
+                        <li>Media screen allows user to determine where multi media files, zip files and pdf files will be linked to when inserted into the body of a post and to specify the maximum dimensions in pixels to use when inserting an image into the body of a post. </li>
+                        <li><img src="gallery/mediasetting.png" alt="Media" /></li>
+                        <li class="auto-style3"><em>Figure 71. </em>Media Screen</li> 
+                    </ul>
+
+                    <a name="privacy"><h2>Privacy</h2></a>
+                    <ul>
+                        <li>Privacy screen allows user to decide on the visibility of the website on search engines such as Google.&nbsp; </li>
+                        <li><img src="gallery/privacy.png" alt="privacy" /></li>
+                        <li class="auto-style3"><em>Figure 72. </em>Privacy Screen</li> 
+                    </ul>
+
+                    <a name="permalinks"><h2>Permalinks</h2></a>
+                    <ul>
+                        <li><img src="gallery/permalinkscreen.png" alt="Permalinks" /></li>
+                        <li class="auto-style3"><em>Figure 73. </em>Permalinks Screen</li> 
+                    </ul>
+                    
+                    <a name="jquery"><h2>jQuery Lightbox</h2></a>
+                    <ul>
+                        <li>jQuery Lightbox is a Lightbox plugin setting that was installed when the plugin was activated. Lightbox plugin is used with the photo gallery to display photos in a certain way. The setting allows user to edit the plugin's properties without accessing the code.</li>
+                        <li><img src="gallery/jquerybox.png" alt="Permalinks" /></li>
+                        <li class="auto-style3"><em>Figure 74. </em>jQuery Lightbox</li> 
+                    </ul>
+                    <div class="divider"><a href="#top"> ^ Back to Top</a><hr/></div> 
             </div><!--End of content-->
        </div>
         

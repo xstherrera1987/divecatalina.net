@@ -6,9 +6,14 @@
 get_header();?>
 
 	<script type="text/javascript">
-		// slideshow JS function
-		home_slideshow();
-	</script>
+    // slideshow JS function
+    home_slideshow();
+    $('img[data-large]').touchGallery({
+    getSource: function() {
+    return $(this).attr('data-large');
+    }
+    });
+  </script>
 	
 	<div id="content">
     <div id="gallery">
