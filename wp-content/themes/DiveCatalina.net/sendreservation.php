@@ -76,7 +76,7 @@
 		<div id="container">
 			<div id="formresult">
 
-				<h1><a href="index.html">Dive Catalina</a></h1>
+				<h1><a href="http://www.divecatalina.net">Dive Catalina</a></h1>
 				<h2>Work less... Dive Moore!</h2>
 				<div class = "clear"></div>
 
