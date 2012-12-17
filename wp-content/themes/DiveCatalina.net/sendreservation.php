@@ -50,12 +50,7 @@
 		$emailSent = true;
 	}
 
-	if(isset($emailSent) && $emailSent == true) {
-		$result = "Your reservation request has been made. We will be contacting you soon";
-	} 
-	else {
-		$result = "Oops! Something went wrong with your request. Please review your request and send us another one.";
-	} ?>
+	?>
 		<!DOCTYPE html>
 		<html>
 		<head>
@@ -81,7 +76,13 @@
 				<div class = "clear"></div>
 
 				<p>
-					<?php echo $result;?> <br/><br/>
+					<?php 
+						if(isset($emailSent) && $emailSent == true)
+							echo '<p>Your reservation request has been made. We will be contacting you soon</p>'; 
+						else
+							echo '<p id="errormsg">Oops! Something went wrong with your request.<br> Please review your request and send us another one.</p>';
+					?> 
+					<br/><br/>
 					<div id="formresult-sig">- Ron &amp; Connie</div>
 				</p>
 					

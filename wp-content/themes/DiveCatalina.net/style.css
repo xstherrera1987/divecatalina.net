@@ -408,6 +408,11 @@ textarea { resize: none;}
 	font-style: italic;
 }
 
+#errormsg {
+	font-size: 32px;
+	color: #ff0000;
+}
+
 .portrait img {
     float: left;
 }
