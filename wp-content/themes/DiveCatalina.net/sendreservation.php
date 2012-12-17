@@ -1,68 +1,93 @@
 <?php
+	//Check to make sure that the name field is not empty
+	if(trim($_POST['name']) == '') {
+		$hasError = true;
+	} else {
+		$name = trim($_POST['name']);
+	}
 
-/* Email Variables */
+	//Check to make sure that the subject field is not empty
+	if(trim($_POST['subject']) == '') {
+		$hasError = true;
+	} else {
+		$subject = trim($_POST['subject']);
+	}
 
-$emailSubject = 'Dive Catalina Reservation Request';
-$webMaster = 'jngallego@gmail.com';
+	//Check to make sure sure that a valid email address is submitted
+	if(trim($_POST['email']) == '')  {
+		$hasError = true;
+	} else if (!eregi("^[A-Z0-9._%-]+@[A-Z0-9._%-]+\.[A-Z]{2,4}$", trim($_POST['email']))) {
+		$hasError = true;
+	} else {
+		$email = trim($_POST['email']);
+	}
 
+	//Check to make sure that a valid phone number is submitted
+	if(trim($_POST['phone']) == '') {
+		$hasError = true;
+	} else {
+		$phone = trim($_POST['phone']);
+	}
 
-/* Data Variables */
+	//Check to make sure comments were entered
+	if(trim($_POST['message']) == '') {
+		$hasError = true;
+	} else {
+		if(function_exists('stripslashes')) {
+			$message = stripslashes(trim($_POST['message']));
+		} else {
+			$message = trim($_POST['message']);
+		}
+	}
 
-$name = $_POST['name'];
-$lname = $_POST['email'];
-$email = $_POST['phone'];
-$comments = $_POST['message'];
+	//If there is no error, send the email
+	if(!isset($hasError)) {
+		$emailTo = 'jngallego@gmail.com'; //Put your own email address here
+		$body = "Name: $name \n\nEmail: $email \n\nPhone: $phone \n\nSubject: $subject \n\nMessage:\n\n$message";
+		$headers = 'From: '.$name.' <'.$email.'>' . "\r\n" . 'Reply-To: ' . $email;
 
-$body = <<<EOD
-<br><hr><br>
-Name: $name <br>
-Last: $lname <br>
-Email: $email <br>
-Message: $message <br>
+		mail($emailTo, $subject, $body, $headers);
+		$emailSent = true;
+	}
 
-EOD;
-$headers = "From: $email\r\n";
-$headers .= "Content-type: text/html\r\n";
-$success = mail($webMaster, $emailSubject, $body,
-$headers);
+	if(isset($emailSent) && $emailSent == true) {
+		$result = "Your reservation request has been made. We will be contacting you soon";
+	} 
+	else {
+		$result = "Oops! Something went wrong with your request. Please review your request and send us another one.";
+	} ?>
+		<!DOCTYPE html>
+		<html>
+		<head>
+			<meta charset="utf-8">
 
-/* Results rendered as HTML */
+			<title>Dive Catalina</title>
 
-$theResults = <<<EOD
-<html>
-<head>
-<title>sent message</title>
-<meta http-equiv="refresh" content="4;URL=http://www.divecatalina.net">
-<style type="text/css">
-<!--
-body {
-background-color: #cacaca;
-font-family: Verdana, Arial, Helvetica, sans-serif;
-font-size: 20px;
-font-style: normal;
-line-height: normal;
-font-weight: normal;
-color: #222222;
-text-decoration: none;
-padding-top: 200px;
-margin-left: 150px;
-width: 800px;
-}
+			<link rel="stylesheet" href="css/reset.css" />
+			<link rel="stylesheet" href="style.css" />
+			<link rel="stylesheet" href="css/media-queries.css" />
 
--->
-</style>
-</head>
-<div align="center">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!--[if IE]>
+				<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+   		</head>
+   		<body>
+		<div id="container">
+			<div id="formresult">
 
-	Your reservation request has been made. We will be contacting you soon.
+				<h1><a href="index.html">Dive Catalina</a></h1>
+				<h2>Work less... Dive Moore!</h2>
+				<div class = "clear"></div>
 
-	- Ron & Connie
- </div>
-
-
-</div>
-</body>
-</html>
-EOD;
-echo "$theResults";
-?>
+				<p>
+					<?php echo $result;?> <br/><br/>
+					<div id="formresult-sig">- Ron &amp; Connie</div>
+				</p>
+					
+				<br/><br/><br/>
+				<a href="http://www.divecatalina.net"> >> Return to Dive Catalina << </p>
+		 	</div>
+		</div>
+		</body>
+		</html>

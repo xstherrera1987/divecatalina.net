@@ -34,7 +34,6 @@
     <?php wp_head(); ?>
 
 	<?php /* load JS libraries in HEAD section*/ ?>
-	
 	<?php /* safe include for jQuery */ ?>
 	<?php wp_enqueue_script("jquery"); ?>
 </head>
