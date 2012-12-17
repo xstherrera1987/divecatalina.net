@@ -31,7 +31,7 @@ get_header(); ?>
 				echo '	<div id="staffpages">';
 				foreach($staffpages as $pg) {
 				  
-				  echo '<div class="staff">';
+				  echo '  <div class="staff">';
 				  // picture first (so its on left)
 				  echo '  <div class="portrait">';
 				  
@@ -55,7 +55,7 @@ get_header(); ?>
 				  echo '  </div>';
 				  
 				  echo '</div>';
-				  echo '<div class="clear"></div>';
+				  echo '  <div class="clear"></div>';
 				  echo '<br />';
 				}
 				echo '	</div>';
