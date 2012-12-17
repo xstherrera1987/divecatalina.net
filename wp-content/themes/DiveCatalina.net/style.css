@@ -396,3 +396,18 @@ textarea { resize: none;}
     float:left;
     margin: 10px;
 }
+/*******GALLERY*******/
+.gallery {
+				margin: auto;
+			}
+			.gallery-item {
+				float: left;
+				margin-top: 10px;
+				text-align: center;
+				width: 20%;		}
+			.gallery img {
+				border: 5px solid #4d4d4d;
+			}
+			.gallery-caption {
+				margin-left: 0;
+			}

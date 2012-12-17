@@ -81,3 +81,7 @@ function foot_navmenu_fallback() {
 	
 	wp_list_pages( $args );
 }
+function remove_gallery_style() {
+  return "<div class='gallery'>";
+}
+add_filter('gallery_style', 'remove_gallery_style');
