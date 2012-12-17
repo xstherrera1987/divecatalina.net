@@ -63,9 +63,9 @@
 
 			<title>Dive Catalina</title>
 
-			<link rel="stylesheet" href="css/reset.css" />
-			<link rel="stylesheet" href="style.css" />
-			<link rel="stylesheet" href="css/media-queries.css" />
+			<link rel="stylesheet" href="css/reset.css" type="text/css" />
+		    <link rel="stylesheet" type="text/css" href="style.css" />
+		    <link rel="stylesheet" href="css/media-queries.css"	type="text/css" />
 
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<!--[if IE]>
