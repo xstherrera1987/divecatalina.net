@@ -3,7 +3,8 @@ Project Name: Dive Catalina.net
 Author: Team Grep
 */
 
-a 			{ text-decoration: none; color: #0086AB;}
+li              { list-style-position: inside;}
+a 		{ text-decoration: none; color: #0086AB;}
 a:hover 	{ text-decoration: underline;}
 
 .clear		{clear: both;}
@@ -223,7 +224,7 @@ header h2 {
 	margin-bottom: 50px;
 }
 
-#content h1 {
+h1 {
 	font-family: 'nexa-bold-regular', Arial, sans-serif;
 	font-size: 24px;
 	color: #0086AB;
@@ -388,14 +389,10 @@ textarea { resize: none;}
 
 .staffbio {
     float: left;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
-
-
-
-
-
-
-
-
+.service-section .service-image {
+    float:left;
+    margin: 10px;
+}
