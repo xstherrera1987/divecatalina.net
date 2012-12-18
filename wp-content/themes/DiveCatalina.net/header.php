@@ -23,6 +23,12 @@
     <link rel="stylesheet" 
 		href="<?php bloginfo('template_directory');?>/css/media-queries.css"
 		type="text/css" />
+	<?php
+	if (strcasecmp(get_the_title($post->ID), "links") == 0) { ?>
+	    <link rel="stylesheet" 
+	      href="<?php bloginfo('template_directory');?>/css/links.css"
+	      type="text/css" />
+	<?php } ?>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--[if IE]>
