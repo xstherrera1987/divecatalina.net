@@ -30,11 +30,6 @@ get_header();?>
 						<input type="text" name="phone" id="phone" value="" class="required" role="input" aria-required="true" size="30" />
 					</p>		
 					<p>
-						<label for="subject">Subject: <em>*</em></label>
-						<input type="text" name="subject" id="subject" value="" class="required" role="input" aria-required="true" size="30" />
-					</p>	
-
-					<p>
 						<label for="message">Message: <em>*</em></label>
 						<textarea name="message" id="message" class="required" roles="textbox" aria-required="true" cols="30" rows="10"></textarea>
 					</p>					

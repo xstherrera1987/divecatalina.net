@@ -6,13 +6,6 @@
 		$name = trim($_POST['name']);
 	}
 
-	//Check to make sure that the subject field is not empty
-	if(trim($_POST['subject']) == '') {
-		$hasError = true;
-	} else {
-		$subject = trim($_POST['subject']);
-	}
-
 	//Check to make sure sure that a valid email address is submitted
 	if(trim($_POST['email']) == '')  {
 		$hasError = true;
@@ -42,10 +35,11 @@
 
 	//If there is no error, send the email
 	if(!isset($hasError)) {
-		$emailTo = 'jngallego@gmail.com'; //Put your own email address here
+		$emailTo = 'itdoesnot@gmail.com'; //Put your own email address here
 		$body = "Name: $name \n\nEmail: $email \n\nPhone: $phone \n\nSubject: $subject \n\nMessage:\n\n$message";
-		$headers = 'From: '.$name.' <'.$email.'>' . "\r\n" . 'Reply-To: ' . $email;
-
+		$headers = 'From: '.$email;
+		$subject = "DiveCatalina.net Diving Registration";
+		
 		mail($emailTo, $subject, $body, $headers);
 		$emailSent = true;
 	}
