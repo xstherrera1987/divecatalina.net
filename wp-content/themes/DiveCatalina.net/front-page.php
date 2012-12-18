@@ -15,7 +15,7 @@ get_header(); ?>
 					$height = $img_meta['height'];
 					$img_data = wp_get_attachment_image_src($img->ID, array($width,$height));
 					$url = $img_data[0];
-					echo '<img src="'.$url.'" height="'.$height.'" width="'.$width.'" />';
+					echo '<img src="'.$url.'" height="256" width="755" />';
 				}
 			?>
 		</div>

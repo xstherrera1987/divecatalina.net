@@ -274,18 +274,14 @@ footer li {
 
 /************ INDEX ************/
 #slideshow { 
-	position: relative;
+    position: relative;
     margin: 20px auto;
-    max-width: 755px;
+    width: 755px;
     height: 256px;
 }
 
 #slideshow img {
     position: absolute;
-    left: 50%;
-    width: 100%;
-    margin-left: -50%;
-    height: auto;
 }
 
 /************ ABOUT US ************/
