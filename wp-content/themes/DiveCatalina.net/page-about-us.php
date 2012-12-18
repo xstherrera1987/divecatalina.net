@@ -20,7 +20,7 @@ get_header(); ?>
 				$img = $aboutusimages[0];
 				$img_data = wp_get_attachment_image_src($img->ID, "full");
 				$url = $img_data[0];
-				echo '<img src="'.$url.'" height="281" width="211" class="aboutus-imgleft" />';
+				echo '<img src="'.$url.'" height="211" width="281" class="aboutus-imgleft" />';
 				
 				the_content();
 				echo '<br/><hr/><br/>';
