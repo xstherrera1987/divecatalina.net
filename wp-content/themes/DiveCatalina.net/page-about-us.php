@@ -11,6 +11,9 @@ get_header(); ?>
 			<?php
 				// About us Content
 				the_post();
+				echo '<h1>'.get_the_title($post->ID).'</h1>';
+				echo '<div class="clear"></div>';
+				
 				$aboutusimgargs = array('post_type' => 'attachment', 'post_mime_type' => 'image', 'post_parent' => $post->ID);
 				$aboutusimages = get_posts( $aboutusimgargs );
 				// only use first image
