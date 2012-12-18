@@ -18,7 +18,7 @@ get_header(); ?>
 				$aboutusimages = get_posts( $aboutusimgargs );
 				// only use first image
 				$img = $aboutusimages[0];
-				$img_data = wp_get_attachment_image_src($img->ID);
+				$img_data = wp_get_attachment_image_src($img->ID, "full");
 				$url = $img_data[0];
 				echo '<img src="'.$url.'" height="281" width="211" class="aboutus-imgleft" />';
 				
