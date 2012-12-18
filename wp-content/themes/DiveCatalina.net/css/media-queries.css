@@ -70,7 +70,51 @@
     .bottomnav-ul li { float: none; margin: 0 10px; }
     #footerContact {display: none;}
 
+     /************ Gallery ************ Portrait view*/
+    .gallery {
+		margin: auto;
+	}
+	.gallery-item {
+		float: none;
+		text-align: center;
+		width: auto;
+	}
+
+	.gallery img {
+		border: 2px solid #4d4d4d; 
+        width: 160px; 
+        height: auto;
+	}
+	.gallery-caption {
+		margin-left: 0;
+	}
 }
+
+@media screen
+     and (min-width: 479px)
+     and (max-width: 930px) {
+     /************ Gallery ************/
+    .gallery {
+		margin: auto;
+	}
+	.gallery-item {
+		float: left;
+		text-align: center;
+		width: 20%; /*Size of the columns*/
+	}
+
+    .gallery img {
+        border: 2px solid #4d4d4d; 
+        width: 85%; 
+        height:auto;
+        padding: 0px;
+        margin: 0px;
+       }
+	.gallery-caption {
+		margin-left: 0;
+	}
+   }
+
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
@@ -147,18 +191,19 @@ and (max-device-width : 480px) {
     /************ FOOTER ************/
     .bottomnav-ul li { float: none; margin: 0 10px; }
     #footerContact {display: none;}
+
 }
  
 /* Smartphones (landscape) ----------- */
-@media only screen
-and (min-width : 321px) {
-/* Styles */
+@media only screen and (min-width : 321px) {
+    /* Styles */
 }
  
 /* Smartphones (portrait) ----------- */
 @media only screen
 and (max-width : 320px) {
 /* Styles */
+
 }
  
 /* iPads (portrait and landscape) ----------- */
@@ -166,6 +211,7 @@ and (max-width : 320px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
 /* Styles */
+
 }
  
 /* iPads (landscape) ----------- */
@@ -177,24 +223,18 @@ and (orientation : landscape) {
 }
  
 /* iPads (portrait) ----------- */
-@media only screen
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-/* Styles */
-}
- 
-/* The New iPad (iPad 3) ----------- */
-@media only screen
-and (min-device-width: 1536px) 
-and (max-device-width: 2048px) 
-and (-webkit-min-device-pixel-ratio: 2) {
-/* Styles */
-}
- 
-/* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-/* Styles */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* Styles */
+    @media screen and (min-width: 479px) and (max-width: 930px) {
+    }
+
+    /* The New iPad (iPad 3) ----------- */
+    @media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-webkit-min-device-pixel-ratio: 2) {
+        /* Styles */
+    }
+
+    /* iPhone 4 ----------- */
+    @media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+        /* Styles */
+    }
 }
