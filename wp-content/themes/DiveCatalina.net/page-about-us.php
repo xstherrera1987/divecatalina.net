@@ -40,7 +40,8 @@ get_header(); ?>
 				$staffpages = get_pages( array( 'child_of' => $meetstaff->ID, 'parent' => $meetstaff->ID, hierarchical => '1', 'sort_column' => 'post_date', 'sort_order' => 'desc' ) );
 				
 				echo '	<div id="staffpages">';
-				foreach($staffpages as $pg) {
+				for($i=count($staffpages)-1; $i>=0; $i--) {
+				  $pg = $staffpages[$i];
 				  
 				  echo '  <div class="staff">';
 				  // picture first (so its on left)
