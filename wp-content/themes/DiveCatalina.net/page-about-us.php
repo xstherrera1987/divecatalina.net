@@ -52,7 +52,7 @@ get_header(); ?>
 				  $img = $images[0];
 				  $img_data = wp_get_attachment_image_src($img->ID);
 				  $url = $img_data[0];
-				  echo '<img src="'.$url.'" height="150" width="120" />';
+				  echo '<img src="'.$url.'" height="150" width="120" class="portrait-img" />';
 				  
 				  echo '  </div>';
 				  

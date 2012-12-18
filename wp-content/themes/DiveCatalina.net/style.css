@@ -409,13 +409,12 @@ textarea { resize: none;}
 	color: #ff0000;
 }
 
-.portrait img {
+.portrait-img {
     float: left;
 }
 
 .staffbio {
-    float: left;
-    margin-left: 10px;
+    margin-left:130px;
 }
 
 .service-section .service-image {
