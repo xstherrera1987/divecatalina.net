@@ -437,3 +437,8 @@ textarea { resize: none;}
 .gallery-caption {
 	margin-left: 0;
 }
+
+.aboutus-imgleft {
+    float:left;
+    margin-right: 10px;
+}
