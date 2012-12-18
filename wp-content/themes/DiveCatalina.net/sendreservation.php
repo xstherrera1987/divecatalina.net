@@ -35,10 +35,10 @@
 
 	//If there is no error, send the email
 	if(!isset($hasError)) {
-		$emailTo = 'itdoesnot@gmail.com'; //Put your own email address here
+		$emailTo = 'ron@divecatalina.net';
 		$body = "Name: $name \n\nEmail: $email \n\nPhone: $phone \n\nSubject: $subject \n\nMessage:\n\n$message";
-		$headers = 'From: '.$email;
-		$subject = "DiveCatalina.net Diving Registration";
+		$headers = 'From: diveregistrations@divecatalina.net';
+		$subject = "DiveCatalina.net Dive Reservation";
 		
 		mail($emailTo, $subject, $body, $headers);
 		$emailSent = true;
