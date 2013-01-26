@@ -39,7 +39,7 @@ get_header();
     // get each staff page
     $staffpages = get_pages(array('child_of' => $meetstaff->ID, 'parent' => $meetstaff->ID, hierarchical => '1', 'sort_column' => 'post_date', 'sort_order' => 'desc'));
     
-    // compare pages by 
+    // compare pages by page's order attribute
     function pageComparator($a, $b) {
       $a_order = get_post_field('menu_order', $a->ID);
       $b_order = get_post_field('menu_order', $b->ID);
